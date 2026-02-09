@@ -1,4 +1,5 @@
 import Hero from '@/components/landing/Hero'
+import Footer from '@/components/landing/Footer'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           <h2 className='text-3xl font-serif text-navy'>Our Mission</h2>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }

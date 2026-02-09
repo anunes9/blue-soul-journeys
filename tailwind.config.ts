@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
+        merriweather: ['Merriweather', 'serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
