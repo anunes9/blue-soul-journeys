@@ -1,15 +1,14 @@
 import Hero from '@/components/landing/Hero'
+import Destinations from '@/components/landing/Destinations'
 import Footer from '@/components/landing/Footer'
+import Mission from '@/components/landing/Mission'
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <section id='mission' className='min-h-screen bg-sand p-16'>
-        <div className='container mx-auto'>
-          <h2 className='text-3xl font-serif text-navy'>Our Mission</h2>
-        </div>
-      </section>
+      <Mission />
+      <Destinations />
       <Footer />
     </main>
   )
