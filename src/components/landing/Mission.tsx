@@ -70,21 +70,6 @@ const Mission = () => {
             communities.
           </p>
 
-          <div className='flex flex-col gap-8'>
-            {values.map((value, index) => (
-              <div
-                key={value.title}
-                className='flex flex-col items-start gap-4'
-              >
-                <h3 className='text-4xl font-sans text-navy mb-3'>
-                  {value.title}
-                </h3>
-
-                <p className='text-muted-foreground'>{value.description}</p>
-              </div>
-            ))}
-          </div>
-
           {/* Values */}
           <div className='grid md:grid-cols-3 gap-8'>
             {values.map((value, index) => (

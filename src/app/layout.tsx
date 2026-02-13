@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Navbar from '@/components/Navbar'
 import './globals.css'
 
 const siteUrl = 'https://www.bluesouljourneys.com'
@@ -74,7 +75,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='antialiased'>{children}</body>
+      <body className='antialiased'>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

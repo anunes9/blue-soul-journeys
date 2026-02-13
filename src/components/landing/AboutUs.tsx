@@ -77,7 +77,7 @@ const AboutUs = () => {
 
         {/* Image + Text Block */}
         <div className='grid md:grid-cols-2 gap-12 items-center mb-20'>
-          <div className='relative h-96 md:h-[500px] rounded-3xl overflow-hidden shadow-xl group'>
+          <div className='relative h-96 md:h-125 rounded-3xl overflow-hidden shadow-xl group'>
             <Image
               src='/hero-underwater.jpg'
               alt='Blue Soul Journeys team diving together'
@@ -123,9 +123,7 @@ const AboutUs = () => {
               <div className='w-16 h-16 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300'>
                 <item.icon className='w-8 h-8 text-primary-foreground' />
               </div>
-              <h3 className='text-xl font-sans text-navy mb-3'>
-                {item.title}
-              </h3>
+              <h3 className='text-xl font-sans text-navy mb-3'>{item.title}</h3>
               <p className='text-muted-foreground'>{item.description}</p>
             </div>
           ))}

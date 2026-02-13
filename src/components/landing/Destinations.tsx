@@ -1,34 +1,6 @@
 import Image from 'next/image'
-
-const destinations = [
-  {
-    name: 'The Red Sea',
-    region: 'Egypt',
-    description:
-      'A journey into the origins of modern diving, shaped by history, vibrant reefs and the iconic wrecks of the Red Sea.',
-    image:
-      'https://cdn.ailandingpage.ai/landingpage_io/user-generate/64521692-7885-44a6-8bcf-d1d3d1afa10b/64521692-7885-44a6-8bcf-d1d3d1afa10b/destinations/dest-redsea-dcafe0eede2546bf894c1ed1ad9a3ce5.png',
-    alt: 'Red Sea Diving',
-  },
-  {
-    name: 'The Maldives',
-    region: 'Central & Deep South Atolls',
-    description:
-      'Drift dives through channels, manta cleaning stations, and endless blue.',
-    image:
-      'https://cdn.ailandingpage.ai/landingpage_io/user-generate/64521692-7885-44a6-8bcf-d1d3d1afa10b/64521692-7885-44a6-8bcf-d1d3d1afa10b/destinations/dest-maldives-16204dd0f71d4d77874d67d7aa7c5a17.png',
-    alt: 'Maldives Diving',
-  },
-  {
-    name: 'Mozambique',
-    region: 'Tofo & The Wild Coast',
-    description:
-      'Megafauna encounters and untouched reefs for the adventurous spirit.',
-    image:
-      'https://cdn.ailandingpage.ai/landingpage_io/user-generate/64521692-7885-44a6-8bcf-d1d3d1afa10b/64521692-7885-44a6-8bcf-d1d3d1afa10b/destinations/dest-mozambique-667b060d0f7f48df851199701edcff39.png',
-    alt: 'Mozambique Diving',
-  },
-]
+import Link from 'next/link'
+import { destinations } from '@/data/destinations'
 
 const Destinations = () => {
   return (
@@ -67,9 +39,10 @@ const Destinations = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {destinations.map((dest) => (
-              <div
-                key={dest.name}
-                className='group relative h-125 rounded-3xl overflow-hidden shadow-xl cursor-pointer'
+              <Link
+                key={dest.slug}
+                href={`/destinations/${dest.slug}`}
+                className='group relative h-125 rounded-3xl overflow-hidden shadow-xl cursor-pointer block'
               >
                 <Image
                   src={dest.image}
@@ -90,7 +63,7 @@ const Destinations = () => {
                     {dest.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

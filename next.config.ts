@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'cdn.ailandingpage.ai',
       },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+      },
     ],
   },
 }

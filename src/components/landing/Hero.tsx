@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ChevronDown } from 'lucide-react'
 
@@ -102,10 +103,10 @@ const Hero = () => {
             style={{ animationDelay: '0.8s' }}
           >
             <Button variant='hero' size='xl'>
-              Start Your Journey
+              <Link href='/#contact'>Start Your Journey</Link>
             </Button>
             <Button variant='heroOutline' size='xl'>
-              Explore Destinations
+              <Link href='/#destinations'>Explore Destinations</Link>
             </Button>
           </div>
         </div>
