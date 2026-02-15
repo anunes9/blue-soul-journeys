@@ -22,9 +22,25 @@ export async function generateMetadata({
     return { title: 'Destination Not Found' }
   }
 
+  const url = `https://www.bluesouljourneys.com/destinations/${slug}`
+
   return {
-    title: `${destination.name} — Blue Soul Journeys`,
+    title: `${destination.name} Diving — ${destination.region}`,
     description: destination.description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${destination.name} — Blue Soul Journeys`,
+      description: destination.description,
+      url,
+      images: [
+        {
+          url: destination.image,
+          alt: destination.alt,
+        },
+      ],
+    },
   }
 }
 

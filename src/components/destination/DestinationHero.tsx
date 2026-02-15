@@ -3,7 +3,7 @@ import type { Destination } from '@/data/destinations'
 
 const DestinationHero = ({ destination }: { destination: Destination }) => {
   return (
-    <section className='relative min-h-[70vh] flex items-end justify-center overflow-hidden'>
+    <section className='relative min-h-[70vh] flex items-center justify-center overflow-hidden'>
       {/* Background Image */}
       <div className='absolute inset-0 z-0'>
         <Image
@@ -17,7 +17,7 @@ const DestinationHero = ({ destination }: { destination: Destination }) => {
       </div>
 
       {/* Content */}
-      <div className='relative z-20 container mx-auto px-6 pb-24 text-center'>
+      <div className='relative z-20 container mx-auto px-6 pb-12 text-center'>
         <div className='max-w-4xl mx-auto'>
           <div
             className='inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-primary-foreground/20 animate-fade-up'

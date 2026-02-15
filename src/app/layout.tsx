@@ -68,6 +68,33 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  name: siteName,
+  url: siteUrl,
+  logo: `${siteUrl}/logo.avif`,
+  description,
+  email: 'contact@bluesouljourneys.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Lisbon',
+    addressCountry: 'PT',
+  },
+  sameAs: [],
+  areaServed: [
+    { '@type': 'Country', name: 'Egypt' },
+    { '@type': 'Country', name: 'Maldives' },
+    { '@type': 'Country', name: 'Mozambique' },
+  ],
+  knowsAbout: [
+    'Scuba Diving',
+    'Liveaboard Diving',
+    'Marine Conservation',
+    'Dive Travel',
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -76,6 +103,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='antialiased'>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         {children}
       </body>

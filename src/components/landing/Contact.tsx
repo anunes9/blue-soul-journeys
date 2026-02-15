@@ -13,7 +13,9 @@ const Contact = () => {
   })
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
@@ -49,11 +51,7 @@ const Contact = () => {
               className='text-ocean-deep'
             />
           </pattern>
-          <rect
-            width='100%'
-            height='100%'
-            fill='url(#contact-wave-pattern)'
-          />
+          <rect width='100%' height='100%' fill='url(#contact-wave-pattern)' />
         </svg>
       </div>
 
@@ -68,8 +66,7 @@ const Contact = () => {
 
           {/* Main Heading */}
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight'>
-            Ready to Dive{' '}
-            <span className='text-gradient-aqua'>Deeper</span>?
+            Ready to Dive <span className='text-gradient-aqua'>Deeper</span>?
           </h2>
 
           <p className='text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
@@ -82,32 +79,30 @@ const Contact = () => {
         <div className='grid md:grid-cols-5 gap-12 max-w-5xl mx-auto'>
           {/* Contact Info */}
           <div className='md:col-span-2 flex flex-col gap-8'>
-            <div className='group p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
-              <div className='w-12 h-12 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300'>
+            <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
+              <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Mail className='w-6 h-6 text-primary-foreground' />
               </div>
-              <h4 className='text-lg font-sans text-navy mb-1'>Email</h4>
-              <p className='text-muted-foreground text-sm'>
+
+              <p className='text-primary text-sm'>
                 contact@bluesouljourneys.com
               </p>
             </div>
 
-            <div className='group p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
-              <div className='w-12 h-12 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300'>
+            <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
+              <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Phone className='w-6 h-6 text-primary-foreground' />
               </div>
-              <h4 className='text-lg font-sans text-navy mb-1'>Phone</h4>
-              <p className='text-muted-foreground text-sm'>
-                +351 912 345 678
-              </p>
+
+              <p className='text-primary text-sm'>+351 912 345 678</p>
             </div>
 
-            <div className='group p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
-              <div className='w-12 h-12 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300'>
+            <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
+              <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <MapPin className='w-6 h-6 text-primary-foreground' />
               </div>
-              <h4 className='text-lg font-sans text-navy mb-1'>Location</h4>
-              <p className='text-muted-foreground text-sm'>
+
+              <p className='text-primary text-sm'>
                 Lisbon, Portugal — diving worldwide
               </p>
             </div>
@@ -117,74 +112,46 @@ const Contact = () => {
           <div className='md:col-span-3'>
             <form
               onSubmit={handleSubmit}
-              className='p-8 rounded-2xl bg-card border border-border/50 shadow-sm'
+              className='flex flex-col gap-6 p-8 rounded-2xl bg-card border border-border/50 shadow-sm'
             >
-              <div className='grid sm:grid-cols-2 gap-6 mb-6'>
-                <div>
-                  <label
-                    htmlFor='name'
-                    className='block text-sm font-medium text-navy mb-2'
-                  >
-                    Name
-                  </label>
-                  <input
-                    type='text'
-                    id='name'
-                    name='name'
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300'
-                    placeholder='Your name'
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor='email'
-                    className='block text-sm font-medium text-navy mb-2'
-                  >
-                    Email
-                  </label>
-                  <input
-                    type='email'
-                    id='email'
-                    name='email'
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300'
-                    placeholder='your@email.com'
-                  />
-                </div>
-              </div>
-
-              <div className='mb-6'>
+              <div>
                 <label
-                  htmlFor='subject'
+                  htmlFor='name'
                   className='block text-sm font-medium text-navy mb-2'
                 >
-                  Subject
+                  Name
                 </label>
-                <select
-                  id='subject'
-                  name='subject'
-                  value={formData.subject}
+                <input
+                  type='text'
+                  id='name'
+                  name='name'
+                  value={formData.name}
                   onChange={handleChange}
                   required
                   className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300'
+                  placeholder='Your name'
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor='email'
+                  className='block text-sm font-medium text-navy mb-2'
                 >
-                  <option value='' disabled>
-                    Select a subject
-                  </option>
-                  <option value='general'>General Inquiry</option>
-                  <option value='booking'>Booking a Journey</option>
-                  <option value='custom'>Custom Expedition</option>
-                  <option value='partnership'>Partnership</option>
-                  <option value='other'>Other</option>
-                </select>
+                  Email
+                </label>
+                <input
+                  type='email'
+                  id='email'
+                  name='email'
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300'
+                  placeholder='your@email.com'
+                />
               </div>
 
-              <div className='mb-8'>
+              <div>
                 <label
                   htmlFor='message'
                   className='block text-sm font-medium text-navy mb-2'
@@ -203,12 +170,7 @@ const Contact = () => {
                 />
               </div>
 
-              <Button
-                type='submit'
-                variant='hero'
-                size='xl'
-                className='w-full'
-              >
+              <Button type='submit' variant='hero' size='xl' className='w-full'>
                 <Send className='w-5 h-5 mr-2' />
                 Send Message
               </Button>

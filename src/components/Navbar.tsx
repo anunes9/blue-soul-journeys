@@ -82,6 +82,13 @@ const Navbar = () => {
             </div>
 
             <Link
+              href='/how-it-works'
+              className='text-sm font-medium text-navy/80 hover:text-ocean-deep transition-colors'
+            >
+              How It Works
+            </Link>
+
+            <Link
               href='/my-story'
               className='text-sm font-medium text-navy/80 hover:text-ocean-deep transition-colors'
             >
@@ -135,6 +142,14 @@ const Navbar = () => {
           ))}
 
           <div className='w-12 h-px bg-aqua/30' />
+
+          <Link
+            href='/how-it-works'
+            onClick={() => setMobileMenuOpen(false)}
+            className='text-2xl font-serif text-navy hover:text-ocean-deep transition-colors'
+          >
+            How It Works
+          </Link>
 
           <Link
             href='/my-story'
