@@ -1,136 +1,159 @@
-import Image from 'next/image'
-import { Compass, Anchor, Waves } from 'lucide-react'
+import { Compass, Heart, Sparkles } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import ScrollReveal from "@/components/ScrollReveal";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-const milestones = [
+const values = [
   {
     icon: Compass,
-    title: 'Born from Passion',
+    title: "Conscious Travel",
     description:
-      'Blue Soul Journeys was founded by a team of marine biologists and PADI-certified dive masters who wanted to share the ocean in a more intentional, respectful way.',
+      "I believe travel should respect the ocean, the people and natural rhythms \u2014 creating meaningful experiences without rush or excess.",
   },
   {
-    icon: Anchor,
-    title: 'Rooted in Experience',
+    icon: Heart,
+    title: "Connection to the Ocean",
     description:
-      'With over 15 years of combined diving experience across three continents, we bring deep knowledge and genuine care to every expedition we design.',
+      "For me, diving is more than exploration. It\u2019s a way to slow down, observe and reconnect \u2014 with the ocean, with others and with ourselves.",
   },
   {
-    icon: Waves,
-    title: 'Driven by Purpose',
+    icon: Sparkles,
+    title: "Carefully Selected Experiences",
     description:
-      'Every journey we craft supports local marine conservation efforts and gives back to the coastal communities that welcome us.',
+      "Each itinerary is thoughtfully designed, built around trusted local partners \u2014 always prioritising safety, quality and authenticity.",
   },
-]
+];
 
 const AboutUs = () => {
   return (
-    <section id='about' className='py-24 bg-white relative overflow-hidden'>
+    <section id="about" className="py-24 bg-white relative overflow-hidden">
       {/* Subtle wave pattern background */}
-      <div className='absolute inset-0 opacity-5'>
+      <div className="absolute inset-0 opacity-5">
         <svg
-          className='w-full h-full'
-          viewBox='0 0 100 100'
-          preserveAspectRatio='none'
+          aria-hidden="true"
+          className="w-full h-full"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
         >
           <pattern
-            id='about-wave-pattern'
-            x='0'
-            y='0'
-            width='50'
-            height='10'
-            patternUnits='userSpaceOnUse'
+            id="about-wave-pattern"
+            x="0"
+            y="0"
+            width="50"
+            height="10"
+            patternUnits="userSpaceOnUse"
           >
             <path
-              d='M0 5 Q12.5 0 25 5 T50 5'
-              fill='none'
-              stroke='currentColor'
-              strokeWidth='0.5'
-              className='text-ocean-deep'
+              d="M0 5 Q12.5 0 25 5 T50 5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="0.5"
+              className="text-ocean-deep"
             />
           </pattern>
-          <rect width='100%' height='100%' fill='url(#about-wave-pattern)' />
+          <rect width="100%" height="100%" fill="url(#about-wave-pattern)" />
         </svg>
       </div>
 
-      <div className='container mx-auto px-6 relative z-10'>
-        <div className='max-w-4xl mx-auto text-center mb-16'>
-          {/* Section Label */}
-          <div className='inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8'>
-            <span className='text-sm font-medium text-ocean-deep tracking-wide uppercase'>
-              About Us
-            </span>
-          </div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <ScrollReveal animation="fade-up">
+            <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
+              <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
+                What I Do
+              </span>
+            </div>
+          </ScrollReveal>
 
-          {/* Main Heading */}
-          <h2 className='text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight'>
-            The People Behind the{' '}
-            <span className='text-gradient-aqua'>Blue</span>
-          </h2>
+          <ScrollReveal animation="fade-up" delay={100}>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight">
+              Dive Journeys Designed with{" "}
+              <span className="text-gradient-aqua">Care & Purpose</span>
+            </h2>
+          </ScrollReveal>
 
-          <p className='text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
-            We are a small, dedicated team of ocean lovers, storytellers, and
-            dive professionals. We don&apos;t just plan trips — we share a piece
-            of the world that changed our lives, hoping it will change yours
-            too.
-          </p>
+          <ScrollReveal animation="fade-up" delay={200}>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              I design dive journeys bringing together trusted local knowledge,
+              thoughtful planning and respect for the ocean.
+            </p>
+          </ScrollReveal>
         </div>
 
         {/* Image + Text Block */}
-        <div className='grid md:grid-cols-2 gap-12 items-center mb-20'>
-          <div className='relative h-96 md:h-125 rounded-3xl overflow-hidden shadow-xl group'>
-            <Image
-              src='/hero-underwater.jpg'
-              alt='Blue Soul Journeys team diving together'
-              fill
-              className='object-cover transition-transform duration-700 group-hover:scale-105'
-              sizes='(max-width: 768px) 100vw, 50vw'
-            />
-            <div className='absolute inset-0 bg-linear-to-t from-[#0A3D62]/60 via-transparent to-transparent' />
-          </div>
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+          <ScrollReveal animation="fade-right">
+            <div className="relative h-96 md:h-125 rounded-3xl overflow-hidden shadow-xl group">
+              <Image
+                src="/hero-underwater.jpg"
+                alt="Underwater diving scene"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0A3D62]/60 via-transparent to-transparent" />
+            </div>
+          </ScrollReveal>
 
-          <div>
-            <h3 className='text-2xl md:text-3xl font-serif text-navy mb-6 leading-tight'>
-              Our story started underwater
-            </h3>
-            <p className='text-muted-foreground leading-relaxed mb-6'>
-              What began as a shared love for diving between a few close friends
-              quickly grew into something bigger — a mission to create
-              thoughtful, small-group dive experiences that prioritize
-              connection over convenience.
-            </p>
-            <p className='text-muted-foreground leading-relaxed mb-6'>
-              We believe the ocean teaches us patience, humility, and wonder.
-              Every bubble, every current, every encounter with marine life
-              reminds us why we do what we do.
-            </p>
-            <p className='text-muted-foreground leading-relaxed'>
-              Based between Portugal and the tropics, we spend our days scouting
-              new reefs, building relationships with local dive operators, and
-              ensuring every detail of your journey feels personal and
-              purposeful.
-            </p>
-          </div>
+          <ScrollReveal animation="fade-left" delay={150}>
+            <div>
+              <h3 className="text-2xl md:text-3xl font-serif text-navy mb-6 leading-tight">
+                Born from real dives and genuine connections
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Blue Soul Journeys grew from years spent in and around the ocean
+                &mdash; diving remote reefs, exploring iconic wrecks and sharing
+                time with people whose lives are shaped by the sea.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Every journey I create is rooted in places I know, journeys
+                I&apos;ve experienced first-hand and partners I trust deeply. I
+                don&apos;t build trips from a catalogue.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Whether it&apos;s a liveaboard in the Red Sea, drifting through
+                the channels of the Maldives or slow, immersive dives along the
+                Mozambican coast, each journey is designed to feel personal,
+                conscious and connected to the ocean.
+              </p>
+              <Link
+                href="/what-i-do"
+                className={cn(
+                  buttonVariants({ variant: "hero", size: "xl" }),
+                  "inline-flex",
+                )}
+              >
+                Learn More
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
 
-        {/* Milestones / Values */}
-        <div className='grid md:grid-cols-3 gap-8'>
-          {milestones.map((item, index) => (
-            <div
+        {/* Values */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {values.map((item, index) => (
+            <ScrollReveal
               key={item.title}
-              className='group p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'
-              style={{ animationDelay: `${index * 0.2}s` }}
+              animation="fade-up"
+              delay={index * 150}
             >
-              <div className='w-16 h-16 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300'>
-                <item.icon className='w-8 h-8 text-primary-foreground' />
+              <div className="group p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300 h-full">
+                <div className="w-16 h-16 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <item.icon className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-sans text-navy mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground">{item.description}</p>
               </div>
-              <h3 className='text-xl font-sans text-navy mb-3'>{item.title}</h3>
-              <p className='text-muted-foreground'>{item.description}</p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

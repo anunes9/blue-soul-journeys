@@ -1,28 +1,33 @@
-import { notFound } from 'next/navigation'
-import type { Metadata } from 'next'
-import { destinations, getDestinationBySlug } from '@/data/destinations'
-import DestinationHero from '@/components/destination/DestinationHero'
-import DestinationDescription from '@/components/destination/DestinationDescription'
-import Contact from '@/components/landing/Contact'
-import Footer from '@/components/landing/Footer'
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import DestinationDates from "@/components/destination/DestinationDates";
+import DestinationDescription from "@/components/destination/DestinationDescription";
+import DestinationHero from "@/components/destination/DestinationHero";
+import DestinationInclusions from "@/components/destination/DestinationInclusions";
+import DestinationItinerary from "@/components/destination/DestinationItinerary";
+import DestinationTransfers from "@/components/destination/DestinationTransfers";
+import DestinationVessel from "@/components/destination/DestinationVessel";
+import Contact from "@/components/landing/Contact";
+import Footer from "@/components/landing/Footer";
+import { destinations, getDestinationBySlug } from "@/data/destinations";
 
 export function generateStaticParams() {
-  return destinations.map((d) => ({ slug: d.slug }))
+  return destinations.map((d) => ({ slug: d.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params
-  const destination = getDestinationBySlug(slug)
+  const { slug } = await params;
+  const destination = getDestinationBySlug(slug);
 
   if (!destination) {
-    return { title: 'Destination Not Found' }
+    return { title: "Destination Not Found" };
   }
 
-  const url = `https://www.bluesouljourneys.com/destinations/${slug}`
+  const url = `https://www.bluesouljourneys.com/destinations/${slug}`;
 
   return {
     title: `${destination.name} Diving — ${destination.region}`,
@@ -41,27 +46,32 @@ export async function generateMetadata({
         },
       ],
     },
-  }
+  };
 }
 
 export default async function DestinationPage({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params
-  const destination = getDestinationBySlug(slug)
+  const { slug } = await params;
+  const destination = getDestinationBySlug(slug);
 
   if (!destination) {
-    notFound()
+    notFound();
   }
 
   return (
     <main>
       <DestinationHero destination={destination} />
       <DestinationDescription destination={destination} />
+      <DestinationVessel destination={destination} />
+      <DestinationInclusions destination={destination} />
+      <DestinationItinerary destination={destination} />
+      <DestinationDates destination={destination} />
+      <DestinationTransfers destination={destination} />
       <Contact />
       <Footer />
     </main>
-  )
+  );
 }
