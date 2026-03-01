@@ -14,15 +14,31 @@ export async function generateMetadata({
     locale,
     namespace: "metadata.whyTravelWithMe",
   });
-  const url = `https://www.bluesouljourneys.com/${locale}/why-travel-with-me`;
+  const siteUrl = "https://www.bluesouljourneys.com";
+  const url = `${siteUrl}/${locale}/why-travel-with-me`;
   return {
     title: t("title"),
     description: t("description"),
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${siteUrl}/en/why-travel-with-me`,
+        pt: `${siteUrl}/pt/why-travel-with-me`,
+        es: `${siteUrl}/es/why-travel-with-me`,
+        "x-default": `${siteUrl}/en/why-travel-with-me`,
+      },
+    },
     openGraph: {
       title: `${t("title")} — Blue Soul Journeys`,
       description: t("description"),
       url,
+      images: [{ url: "/images/image_why_travel_with_me.jpg", width: 1200, height: 630, alt: "Why travel with Blue Soul Journeys" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("title")} — Blue Soul Journeys`,
+      description: t("description"),
+      images: ["/images/image_why_travel_with_me.jpg"],
     },
   };
 }

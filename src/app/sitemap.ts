@@ -1,53 +1,39 @@
 import type { MetadataRoute } from "next";
 import { destinations } from "@/data/destinations";
+import { routing } from "@/i18n/routing";
 
 const siteUrl = "https://www.bluesouljourneys.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const destinationRoutes = destinations.map((d) => ({
-    url: `${siteUrl}/destinations/${d.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+const staticRoutes = [
+  { path: "", changeFrequency: "weekly" as const, priority: 1.0 },
+  { path: "/journeys", changeFrequency: "weekly" as const, priority: 0.9 },
+  { path: "/destinations", changeFrequency: "weekly" as const, priority: 0.9 },
+  { path: "/how-it-works", changeFrequency: "monthly" as const, priority: 0.7 },
+  { path: "/what-i-do", changeFrequency: "monthly" as const, priority: 0.7 },
+  { path: "/why-travel-with-me", changeFrequency: "monthly" as const, priority: 0.7 },
+  { path: "/my-story", changeFrequency: "monthly" as const, priority: 0.7 },
+];
 
-  return [
-    {
-      url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${siteUrl}/my-story`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/how-it-works`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/what-i-do`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/why-travel-with-me`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteUrl}/journeys`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    ...destinationRoutes,
-  ];
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
+  const staticEntries = staticRoutes.flatMap(({ path, changeFrequency, priority }) =>
+    routing.locales.map((locale) => ({
+      url: `${siteUrl}/${locale}${path}`,
+      lastModified: now,
+      changeFrequency,
+      priority,
+    }))
+  );
+
+  const destinationEntries = routing.locales.flatMap((locale) =>
+    destinations.map((d) => ({
+      url: `${siteUrl}/${locale}/destinations/${d.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }))
+  );
+
+  return [...staticEntries, ...destinationEntries];
 }

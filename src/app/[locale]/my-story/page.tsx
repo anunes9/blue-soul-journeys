@@ -12,15 +12,31 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.myStory" });
-  const url = `https://www.bluesouljourneys.com/${locale}/my-story`;
+  const siteUrl = "https://www.bluesouljourneys.com";
+  const url = `${siteUrl}/${locale}/my-story`;
   return {
     title: t("title"),
     description: t("description"),
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${siteUrl}/en/my-story`,
+        pt: `${siteUrl}/pt/my-story`,
+        es: `${siteUrl}/es/my-story`,
+        "x-default": `${siteUrl}/en/my-story`,
+      },
+    },
     openGraph: {
       title: `${t("title")} — Blue Soul Journeys`,
       description: t("description"),
       url,
+      images: [{ url: "/images/my_story1.jpg", width: 1200, height: 630, alt: "My Story — Blue Soul Journeys" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("title")} — Blue Soul Journeys`,
+      description: t("description"),
+      images: ["/images/my_story1.jpg"],
     },
   };
 }

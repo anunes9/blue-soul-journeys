@@ -11,15 +11,31 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.whatIDo" });
-  const url = `https://www.bluesouljourneys.com/${locale}/what-i-do`;
+  const siteUrl = "https://www.bluesouljourneys.com";
+  const url = `${siteUrl}/${locale}/what-i-do`;
   return {
     title: t("title"),
     description: t("description"),
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${siteUrl}/en/what-i-do`,
+        pt: `${siteUrl}/pt/what-i-do`,
+        es: `${siteUrl}/es/what-i-do`,
+        "x-default": `${siteUrl}/en/what-i-do`,
+      },
+    },
     openGraph: {
       title: `${t("title")} — Blue Soul Journeys`,
       description: t("description"),
       url,
+      images: [{ url: "/images/what_i_do1.avif", width: 1200, height: 630, alt: "What Blue Soul Journeys does" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("title")} — Blue Soul Journeys`,
+      description: t("description"),
+      images: ["/images/what_i_do1.avif"],
     },
   };
 }

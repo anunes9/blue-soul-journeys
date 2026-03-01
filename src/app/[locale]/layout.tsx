@@ -10,6 +10,12 @@ import { routing } from "@/i18n/routing";
 const siteUrl = "https://www.bluesouljourneys.com";
 const siteName = "Blue Soul Journeys";
 
+const ogLocale: Record<string, string> = {
+  en: "en_GB",
+  pt: "pt_PT",
+  es: "es_ES",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -17,6 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.home" });
+  const canonicalUrl = `${siteUrl}/${locale}`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -44,8 +51,11 @@ export async function generateMetadata({
     creator: siteName,
     openGraph: {
       type: "website",
-      locale: locale === "pt" ? "pt_PT" : locale === "es" ? "es_ES" : "en_GB",
-      url: siteUrl,
+      locale: ogLocale[locale] ?? "en_GB",
+      alternateLocale: Object.entries(ogLocale)
+        .filter(([l]) => l !== locale)
+        .map(([, v]) => v),
+      url: canonicalUrl,
       siteName,
       title: `${siteName} | ${t("title")}`,
       description: t("description"),
@@ -76,7 +86,13 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: siteUrl,
+      canonical: canonicalUrl,
+      languages: {
+        "en": `${siteUrl}/en`,
+        "pt": `${siteUrl}/pt`,
+        "es": `${siteUrl}/es`,
+        "x-default": `${siteUrl}/en`,
+      },
     },
   };
 }
@@ -85,33 +101,40 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  name: siteName,
-  url: siteUrl,
-  logo: `${siteUrl}/logo.avif`,
-  description:
-    "Dive journeys designed for those who truly feel at home in the ocean. Liveaboard expeditions and dive resorts in the Red Sea, Maldives and Mozambique, chosen with care.",
-  email: "contact@bluesouljourneys.com",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Lisbon",
-    addressCountry: "PT",
-  },
-  sameAs: [],
-  areaServed: [
-    { "@type": "Country", name: "Egypt" },
-    { "@type": "Country", name: "Maldives" },
-    { "@type": "Country", name: "Mozambique" },
-  ],
-  knowsAbout: [
-    "Scuba Diving",
-    "Liveaboard Diving",
-    "Marine Conservation",
-    "Dive Travel",
-  ],
-};
+function buildJsonLd(locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    name: siteName,
+    url: `${siteUrl}/${locale}`,
+    logo: `${siteUrl}/logo.avif`,
+    image: `${siteUrl}/hero-underwater.jpg`,
+    description:
+      "Dive journeys designed for those who truly feel at home in the ocean. Liveaboard expeditions and dive resorts in the Red Sea, Maldives and Mozambique, chosen with care.",
+    email: "contact@bluesouljourneys.com",
+    telephone: "+351914171793",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lisbon",
+      addressCountry: "PT",
+    },
+    sameAs: [
+      "https://www.instagram.com/bluesouljourneys",
+    ],
+    areaServed: [
+      { "@type": "Country", name: "Egypt" },
+      { "@type": "Country", name: "Maldives" },
+      { "@type": "Country", name: "Mozambique" },
+    ],
+    knowsAbout: [
+      "Scuba Diving",
+      "Liveaboard Diving",
+      "Marine Conservation",
+      "Dive Travel",
+    ],
+    inLanguage: locale,
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -132,7 +155,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <script type="application/ld+json">{JSON.stringify(buildJsonLd(locale))}</script>
       <Navbar />
       {children}
       <WhatsAppFloat />

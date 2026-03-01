@@ -44,17 +44,32 @@ export async function generateMetadata({
     description = dest.description;
   }
 
-  const url = `https://www.bluesouljourneys.com/${locale}/destinations/${slug}`;
+  const siteUrl = "https://www.bluesouljourneys.com";
+  const url = `${siteUrl}/${locale}/destinations/${slug}`;
 
   return {
     title: `${name} Diving`,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${siteUrl}/en/destinations/${slug}`,
+        pt: `${siteUrl}/pt/destinations/${slug}`,
+        es: `${siteUrl}/es/destinations/${slug}`,
+        "x-default": `${siteUrl}/en/destinations/${slug}`,
+      },
+    },
     openGraph: {
       title: `${name} — Blue Soul Journeys`,
       description,
       url,
-      images: [{ url: dest.image, alt: dest.alt }],
+      images: [{ url: dest.image, width: 1200, height: 630, alt: dest.alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${name} — Blue Soul Journeys`,
+      description,
+      images: [dest.image],
     },
   };
 }
