@@ -61,7 +61,7 @@ const Hero = () => {
       <div className='relative z-20 container mx-auto px-6 text-center'>
         <div className='max-w-4xl mx-auto'>
           {/* Logo/Brand */}
-          <div className='animate-fade-up' style={{ animationDelay: '0.2s' }}>
+          {/*<div className='animate-fade-up' style={{ animationDelay: '0.2s' }}>
             <Image
               src='/logo_text.png'
               width={512}
@@ -69,11 +69,11 @@ const Hero = () => {
               className='h-auto w-80 mx-auto'
               alt='Blue Soul Journeys'
             />
-          </div>
+          </div>*/}
 
           {/* Headline */}
           <h1
-            className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-primary-foreground mb-6 leading-tight animate-fade-up'
+            className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-primary-foreground mb-6 leading-tight animate-fade-up'
             style={{ animationDelay: '0.4s' }}
           >
             {t('tagline').split(' ').slice(0, -1).join(' ')}{' '}

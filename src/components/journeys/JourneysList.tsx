@@ -55,7 +55,7 @@ const JourneysList = () => {
             </div>
 
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary-foreground mb-8 leading-tight animate-fade-up"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up"
               style={{ animationDelay: "0.4s" }}
             >
               Dive Journeys Designed to{" "}
@@ -101,7 +101,7 @@ const JourneysList = () => {
                 </span>
               </div>
 
-              <p className="text-xl md:text-2xl text-navy font-serif leading-relaxed">
+              <p className="text-xl md:text-2xl text-navy font-heading leading-relaxed">
                 {t("featuredSubheading")}
               </p>
             </div>
@@ -135,7 +135,7 @@ const JourneysList = () => {
                       <span className="text-sm font-medium text-aqua tracking-wide uppercase mb-2">
                         {td(`${dest.slug}.region` as never)}
                       </span>
-                      <h3 className="text-2xl md:text-3xl font-serif text-navy mb-4">
+                      <h3 className="text-2xl md:text-3xl font-heading text-navy mb-4">
                         {td(`${dest.slug}.name` as never)}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed mb-6">

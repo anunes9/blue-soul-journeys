@@ -73,7 +73,7 @@ const Contact = () => {
           </ScrollReveal>
 
           <ScrollReveal animation='fade-up' delay={100}>
-            <h2 className='text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight'>
+            <h2 className='text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight'>
               {t('heading')}{' '}
               <span className='text-gradient-aqua'>
                 {t('headingHighlight')}
@@ -89,11 +89,11 @@ const Contact = () => {
           </ScrollReveal>
         </div>
 
-        <div className='grid md:grid-cols-5 gap-12 max-w-5xl mx-auto'>
+        <div className='grid md:grid-cols-6 gap-12 max-w-5xl mx-auto'>
           {/* Contact Info */}
           <ScrollReveal
             animation='fade-right'
-            className='md:col-span-2 flex flex-col gap-8'
+            className='md:col-span-3 lg:col-span-2 flex flex-col gap-8'
           >
             <a
               href='mailto:contact@bluesouljourneys.com'
@@ -155,7 +155,7 @@ const Contact = () => {
           <ScrollReveal
             animation='fade-left'
             delay={150}
-            className='md:col-span-3'
+            className='md:col-span-3 lg:col-span-4'
           >
             <form
               onSubmit={handleSubmit}

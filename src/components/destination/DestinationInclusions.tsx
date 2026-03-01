@@ -60,7 +60,7 @@ const DestinationInclusions = ({
             {/* Included */}
             <ScrollReveal animation="fade-right">
               <div className="p-8 rounded-2xl bg-card border-2 border-aqua/30 shadow-lg h-full">
-                <h3 className="text-xl font-serif text-navy mb-6">{t("included")}</h3>
+                <h3 className="text-xl font-heading text-navy mb-6">{t("included")}</h3>
                 <ul className="space-y-4">
                   {Array.isArray(included) &&
                     included.map((item) => (
@@ -78,7 +78,7 @@ const DestinationInclusions = ({
             {/* Not Included */}
             <ScrollReveal animation="fade-left" delay={150}>
               <div className="p-8 rounded-2xl bg-card border border-border/50 h-full">
-                <h3 className="text-xl font-serif text-navy/60 mb-6">
+                <h3 className="text-xl font-heading text-navy/60 mb-6">
                   {t("notIncluded")}
                 </h3>
                 <ul className="space-y-4">

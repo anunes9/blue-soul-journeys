@@ -83,7 +83,7 @@ const HowItWorks = () => {
             </div>
 
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary-foreground mb-8 leading-tight animate-fade-up"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up"
               style={{ animationDelay: "0.4s" }}
             >
               {t("heading").split(" ").slice(0, -1).join(" ")}{" "}
@@ -120,7 +120,7 @@ const HowItWorks = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <ScrollReveal animation="fade-right">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
                     {t("trustHeading")}
                   </h2>
                   <div className="space-y-5 text-muted-foreground leading-relaxed">
@@ -160,7 +160,7 @@ const HowItWorks = () => {
                 </span>
               </div>
 
-              <p className="text-xl md:text-2xl text-navy font-serif leading-relaxed">
+              <p className="text-xl md:text-2xl text-navy font-heading leading-relaxed">
                 {t("expect1")}
               </p>
               <p className="text-lg text-muted-foreground mt-6 leading-relaxed max-w-2xl mx-auto">
@@ -189,7 +189,7 @@ const HowItWorks = () => {
                         <div className="text-sm font-medium text-aqua mb-1">
                           {step.number}
                         </div>
-                        <h3 className="text-xl font-serif text-navy mb-3">
+                        <h3 className="text-xl font-heading text-navy mb-3">
                           {step.title}
                         </h3>
                         <p className="text-muted-foreground leading-relaxed">

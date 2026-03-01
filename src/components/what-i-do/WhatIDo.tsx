@@ -71,7 +71,7 @@ const WhatIDo = () => {
             </div>
 
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary-foreground mb-8 leading-tight animate-fade-up"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up"
               style={{ animationDelay: "0.4s" }}
             >
               Dive Journeys Designed with{" "}
@@ -106,7 +106,7 @@ const WhatIDo = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <ScrollReveal animation="fade-right">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
                     {t("storyHeading")}
                   </h2>
                   <div className="space-y-5 text-muted-foreground leading-relaxed">
@@ -181,10 +181,10 @@ const WhatIDo = () => {
         <div className="container mx-auto px-6 relative z-10">
           <ScrollReveal animation="scale-in">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-2xl md:text-3xl font-serif text-primary-foreground leading-relaxed mb-4">
+              <p className="text-2xl md:text-3xl font-heading text-primary-foreground leading-relaxed mb-4">
                 {t("closing1")}
               </p>
-              <p className="text-2xl md:text-3xl font-serif text-gradient-aqua">
+              <p className="text-2xl md:text-3xl font-heading text-gradient-aqua">
                 {t("closing2")}
               </p>
             </div>

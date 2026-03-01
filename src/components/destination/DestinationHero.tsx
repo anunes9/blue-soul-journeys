@@ -38,7 +38,7 @@ const DestinationHero = ({
           </div>
 
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-primary-foreground mb-6 leading-tight animate-fade-up"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-primary-foreground mb-6 leading-tight animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
             {td(`${slug}.name` as never)}

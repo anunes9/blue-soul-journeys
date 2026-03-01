@@ -25,7 +25,7 @@ const DestinationTransfers = ({
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-serif text-navy mb-4">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
                     {t("transfersHeading")}
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">

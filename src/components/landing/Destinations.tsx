@@ -26,7 +26,7 @@ const Destinations = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <ScrollReveal animation="fade-up">
-              <h2 className="text-3xl md:text-5xl font-bold text-[#0A3D62] mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-[#0A3D62] mb-6 leading-tight">
                 {t("heading")}
               </h2>
             </ScrollReveal>
@@ -61,7 +61,7 @@ const Destinations = () => {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-[#0A3D62] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 p-8 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-2xl font-merriweather font-bold text-white mb-2">
+                    <h3 className="text-2xl font-heading font-bold text-white mb-2">
                       {td(`${dest.slug}.name` as never)}
                     </h3>
                     <p className="text-[#6DD5ED] font-medium mb-3">

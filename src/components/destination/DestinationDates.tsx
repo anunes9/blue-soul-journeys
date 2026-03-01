@@ -56,7 +56,7 @@ const DestinationDates = ({ destination }: { destination: Destination }) => {
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
                 {t("datesHeading")}
               </h2>
             </div>

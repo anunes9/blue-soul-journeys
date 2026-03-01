@@ -19,9 +19,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        serif: ["Playfair Display", "serif"],
-        merriweather: ["Merriweather", "serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
+        heading: ["var(--font-josefin-sans)", "sans-serif"],
+        merriweather: ["var(--font-merriweather)", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",

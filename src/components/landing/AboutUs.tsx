@@ -68,7 +68,7 @@ const AboutUs = () => {
           </ScrollReveal>
 
           <ScrollReveal animation="fade-up" delay={100}>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
               Dive Journeys Designed with{" "}
               <span className="text-gradient-aqua">Care & Purpose</span>
             </h2>
@@ -98,7 +98,7 @@ const AboutUs = () => {
 
           <ScrollReveal animation="fade-left" delay={150}>
             <div>
-              <h3 className="text-2xl md:text-3xl font-serif text-navy mb-6 leading-tight">
+              <h3 className="text-2xl md:text-3xl font-heading text-navy mb-6 leading-tight">
                 {t("subheading")}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">

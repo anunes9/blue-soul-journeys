@@ -243,7 +243,7 @@ const Navbar = () => {
               className='h-auto w-14'
               alt='Blue Soul Journeys'
             />
-            <span className='text-lg font-serif text-navy tracking-wide'>
+            <span className='text-lg font-heading text-navy tracking-wide'>
               Blue Soul Journeys
             </span>
           </div>
@@ -258,7 +258,7 @@ const Navbar = () => {
               key={dest.slug}
               href={`/destinations/${dest.slug}`}
               onClick={() => setMobileMenuOpen(false)}
-              className='text-2xl font-serif text-navy hover:text-ocean-deep transition-colors'
+              className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
             >
               {td(`${dest.slug}.name` as never)}
             </Link>
@@ -269,7 +269,7 @@ const Navbar = () => {
           <Link
             href='/what-i-do'
             onClick={() => setMobileMenuOpen(false)}
-            className='text-2xl font-serif text-navy hover:text-ocean-deep transition-colors'
+            className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
           >
             {t('whatIDo')}
           </Link>
@@ -277,7 +277,7 @@ const Navbar = () => {
           <Link
             href='/how-it-works'
             onClick={() => setMobileMenuOpen(false)}
-            className='text-2xl font-serif text-navy hover:text-ocean-deep transition-colors'
+            className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
           >
             {t('howItWorks')}
           </Link>
@@ -285,7 +285,7 @@ const Navbar = () => {
           <Link
             href='/my-story'
             onClick={() => setMobileMenuOpen(false)}
-            className='text-2xl font-serif text-navy hover:text-ocean-deep transition-colors'
+            className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
           >
             {t('myStory')}
           </Link>
@@ -293,7 +293,7 @@ const Navbar = () => {
           <Link
             href='/#contact'
             onClick={() => setMobileMenuOpen(false)}
-            className='text-2xl font-serif text-navy hover:text-ocean-deep transition-colors'
+            className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
           >
             {t('contact')}
           </Link>

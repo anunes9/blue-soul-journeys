@@ -84,7 +84,7 @@ const WhyTravelWithMe = () => {
             </div>
 
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary-foreground mb-8 leading-tight animate-fade-up"
+              className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up"
               style={{ animationDelay: "0.4s" }}
             >
               {t("heading")}
@@ -122,7 +122,7 @@ const WhyTravelWithMe = () => {
                       </div>
                     </div>
                     <div>
-                      <h2 className="text-2xl md:text-3xl font-serif text-navy mb-4">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
                         {reason.title}
                       </h2>
                       <p className="text-lg text-muted-foreground leading-relaxed">
@@ -144,7 +144,7 @@ const WhyTravelWithMe = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <ScrollReveal animation="fade-right">
                 <div className="p-8 md:p-10 rounded-2xl bg-card border-2 border-aqua/30 shadow-lg h-full">
-                  <h3 className="text-2xl font-serif text-navy mb-8">
+                  <h3 className="text-2xl font-heading text-navy mb-8">
                     {t("withMeHeading")}
                   </h3>
                   <ul className="space-y-5">
@@ -162,7 +162,7 @@ const WhyTravelWithMe = () => {
 
               <ScrollReveal animation="fade-left" delay={150}>
                 <div className="p-8 md:p-10 rounded-2xl bg-card border border-border/50 h-full">
-                  <h3 className="text-2xl font-serif text-navy/60 mb-8">
+                  <h3 className="text-2xl font-heading text-navy/60 mb-8">
                     {t("onYourOwnHeading")}
                   </h3>
                   <ul className="space-y-5">

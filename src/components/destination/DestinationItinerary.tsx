@@ -63,7 +63,7 @@ const DestinationItinerary = ({
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
                 {t("itineraryHeading")}
               </h2>
             </div>
@@ -93,7 +93,7 @@ const DestinationItinerary = ({
                       <span className="text-sm font-medium text-aqua tracking-wide">
                         {item.day}
                       </span>
-                      <h3 className="text-xl font-serif text-navy mt-1 mb-3">
+                      <h3 className="text-xl font-heading text-navy mt-1 mb-3">
                         {item.title}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed">
