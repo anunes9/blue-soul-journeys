@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
 const siteUrl = "https://www.bluesouljourneys.com";
@@ -108,6 +109,7 @@ export default function RootLayout({
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <Navbar />
         {children}
+        <WhatsAppFloat />
       </body>
     </html>
   );

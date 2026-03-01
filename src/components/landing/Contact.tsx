@@ -4,6 +4,8 @@ import { Instagram, Mail, MapPin, Phone, Send } from 'lucide-react'
 import { useState } from 'react'
 import ScrollReveal from '@/components/ScrollReveal'
 import { Button } from '@/components/ui/button'
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon'
+import { WHATSAPP_URL } from '@/lib/contact'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -100,19 +102,30 @@ const Contact = () => {
 
             <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
               <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
-                <Phone className='w-6 h-6 text-primary-foreground' />
-              </div>
-
-              <p className='text-primary text-sm'>+351 914 171 793</p>
-            </div>
-
-            <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
-              <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Instagram className='w-6 h-6 text-primary-foreground' />
               </div>
 
               <p className='text-primary text-sm'>@bluesouljourneys</p>
             </div>
+
+            <a
+              href={WHATSAPP_URL}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'
+              aria-label='Chat on WhatsApp'
+            >
+              <div
+                className='w-10 h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300'
+                style={{ backgroundColor: '#25D366' }}
+              >
+                <WhatsAppIcon className='w-6 h-6 text-white' />
+              </div>
+              <div>
+                <p className='text-xs text-muted-foreground mb-0.5'>WhatsApp</p>
+                <p className='text-primary text-sm'>+351 914 171 793</p>
+              </div>
+            </a>
           </ScrollReveal>
 
           {/* Contact Form */}

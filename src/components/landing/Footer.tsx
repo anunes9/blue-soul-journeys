@@ -1,5 +1,7 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,6 +41,15 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-aqua/20 hover:text-aqua transition-all"
               >
                 <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat on WhatsApp"
+                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-aqua/20 hover:text-aqua transition-all"
+              >
+                <WhatsAppIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -105,6 +116,17 @@ const Footer = () => {
               <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
                 <Instagram className="w-4 h-4" />
                 @bluesouljourneys
+              </li>
+              <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
+                <WhatsAppIcon className="w-4 h-4" />
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-aqua transition-colors"
+                >
+                  +351 914 171 793
+                </a>
               </li>
               <li className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5" />
