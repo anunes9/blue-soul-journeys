@@ -1,0 +1,475 @@
+{
+  "nav": {
+    "journeys": "Viagens",
+    "whatIDo": "O Que Faço",
+    "howItWorks": "Como Funciona",
+    "whyTravelWithMe": "Porquê Viajar Comigo",
+    "myStory": "A Minha História",
+    "contact": "Contacto",
+    "toggleMenu": "Alternar menu"
+  },
+  "hero": {
+    "tagline": "Onde as Almas do Oceano Pertencem",
+    "description": "Crio viagens de mergulho com grande atenção ao detalhe, em colaboração com parceiros locais de confiança. Sempre que possível, acompanho pessoalmente as viagens, garantindo segurança, tranquilidade e uma experiência alinhada com o destino.",
+    "ctaPrimary": "Iniciar a Sua Viagem",
+    "ctaSecondary": "Explorar Viagens",
+    "scrollLabel": "Ir para a próxima secção",
+    "imageAlt": "Cena de mergulho subaquático"
+  },
+  "mission": {
+    "label": "Viagens de Mergulho, Escolhidas com Cuidado",
+    "heading": "Mais do que uma Simples Viagem",
+    "description": "Cada viagem é cuidadosamente selecionada, com foco na qualidade, segurança, respeito pelo oceano e pelas comunidades que visitamos. A Blue Soul Journeys dedica-se exclusivamente ao mergulho — de expedições em liveaboard a estadias em resorts de mergulho selecionados.",
+    "value1Title": "Qualidade & Segurança",
+    "value1Description": "Cada destino é escolhido com cuidado, trabalhando exclusivamente com parceiros locais de confiança e experiências bem testadas.",
+    "value2Title": "Viagem Consciente",
+    "value2Description": "Viagens que respeitam o oceano, as pessoas e os ritmos naturais — criando experiências significativas sem pressa nem excessos.",
+    "value3Title": "Ligação Pessoal",
+    "value3Description": "Cada viagem é desenhada com intenção, moldada à sua personalidade e ao que procura no oceano."
+  },
+  "aboutUs": {
+    "label": "O Que Faço",
+    "heading": "Viagens de Mergulho Desenhadas com Cuidado e Propósito",
+    "description": "Desenho viagens de mergulho reunindo conhecimento local de confiança, planeamento cuidadoso e respeito pelo oceano.",
+    "subheading": "Nascido de mergulhos reais e ligações genuínas",
+    "paragraph1": "A Blue Soul Journeys cresceu de anos passados dentro e fora do oceano — mergulhando em recifes remotos, explorando naufrágios icónicos e partilhando tempo com pessoas cujas vidas são moldadas pelo mar.",
+    "paragraph2": "Cada viagem que crio está enraizada em lugares que conheço, viagens que experienciei em primeira mão e parceiros em quem confio profundamente. Não construo viagens a partir de um catálogo.",
+    "paragraph3": "Seja num liveaboard no Mar Vermelho, a derivar pelos canais das Maldivas ou em mergulhos lentos e imersivos ao longo da costa moçambicana, cada viagem é desenhada para se sentir pessoal, consciente e ligada ao oceano.",
+    "cta": "Saber Mais",
+    "value1Title": "Viagem Consciente",
+    "value1Description": "Acredito que viajar deve respeitar o oceano, as pessoas e os ritmos naturais — criando experiências significativas sem pressa nem excessos.",
+    "value2Title": "Ligação ao Oceano",
+    "value2Description": "Para mim, o mergulho é mais do que exploração. É uma forma de abrandar, observar e reconectar — com o oceano, com os outros e connosco próprios.",
+    "value3Title": "Experiências Cuidadosamente Selecionadas",
+    "value3Description": "Cada itinerário é cuidadosamente desenhado, construído em torno de parceiros locais de confiança — priorizando sempre a segurança, qualidade e autenticidade.",
+    "imageAlt": "Cena de mergulho subaquático"
+  },
+  "destinations": {
+    "heading": "Viagens de Mergulho em Destaque",
+    "description1": "De recifes de coral remotos a naufrágios lendários, estas viagens de mergulho convidam-no a explorar o oceano nas suas muitas expressões — de mergulhos calmos e contemplativos a encontros mais intensos.",
+    "description2": "Cada destino move-se ao seu próprio ritmo, deixando espaço para observar, sentir e mergulhar ao seu próprio ritmo."
+  },
+  "contact": {
+    "label": "Entre em Contacto",
+    "heading": "Pronto para Iniciar a Sua",
+    "headingHighlight": "Viagem",
+    "description": "Vamos criar uma experiência de viagem que se sinta como você — guiada pela experiência e profundamente ligada ao oceano.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "O seu nome",
+    "emailLabel": "Email",
+    "emailPlaceholder": "o_seu@email.com",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Fale-nos sobre a sua viagem de mergulho de sonho...",
+    "submitButton": "Enviar Mensagem",
+    "whatsappLabel": "WhatsApp",
+    "whatsappAriaLabel": "Conversar no WhatsApp"
+  },
+  "footer": {
+    "brandDescription": "Viagens de mergulho desenhadas para quem verdadeiramente se sente em casa no oceano. Cada viagem é escolhida pela sua qualidade, abordagem ética e genuína ligação ao oceano.",
+    "exploreHeading": "Explorar",
+    "contactHeading": "Contacto",
+    "availableWorldwide": "Disponível em todo o mundo",
+    "copyright": "Blue Soul Journeys. Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "instagramAriaLabel": "Instagram",
+    "emailAriaLabel": "Email",
+    "whatsappAriaLabel": "Conversar no WhatsApp"
+  },
+  "whatsappFloat": {
+    "ariaLabel": "Fale connosco no WhatsApp",
+    "tooltip": "Conversar no WhatsApp"
+  },
+  "howItWorks": {
+    "label": "Como Funciona",
+    "heading": "Cada Viagem Começa com uma Conversa",
+    "description": "A partir daí, desenho uma experiência de viagem moldada à sua personalidade, à forma como mergulha e ao que procura no oceano.",
+    "step1Number": "Passo 01",
+    "step1Title": "Primeiro Contacto",
+    "step1Description": "Uma conversa descontraída para compreender o seu estilo de viagem, experiência de mergulho e o que procura — para além de datas e destinos.",
+    "step2Number": "Passo 02",
+    "step2Title": "Desenho da Viagem",
+    "step2Description": "Com base na nossa conversa, desenho destinos, estadias e experiências de mergulho que combinam com o seu ritmo — priorizando sempre a segurança, qualidade e autenticidade.",
+    "step3Number": "Passo 03",
+    "step3Title": "Planeamento da Viagem",
+    "step3Description": "Trato da logística e coordenação, garantindo que tudo corre sem problemas — desde operadores de mergulho e liveaboards a alojamentos.",
+    "step4Number": "Passo 04",
+    "step4Title": "Suporte Contínuo",
+    "step4Description": "Antes e durante a sua viagem, estou disponível para apoiá-lo sempre que necessário — criando espaço para que possa viver plenamente a experiência do oceano.",
+    "trustHeading": "Construído com Confiança e Valores Partilhados",
+    "trust1": "Trabalho em estreita colaboração com um pequeno círculo de operadores locais de confiança — pessoas com quem mergulhei, aprendi e construí relações de longo prazo.",
+    "trust2": "Estas parcerias são construídas com valores claros: segurança, respeito pelo oceano e cuidado genuíno pelas experiências de cada viajante.",
+    "trust3": "Algumas viagens são acompanhadas por mim, sempre que a minha presença acrescenta valor real ao grupo e à experiência global.",
+    "trust4": "Outras são lideradas pelas equipas locais em que confio plenamente — sempre com o mesmo nível de cuidado, preparação e atenção ao detalhe.",
+    "imageAlt": "Experiência de viagem de mergulho",
+    "expectLabel": "O Que Pode Esperar?",
+    "expect1": "Transparência, orientação honesta e uma viagem desenhada com propósito.",
+    "expect2": "Sem pressa. Sem extras desnecessários. Apenas experiências de mergulho cuidadosamente estruturadas, entregues de forma responsável e em sintonia com o que realmente importa para si.",
+    "expect3": "Para além de planear viagens, crio experiências, seleciono parceiros de confiança e apoio-o antes e durante toda a viagem."
+  },
+  "journeys": {
+    "label": "Viagens",
+    "heading": "Viagens de Mergulho Desenhadas para Explorar o Oceano",
+    "description1": "De recifes de coral remotos a naufrágios lendários, estas viagens de mergulho convidam-no a explorar o oceano nas suas muitas expressões — de mergulhos calmos e contemplativos a encontros mais intensos.",
+    "description2": "Cada destino move-se ao seu próprio ritmo, deixando espaço para observar, sentir e mergulhar ao seu próprio ritmo.",
+    "featuredLabel": "Viagens de Mergulho em Destaque",
+    "featuredSubheading": "Uma seleção de viagens que recomendo",
+    "viewJourney": "Ver Viagem"
+  },
+  "whatIDo": {
+    "label": "O Que Faço",
+    "heading": "Viagens de Mergulho Desenhadas com Cuidado e Propósito",
+    "description": "Reunindo conhecimento local de confiança, planeamento cuidadoso e respeito pelo oceano.",
+    "storyHeading": "Nascido de Mergulhos Reais e Ligações Genuínas",
+    "storyP1": "A Blue Soul Journeys cresceu de anos passados dentro e fora do oceano — mergulhando em recifes remotos, explorando naufrágios icónicos e partilhando tempo com pessoas cujas vidas são moldadas pelo mar.",
+    "storyP2": "Cada viagem que crio está enraizada em lugares que conheço, viagens que experienciei em primeira mão e parceiros em quem confio profundamente.",
+    "storyP3": "Não construo viagens a partir de um catálogo.",
+    "storyP4": "Crio viagens a partir de encontros autênticos, mergulhos reais e ligações genuínas. Seja num liveaboard no Mar Vermelho, a derivar pelos canais das Maldivas ou em mergulhos lentos e imersivos ao longo da costa moçambicana, cada viagem é desenhada para se sentir pessoal, consciente e ligada ao oceano.",
+    "imageAlt": "Experiência de viagem de mergulho",
+    "value1Title": "Viagem Consciente",
+    "value1Description": "Acredito que viajar deve respeitar o oceano, as pessoas e os ritmos naturais — criando experiências significativas sem pressa nem excessos.",
+    "value2Title": "Ligação ao Oceano",
+    "value2Description": "Para mim, o mergulho é mais do que exploração. É uma forma de abrandar, observar e reconectar — com o oceano, com os outros e connosco próprios.",
+    "value3Title": "Experiências Cuidadosamente Selecionadas",
+    "value3Description": "Cada itinerário é cuidadosamente desenhado, construído em torno de parceiros locais de confiança — priorizando sempre a segurança, qualidade e autenticidade.",
+    "cta": "Ver Como Funciona",
+    "closing1": "Mergulhe mais fundo. Viaje de forma diferente.",
+    "closing2": "Deixe o oceano guiá-lo. Viva a sua viagem."
+  },
+  "whyTravelWithMe": {
+    "label": "Porquê Viajar Comigo",
+    "heading": "Viaje com Propósito. Explore com Confiança.",
+    "description": "Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais desenhadas à sua medida.",
+    "reason1Title": "Experiência Real no Oceano",
+    "reason1Description": "Anos passados dentro e fora do oceano moldaram a forma como viajo — e a forma como desenho cada jornada. Ajudo-o a escolher destinos e experiências que respeitam o seu ritmo, os seus interesses e o seu nível de conforto — sempre baseado em experiência real, nunca em catálogos.",
+    "reason2Title": "Qualidade e Parceiros de Confiança",
+    "reason2Description": "Cada destino é escolhido com cuidado. Trabalho exclusivamente com parceiros locais de confiança — operadores responsáveis e experiências bem testadas — para que possa viajar com tranquilidade, sabendo que está apoiado em cada etapa da sua jornada.",
+    "reason3Title": "Viagem Significativa e Pessoal",
+    "reason3Description": "Cada jornada é desenhada com intenção — equilibrando natureza, cultura, aventura e tempo. O resultado é uma experiência que se sente profunda, fluida e autêntica. Nunca apressada. Nunca genérica.",
+    "withMeHeading": "Comigo",
+    "withMe1": "Itinerários à medida",
+    "withMe2": "Parceiros especializados no oceano",
+    "withMe3": "Apoio antes e durante a sua jornada",
+    "withMe4": "Experiências alinhadas com os seus valores",
+    "withMe5": "Uma jornada que realmente parece sua",
+    "onYourOwnHeading": "Por Conta Própria",
+    "onYourOwn1": "Pacotes genéricos",
+    "onYourOwn2": "Experiência limitada em experiências marinhas",
+    "onYourOwn3": "Apoio mínimo",
+    "onYourOwn4": "Difícil avaliar o que é seguro ou realmente vale a pena",
+    "onYourOwn5": "Maior risco de desilusões",
+    "imageAlt": "Jornada de mergulho"
+  },
+  "myStory": {
+    "backHome": "Voltar ao início",
+    "label": "A Minha História",
+    "heading": "O oceano mudou a minha vida de formas que nunca esperaria.",
+    "imageAlt": "A Minha História",
+    "timeline2018Year": "2018",
+    "timeline2018Title": "Onde Tudo Começou",
+    "timeline2018P1": "A minha viagem começou em 2018, quando concluí o curso Open Water a bordo do meu primeiro liveaboard na Austrália.",
+    "timeline2018P2": "Naquele primeiro mergulho, algo mudou. Senti um sentido imediato de pertença — uma mistura tranquila de clareza, liberdade e presença que só o oceano pode oferecer.",
+    "timeline2018P3": "Desde então, o oceano ficou comigo, onde quer que eu vá.",
+    "timeline2018ImageAlt": "Primeira experiência de mergulho na Austrália",
+    "timeline2020Year": "2020",
+    "timeline2020Title": "Aprender com o Oceano",
+    "timeline2020P1": "Em 2020, uma experiência de liveaboard na Tailândia aprofundou ainda mais essa ligação.",
+    "timeline2020P2": "Mais tarde, em Moçambique, aproximei-me da conservação marinha e concluí a certificação de Advanced Open Water Course.",
+    "timeline2020P3": "Cada viagem acrescentou uma nova camada — não apenas como mergulhador, mas como pessoa.",
+    "timeline2020ImageAlt": "Mergulho na Tailândia e Moçambique",
+    "timeline2024Year": "2024",
+    "timeline2024Title": "Momentos que Mudaram Tudo",
+    "timeline2024P1": "Em 2024, explorei Raja Ampat — uma das regiões marinhas mais biodiversas do planeta.",
+    "timeline2024P2": "Estar lá confirmou algo que já sentia profundamente: o oceano tem o poder de mudar a forma como vemos o mundo, como nos movemos nele e como nos relacionamos com a natureza.",
+    "timeline2024ImageAlt": "Explorar Raja Ampat",
+    "timeline2025Year": "2025",
+    "timeline2025Title": "A Origem da Blue Soul Journeys",
+    "timeline2025P1": "Em 2025, durante um liveaboard no Egito — rodeado de recifes vibrantes, naufrágios históricos e pessoas extraordinárias — cheguei a um ponto de viragem.",
+    "timeline2025P2": "Senti um forte desejo de partilhar esta ligação ao oceano com os outros. Não como algo ocasional ou superficial, mas de uma forma consistente, pensada e intencional.",
+    "timeline2025P3": "Queria criar um espaço onde os viajantes pudessem sentir-se seguros, apoiados e confiantes. Um espaço construído com confiança — nos parceiros, nos itinerários, no ritmo da viagem — permitindo às pessoas simplesmente estar presentes.",
+    "timeline2025P4": "Um lugar onde o oceano não fosse apenas um cenário, mas parte da experiência, do ritmo e da forma de viajar.",
+    "timeline2025P5": "Foi quando a Blue Soul Journeys verdadeiramente começou.",
+    "timeline2025ImageAlt": "Liveaboard no Egito",
+    "connectionLabel": "Ligação",
+    "connectionHeading": "Mais do que Lugares — São as Pessoas",
+    "connectionP1": "O que torna estas viagens verdadeiramente especiais não é apenas onde vamos, mas com quem as partilhamos.",
+    "connectionP2": "O oceano é onde abrando, respiro fundo e me sinto mais presente. É onde ganho perspetiva e regresso ao equilíbrio.",
+    "connectionP3": "Com o tempo, percebi que o oceano não nos muda apenas individualmente. Cria ligação.",
+    "connectionP4": "Em liveaboards e viagens partilhadas, as conversas desenrolam-se naturalmente. As pessoas encontram-se em torno de um respeito partilhado pelo oceano, pela simplicidade e por uma forma mais consciente de viajar.",
+    "value1Title": "Construído com Confiança",
+    "value1Description": "Cada viagem é desenhada com cuidado, atenção e parceiros de confiança — para que possa simplesmente estar presente.",
+    "value2Title": "Experiências Partilhadas",
+    "value2Description": "Os melhores momentos acontecem quando pessoas com a mesma mentalidade se reúnem com um respeito partilhado pelo oceano.",
+    "wantLabel": "O Que Quero Para Si",
+    "wantHeading": "Quero que sinta o que eu senti",
+    "wantLine1": "A magia do mundo subaquático,",
+    "wantLine2": "o silêncio do amanhecer no mar,",
+    "wantLine3": "a emoção de aprender algo novo,",
+    "wantLine4": "a calma que só o oceano pode dar.",
+    "wantP1": "E quero que se sinta seguro — sabendo que a sua viagem foi desenhada com cuidado, atenção e parceiros de confiança.",
+    "wantClosing1": "Isto é mais do que viajar.",
+    "wantClosing2": "É uma forma de se reconectar com quem é."
+  },
+  "destinationPage": {
+    "aboutLabel": "Sobre Este Destino",
+    "discoverHeading": "Descobrir {name}",
+    "liveaboardLabel": "O Liveaboard",
+    "resortLabel": "O Resort de Mergulho",
+    "inclusionsLabel": "O Que Está Incluído",
+    "included": "Incluído",
+    "notIncluded": "Não Incluído",
+    "itineraryLiveaboardLabel": "Sobre o Percurso",
+    "itineraryResortLabel": "Sobre o Programa",
+    "itineraryHeading": "A Sua Viagem, Dia a Dia",
+    "datesLabel": "Próximas Datas",
+    "datesHeading": "Quando Pode Juntar-se?",
+    "statusAvailable": "Disponível",
+    "statusLimited": "Limitado",
+    "statusSoldOut": "Esgotado",
+    "transfersHeading": "Transferes de Aeroporto"
+  },
+  "destinationData": {
+    "red-sea": {
+      "name": "O Mar Vermelho",
+      "region": "Egito",
+      "description": "Uma viagem às origens do mergulho moderno, moldada pela história, recifes vibrantes e os icónicos naufrágios do Mar Vermelho.",
+      "longDescription": [
+        "O Mar Vermelho é onde o mergulho recreativo moderno nasceu. As suas águas cristalinas, com visibilidade de até 40 metros, revelam um mundo de jardins de coral vibrantes, mergulhos dramáticos em paredes e alguns dos naufrágios mais icónicos do mundo — incluindo o SS Thistlegorm, um navio de carga da Segunda Guerra Mundial que repousa no fundo do mar desde 1941.",
+        "As nossas expedições ao Mar Vermelho levam-no para além dos recifes lotados dos resorts. Exploramos as regiões remotas do sul em liveaboard, visitando locais intocados como o Recife de Elphinstone, onde tubarões-brancos oceânicos patrulham o azul, e as Ilhas Brothers, lar de florestas de coral mole florescentes e carapaus em cardumes.",
+        "Seja atraído pela história sob as ondas ou pelo caleidoscópio de vida marinha que prospera em cada recife, o Mar Vermelho oferece uma experiência de mergulho profundamente enraizada na tradição e inesgotavelmente surpreendente."
+      ],
+      "highlight1Title": "Naufrágios de Classe Mundial",
+      "highlight1Description": "Mergulhe no SS Thistlegorm, no Rosalie Moller e outros naufrágios lendários preservados pelas águas quentes e claras.",
+      "highlight2Title": "Recifes de Coral Pristinos",
+      "highlight2Description": "Explore jardins de coral duro e mole vibrantes repletos de vida, de pequenos nudibranquios a enguias moray gigantes.",
+      "highlight3Title": "Encontros Pelágicos",
+      "highlight3Description": "Aviste tubarões-brancos oceânicos, martelo, golfinhos e raias-manta nos canais de águas profundas.",
+      "vesselName": "Liveaboard do Mar Vermelho",
+      "vesselDescription": "Um liveaboard cuidadosamente selecionado que oferece cabines confortáveis, espaçosos conveses de mergulho e acesso a locais de mergulho remotos no sul do Mar Vermelho. O barco está equipado com equipamento de segurança moderno, Nitrox e tripulação experiente que conhece estas águas intimamente.",
+      "amenities": [
+        "Cabines com casa de banho privativa e ar condicionado",
+        "Espaçoso convés de mergulho com arrumos pessoais",
+        "Nitrox disponível",
+        "Deck solar e áreas de estar",
+        "Pensão completa com cozinha local fresca",
+        "Guias de mergulho experientes"
+      ],
+      "included": [
+        "Alojamento em pensão completa no liveaboard",
+        "Até 4 mergulhos por dia",
+        "Nitrox (para mergulhadores certificados)",
+        "Serviços de guia de mergulho",
+        "Cilindros e pesos",
+        "Toalhas e roupa de cama",
+        "Chá, café e água ao longo do dia"
+      ],
+      "notIncluded": [
+        "Voos internacionais",
+        "Visto egípcio",
+        "Seguro de viagem",
+        "Equipamento de mergulho pessoal",
+        "Bebidas alcoólicas",
+        "Gorjetas para a tripulação",
+        "Taxas de parque marinho"
+      ],
+      "itinerary": [
+        {
+          "day": "Dia 1",
+          "title": "Chegada e Check-in",
+          "description": "Chegada a Hurghada ou Marsa Alam. Transfere para o liveaboard, instalação na cabine, briefing de segurança e um mergulho de verificação em águas abrigadas."
+        },
+        {
+          "day": "Dias 2–3",
+          "title": "Naufrágios e Recifes do Norte",
+          "description": "Mergulhe no SS Thistlegorm e sistemas de recife circundantes. Explore os porões de carga, encontre vida marinha residente e faça um mergulho noturno no naufrágio."
+        },
+        {
+          "day": "Dias 4–5",
+          "title": "Ilhas Brothers",
+          "description": "Travessia em mar aberto até às Brothers. Mergulhos em parede com corais moles, tubarões-martelo e o naufrágio Numidia. Alguns dos mergulhos mais dramáticos do Mar Vermelho."
+        },
+        {
+          "day": "Dias 6–7",
+          "title": "Elphinstone & Daedalus",
+          "description": "Mergulhos em deriva ao longo das famosas paredes de Elphinstone, com oportunidades de ver tubarões-brancos oceânicos. Daedalus oferece recifes pristinos e encontros pelágicos."
+        },
+        {
+          "day": "Dia 8",
+          "title": "Regresso e Partida",
+          "description": "Mergulho final da manhã, regresso ao porto. Transfere para o aeroporto para o voo de partida."
+        }
+      ],
+      "transfers": "Os transferes de aeroporto entre o Aeroporto Internacional de Hurghada (HRG) ou o Aeroporto de Marsa Alam (RMF) e a marina do liveaboard estão incluídos na viagem. Coordenarei os seus horários de chegada e partida para garantir uma ligação tranquila. Se desejar chegar mais cedo ou prolongar a sua estadia, posso ajudar a arranjar alojamento adicional."
+    },
+    "maldives": {
+      "name": "As Maldivas",
+      "region": "Atóis Centrais e Sul Profundo",
+      "description": "Uma viagem guiada pelo ritmo do oceano — a derivar por canais, correntes e frequentes encontros com grandes espécies pelágicas.",
+      "longDescription": [
+        "As Maldivas são um paraíso para mergulhadores — uma cadeia de 26 atóis espalhados pelo Oceano Índico, onde correntes quentes trazem uma extraordinária concentração de vida marinha para canais, thilas e estações de limpeza. Aqui, o mergulho é definido pela deriva: entrega-se à corrente e deixa o oceano levá-lo por um mundo de cor e movimento.",
+        "Os nossos itinerários nas Maldivas focam-se nos Atóis Centrais e do Sul Profundo, longe dos centros turísticos. Visitamos estações de limpeza de raias-manta onde dezenas de raias deslizam em círculos graciosos, exploramos mergulhos em canais repletos de tubarões-recife cinzentos e cardumes de carapaus, e derivamos ao longo de saliências cobertas de coral vivas com corais moles e peixes de vidro.",
+        "Acima da linha de água, a vida a bordo dos nossos liveaboards selecionados é tranquila e íntima. Entre mergulhos, pode fazer caiaque em lagoas turquesa, nadar com tubarões-baleia ou simplesmente ver o sol pôr-se sobre um oceano que se estende até ao horizonte."
+      ],
+      "highlight1Title": "Encontros com Raias-Manta",
+      "highlight1Description": "Visite estações de limpeza de renome mundial onde as mantas se reúnem em números notáveis ao longo da temporada.",
+      "highlight2Title": "Mergulhos em Deriva nos Canais",
+      "highlight2Description": "Deixe-se levar pelas correntes oceânicas pelos canais dos atóis rodeado de tubarões, raias e densos cardumes de peixes.",
+      "highlight3Title": "Atóis Remotos",
+      "highlight3Description": "Explore o Sul Profundo raramente visitado, onde os recifes pristinos permanecem intocados e a vida marinha é abundante.",
+      "vesselName": "Liveaboard das Maldivas",
+      "vesselDescription": "Um liveaboard de estilo dhoni tradicional, cuidadosamente renovado para o conforto de mergulho. O navio transporta um pequeno grupo de mergulhadores, permitindo briefings de mergulho personalizados e itinerários flexíveis baseados nas condições e avistamentos de vida marinha.",
+      "amenities": [
+        "Cabines com casa de banho privativa e ar condicionado",
+        "Dhoni de mergulho dedicado",
+        "Nitrox disponível",
+        "Deck solar com espreguiçadeiras",
+        "Pensão completa com culinária maldívia e internacional",
+        "Caiaques e equipamento de snorkeling"
+      ],
+      "included": [
+        "Alojamento em pensão completa no liveaboard",
+        "Até 3–4 mergulhos por dia",
+        "Nitrox (para mergulhadores certificados)",
+        "Serviços de guia de mergulho",
+        "Cilindros e pesos",
+        "Equipamento de snorkeling",
+        "Chá, café, água e refrigerantes"
+      ],
+      "notIncluded": [
+        "Voos internacionais",
+        "Taxa verde das Maldivas",
+        "Seguro de viagem",
+        "Equipamento de mergulho pessoal",
+        "Bebidas alcoólicas",
+        "Gorjetas para a tripulação",
+        "IVA e taxas de serviço"
+      ],
+      "itinerary": [
+        {
+          "day": "Dia 1",
+          "title": "Chegada a Malé",
+          "description": "Chegada ao Aeroporto Internacional de Velana. Transfere para o liveaboard, briefing de boas-vindas e um mergulho de verificação ao pôr do sol num recife próximo."
+        },
+        {
+          "day": "Dias 2–3",
+          "title": "Sul de Malé e Atol de Vaavu",
+          "description": "Mergulhos em canais com tubarões-recife cinzentos e raias-águia. Visite estações de limpeza de mantas e derive pelos thilas cheios de cor."
+        },
+        {
+          "day": "Dias 4–5",
+          "title": "Atóis de Meemu e Thaa",
+          "description": "Aventure-se em atóis menos visitados. Mergulhos noturnos com tubarões-enfermeira, jardins de coral pristinos e oportunidades de encontros com tubarões-baleia."
+        },
+        {
+          "day": "Dias 6–7",
+          "title": "Sul Profundo — Atol de Huvadhoo",
+          "description": "A joia da viagem. As fortes correntes trazem densos cardumes de peixes, tubarões-martelo e mantas. Alguns dos mais emocionantes mergulhos em deriva das Maldivas."
+        },
+        {
+          "day": "Dia 8",
+          "title": "Regresso e Partida",
+          "description": "Mergulho final da manhã, cruzeiro de regresso a Malé. Transfere para o aeroporto para a sua partida."
+        }
+      ],
+      "transfers": "O liveaboard parte de Malé, facilmente acessível do Aeroporto Internacional de Velana (MLE). Coordenarei os transferes entre o aeroporto e a marina. Para chegadas antecipadas ou partidas tardias, posso arranjar alojamento em hotel em Malé ou Hulhumalé."
+    },
+    "mozambique": {
+      "name": "Moçambique",
+      "region": "Tofo e a Costa Selvagem",
+      "description": "Uma viagem desenvolvida em parceria com centros de mergulho e alojamento locais, onde a ligação ao oceano e à comunidade local faz parte da experiência.",
+      "longDescription": [
+        "Moçambique é uma das últimas verdadeiras fronteiras do mergulho. Ao longo da sua costa selvagem, a quente Corrente das Agulhas varre águas ricas em nutrientes para perto da costa, criando um ecossistema marinho de diversidade e escala impressionantes. É aqui que se vem cara a cara com os gigantes do oceano — tubarões-baleia, raias-manta, baleias jubarte e a esquiva manta oceânica.",
+        "As nossas expedições a Moçambique baseiam-se em torno de Tofo e a costa de Inhambane, onde o mergulho é cru, real e completamente inesquecível. Os mergulhos matinais frequentemente começam com um passeio de barco pelas ondulações, deixando-o em sistemas de recife que poucos mergulhadores alguma vez exploraram. A visibilidade pode surpreendê-lo, as correntes podem desafiá-lo e os encontros ficarão para sempre na memória.",
+        "Para além do mergulho, Moçambique oferece uma riqueza cultural que acrescenta profundidade a cada viagem. Desde a calorosa hospitalidade das comunidades piscatórias locais aos sabores de frutos do mar peri-peri cozinhados na praia, este é um destino que envolve todos os seus sentidos."
+      ],
+      "highlight1Title": "Capital da Megafauna",
+      "highlight1Description": "Um dos melhores lugares da Terra para encontros com tubarões-baleia e raias-manta oceânicas em mar aberto.",
+      "highlight2Title": "Recifes Intocados",
+      "highlight2Description": "Mergulhe em sistemas de coral pristinos ao longo da costa selvagem, longe das multidões e cheios de surpresas.",
+      "highlight3Title": "Imersão Cultural",
+      "highlight3Description": "Conecte-se com as comunidades costeiras locais e experiencie o espírito autêntico da África Oriental.",
+      "vesselName": "Resort de Mergulho da Praia de Tofo",
+      "vesselDescription": "Um resort de mergulho de frente de praia cuidadosamente selecionado em Tofo, gerido em parceria com um centro de mergulho local. O alojamento é simples, confortável e profundamente ligado à comunidade local — com vistas para o oceano, hospitalidade calorosa e acesso direto à praia.",
+      "amenities": [
+        "Quartos com vista para o oceano e casa de banho privativa",
+        "Centro de mergulho no local com guias experientes",
+        "Restaurante de praia com culinária local",
+        "Aluguer de equipamento disponível",
+        "Excursões de snorkeling e safari oceânico",
+        "Turismo com apoio comunitário"
+      ],
+      "included": [
+        "Alojamento no resort de mergulho",
+        "2–3 mergulhos guiados por dia",
+        "Serviços de guia de mergulho",
+        "Cilindros e pesos",
+        "Pequeno-almoço diário",
+        "Excursão de safari oceânico",
+        "Visita à comunidade local"
+      ],
+      "notIncluded": [
+        "Voos internacionais",
+        "Visto de Moçambique",
+        "Seguro de viagem",
+        "Equipamento de mergulho pessoal",
+        "Almoço e jantar (disponível no resort)",
+        "Bebidas alcoólicas",
+        "Excursões adicionais"
+      ],
+      "itinerary": [
+        {
+          "day": "Dia 1",
+          "title": "Chegada a Tofo",
+          "description": "Chegada a Inhambane. Transfere para o resort de mergulho em Tofo, instale-se e desfrute da sua primeira tarde na praia."
+        },
+        {
+          "day": "Dias 2–3",
+          "title": "Exploração dos Recifes",
+          "description": "Mergulhos matinais de barco nos sistemas de recife de Tofo — Recife de Manta, Giants Castle e o Back Wall. Snorkeling ou praia à tarde."
+        },
+        {
+          "day": "Dia 4",
+          "title": "Safari Oceânico",
+          "description": "Um safari oceânico de dia inteiro à procura de tubarões-baleia, mantas, golfinhos e baleias jubarte (sazonal). Uma experiência inesquecível em mar aberto."
+        },
+        {
+          "day": "Dias 5–6",
+          "title": "Mergulhos Profundos e Comunidade",
+          "description": "Explore locais mais profundos ao longo da costa selvagem. Visite uma comunidade piscatória local, aprenda sobre práticas tradicionais e desfrute de um jantar de marisco na praia."
+        },
+        {
+          "day": "Dia 7",
+          "title": "Mergulho Final e Partida",
+          "description": "Um último mergulho matinal, tempo para se despedir de Tofo. Transfere para o aeroporto de Inhambane para a sua partida."
+        }
+      ],
+      "transfers": "Os transferes entre o Aeroporto de Inhambane (INH) e o resort de mergulho em Tofo (aproximadamente 25 minutos) estão incluídos. Posso também ajudar a arranjar transferes de Maputo (Aeroporto Internacional de Mavalane) se estiver a voar pela capital — a pitoresca viagem demora cerca de 6 horas ao longo da costa."
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "Viagens de Mergulho Desenhadas com Cuidado",
+      "description": "Viagens de mergulho desenhadas para quem verdadeiramente se sente em casa no oceano. Expedições em liveaboard e resorts de mergulho no Mar Vermelho, Maldivas e Moçambique, escolhidas com cuidado."
+    },
+    "journeys": {
+      "title": "Viagens",
+      "description": "Viagens de mergulho desenhadas para explorar o oceano com tempo, consciência e profundidade. De recifes de coral remotos a naufrágios lendários, explore o oceano nas suas muitas expressões."
+    },
+    "howItWorks": {
+      "title": "Como Funciona",
+      "description": "Cada viagem começa com uma conversa. Descubra como a Blue Soul Journeys desenha expedições de mergulho personalizadas moldadas à sua personalidade e ao que procura no oceano."
+    },
+    "whatIDo": {
+      "title": "O Que Faço",
+      "description": "Desenho viagens de mergulho com cuidado e propósito — reunindo conhecimento local de confiança, planeamento cuidadoso e respeito pelo oceano."
+    },
+    "whyTravelWithMe": {
+      "title": "Porquê Viajar Comigo",
+      "description": "Viaje com propósito. Explore com confiança. Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais desenhadas à sua medida."
+    },
+    "myStory": {
+      "title": "A Minha História",
+      "description": "O oceano mudou a minha vida de formas que nunca esperaria. Descubra a história por detrás da Blue Soul Journeys e porque é que a viagem de mergulho com significado importa."
+    }
+  }
+}

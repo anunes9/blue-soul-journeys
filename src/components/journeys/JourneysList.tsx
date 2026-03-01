@@ -1,18 +1,16 @@
 import { Anchor } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { buttonVariants } from "@/components/ui/button";
 import { destinations } from "@/data/destinations";
 import { cn } from "@/lib/utils";
 
-const journeyLabels: Record<string, string> = {
-  "red-sea": "Red Sea Liveaboard",
-  maldives: "Maldives Dive Journey",
-  mozambique: "Mozambique Dive Trip",
-};
-
 const JourneysList = () => {
+  const t = useTranslations("journeys");
+  const td = useTranslations("destinationData");
+
   return (
     <>
       {/* Hero Section */}
@@ -52,7 +50,7 @@ const JourneysList = () => {
             >
               <Anchor className="w-4 h-4 text-aqua" />
               <span className="text-sm font-medium text-aqua tracking-wide uppercase">
-                Journeys
+                {t("label")}
               </span>
             </div>
 
@@ -68,17 +66,14 @@ const JourneysList = () => {
               className="text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up"
               style={{ animationDelay: "0.6s" }}
             >
-              From remote coral reefs to legendary wrecks, these dive journeys
-              invite you to explore the ocean in its many expressions &mdash;
-              from calm, contemplative dives to more intense encounters.
+              {t("description1")}
             </p>
 
             <p
               className="text-lg text-primary-foreground/60 mt-6 leading-relaxed max-w-2xl mx-auto animate-fade-up"
               style={{ animationDelay: "0.8s" }}
             >
-              Each destination moves at its own rhythm, leaving space to
-              observe, feel and dive at your own pace.
+              {t("description2")}
             </p>
           </div>
         </div>
@@ -102,12 +97,12 @@ const JourneysList = () => {
             <div className="max-w-3xl mx-auto text-center mb-16">
               <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                  Featured Dive Journeys
+                  {t("featuredLabel")}
                 </span>
               </div>
 
               <p className="text-xl md:text-2xl text-navy font-serif leading-relaxed">
-                A selection of journeys I recommend
+                {t("featuredSubheading")}
               </p>
             </div>
           </ScrollReveal>
@@ -138,13 +133,13 @@ const JourneysList = () => {
                     {/* Content */}
                     <div className="p-8 md:p-10 flex flex-col justify-center direction-ltr">
                       <span className="text-sm font-medium text-aqua tracking-wide uppercase mb-2">
-                        {dest.region}
+                        {td(`${dest.slug}.region` as never)}
                       </span>
                       <h3 className="text-2xl md:text-3xl font-serif text-navy mb-4">
-                        {journeyLabels[dest.slug] || dest.name}
+                        {td(`${dest.slug}.name` as never)}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed mb-6">
-                        {dest.description}
+                        {td(`${dest.slug}.description` as never)}
                       </p>
                       <div>
                         <Link
@@ -154,7 +149,7 @@ const JourneysList = () => {
                             "inline-flex",
                           )}
                         >
-                          View Journey
+                          {t("viewJourney")}
                         </Link>
                       </div>
                     </div>

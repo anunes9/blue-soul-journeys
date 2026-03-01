@@ -1,25 +1,25 @@
 import { Heart, Shield, Users } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const Mission = () => {
+  const t = useTranslations("mission");
+
   const values = [
     {
       icon: Shield,
-      title: "Quality & Safety",
-      description:
-        "Every destination is chosen with care, working exclusively with trusted local partners and well-tested experiences.",
+      title: t("value1Title"),
+      description: t("value1Description"),
     },
     {
       icon: Heart,
-      title: "Conscious Travel",
-      description:
-        "Travel that respects the ocean, the people and natural rhythms \u2014 creating meaningful experiences without rush or excess.",
+      title: t("value2Title"),
+      description: t("value2Description"),
     },
     {
       icon: Users,
-      title: "Personal Connection",
-      description:
-        "Each journey is designed with intention, shaped around who you are and what you seek from the ocean.",
+      title: t("value3Title"),
+      description: t("value3Description"),
     },
   ];
 
@@ -59,7 +59,7 @@ const Mission = () => {
           <ScrollReveal animation="fade-up">
             <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
               <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                Dive Journeys, Chosen with Care
+                {t("label")}
               </span>
             </div>
           </ScrollReveal>
@@ -67,17 +67,13 @@ const Mission = () => {
           {/* Main Statement */}
           <ScrollReveal animation="fade-up" delay={100}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight">
-              More Than Just a Holiday
+              {t("heading")}
             </h2>
           </ScrollReveal>
 
           <ScrollReveal animation="fade-up" delay={200}>
             <p className="text-lg md:text-xl text-muted-foreground mb-16 max-w-3xl mx-auto leading-relaxed">
-              Each journey is carefully selected, with a strong focus on
-              quality, safety, respect for the ocean and the communities we
-              visit. Blue Soul Journeys focuses exclusively on dive travel
-              &mdash; from liveaboard expeditions to stays at carefully selected
-              dive resorts.
+              {t("description")}
             </p>
           </ScrollReveal>
 

@@ -1,4 +1,5 @@
 import { CalendarDays } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Destination, DestinationDate } from "@/data/destinations";
 
@@ -11,17 +12,17 @@ function formatDate(dateStr: string): string {
   });
 }
 
-function StatusBadge({ status }: { status: DestinationDate["status"] }) {
+function StatusBadge({
+  status,
+  labels,
+}: {
+  status: DestinationDate["status"];
+  labels: Record<string, string>;
+}) {
   const styles = {
     available: "bg-aqua/20 text-ocean-deep",
     limited: "bg-amber-100 text-amber-700",
     "sold-out": "bg-red-100 text-red-600",
-  };
-
-  const labels = {
-    available: "Available",
-    limited: "Limited",
-    "sold-out": "Sold Out",
   };
 
   return (
@@ -34,6 +35,14 @@ function StatusBadge({ status }: { status: DestinationDate["status"] }) {
 }
 
 const DestinationDates = ({ destination }: { destination: Destination }) => {
+  const t = useTranslations("destinationPage");
+
+  const statusLabels = {
+    available: t("statusAvailable"),
+    limited: t("statusLimited"),
+    "sold-out": t("statusSoldOut"),
+  };
+
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -43,12 +52,12 @@ const DestinationDates = ({ destination }: { destination: Destination }) => {
               <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
                 <CalendarDays className="w-4 h-4 text-ocean-deep" />
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                  Upcoming Dates
+                  {t("datesLabel")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
-                When Can You Join?
+                {t("datesHeading")}
               </h2>
             </div>
           </ScrollReveal>
@@ -78,7 +87,10 @@ const DestinationDates = ({ destination }: { destination: Destination }) => {
                         )}
                       </div>
                     </div>
-                    <StatusBadge status={tripDate.status} />
+                    <StatusBadge
+                      status={tripDate.status}
+                      labels={statusLabels}
+                    />
                   </div>
                 </div>
               </ScrollReveal>

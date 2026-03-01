@@ -1,12 +1,26 @@
 import { MapPin } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Destination } from "@/data/destinations";
 
+interface ItineraryItem {
+  day: string;
+  title: string;
+  description: string;
+}
+
 const DestinationItinerary = ({
+  slug,
   destination,
 }: {
+  slug: string;
   destination: Destination;
 }) => {
+  const t = useTranslations("destinationPage");
+  const td = useTranslations("destinationData");
+
+  const itinerary = td.raw(`${slug}.itinerary` as never) as ItineraryItem[];
+
   return (
     <section className="py-24 bg-sand relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -44,50 +58,51 @@ const DestinationItinerary = ({
                 <MapPin className="w-4 h-4 text-ocean-deep" />
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
                   {destination.vessel.type === "liveaboard"
-                    ? "About the Route"
-                    : "About the Programme"}
+                    ? t("itineraryLiveaboardLabel")
+                    : t("itineraryResortLabel")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
-                Your Journey, Day by Day
+                {t("itineraryHeading")}
               </h2>
             </div>
           </ScrollReveal>
 
           <div className="space-y-6">
-            {destination.itinerary.map((item, index) => (
-              <ScrollReveal
-                key={item.day}
-                animation="fade-up"
-                delay={index * 100}
-              >
-                <div className="flex gap-6">
-                  {/* Timeline */}
-                  <div className="hidden md:flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center shrink-0 text-sm font-medium text-primary-foreground">
-                      {index + 1}
+            {Array.isArray(itinerary) &&
+              itinerary.map((item, index) => (
+                <ScrollReveal
+                  key={item.day}
+                  animation="fade-up"
+                  delay={index * 100}
+                >
+                  <div className="flex gap-6">
+                    {/* Timeline */}
+                    <div className="hidden md:flex flex-col items-center">
+                      <div className="w-12 h-12 rounded-full bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center shrink-0 text-sm font-medium text-primary-foreground">
+                        {index + 1}
+                      </div>
+                      {index < itinerary.length - 1 && (
+                        <div className="w-px flex-1 bg-aqua/20 mt-3" />
+                      )}
                     </div>
-                    {index < destination.itinerary.length - 1 && (
-                      <div className="w-px flex-1 bg-aqua/20 mt-3" />
-                    )}
-                  </div>
 
-                  {/* Content */}
-                  <div className="group flex-1 p-6 md:p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300">
-                    <span className="text-sm font-medium text-aqua tracking-wide">
-                      {item.day}
-                    </span>
-                    <h3 className="text-xl font-serif text-navy mt-1 mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {item.description}
-                    </p>
+                    {/* Content */}
+                    <div className="group flex-1 p-6 md:p-8 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300">
+                      <span className="text-sm font-medium text-aqua tracking-wide">
+                        {item.day}
+                      </span>
+                      <h3 className="text-xl font-serif text-navy mt-1 mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </ScrollReveal>
-            ))}
+                </ScrollReveal>
+              ))}
           </div>
         </div>
       </div>

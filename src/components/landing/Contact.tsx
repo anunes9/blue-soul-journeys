@@ -1,13 +1,16 @@
 'use client'
 
-import { Instagram, Mail, MapPin, Phone, Send } from 'lucide-react'
+import { Instagram, Mail, Phone, Send } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import ScrollReveal from '@/components/ScrollReveal'
 import { Button } from '@/components/ui/button'
 import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon'
 import { WHATSAPP_URL } from '@/lib/contact'
 
 const Contact = () => {
+  const t = useTranslations('contact')
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -64,22 +67,24 @@ const Contact = () => {
           <ScrollReveal animation='fade-up'>
             <div className='inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8'>
               <span className='text-sm font-medium text-ocean-deep tracking-wide uppercase'>
-                Get in Touch
+                {t('label')}
               </span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation='fade-up' delay={100}>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight'>
-              Ready to Start Your{' '}
-              <span className='text-gradient-aqua'>Journey</span>?
+              {t('heading')}{' '}
+              <span className='text-gradient-aqua'>
+                {t('headingHighlight')}
+              </span>
+              ?
             </h2>
           </ScrollReveal>
 
           <ScrollReveal animation='fade-up' delay={200}>
             <p className='text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
-              Let&apos;s create a travel experience that feels like you &mdash;
-              guided by experience and deeply connected to the ocean.
+              {t('description')}
             </p>
           </ScrollReveal>
         </div>
@@ -94,18 +99,26 @@ const Contact = () => {
               <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Mail className='w-6 h-6 text-primary-foreground' />
               </div>
-
-              <p className='text-primary text-sm'>
-                contact@bluesouljourneys.com
-              </p>
+              <div>
+                <p className='text-xs text-muted-foreground mb-0.5'>
+                  {t('whatsappLabel')}
+                </p>
+                <p className='text-primary text-sm'>
+                  contact@bluesouljourneys.com
+                </p>
+              </div>
             </div>
 
             <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
               <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Instagram className='w-6 h-6 text-primary-foreground' />
               </div>
-
-              <p className='text-primary text-sm'>@bluesouljourneys</p>
+              <div>
+                <p className='text-xs text-muted-foreground mb-0.5'>
+                  {t('whatsappLabel')}
+                </p>
+                <p className='text-primary text-sm'>@bluesouljourneys</p>
+              </div>
             </div>
 
             <a
@@ -113,7 +126,7 @@ const Contact = () => {
               target='_blank'
               rel='noopener noreferrer'
               className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'
-              aria-label='Chat on WhatsApp'
+              aria-label={t('whatsappAriaLabel')}
             >
               <div
                 className='w-10 h-10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300'
@@ -122,7 +135,9 @@ const Contact = () => {
                 <WhatsAppIcon className='w-6 h-6 text-white' />
               </div>
               <div>
-                <p className='text-xs text-muted-foreground mb-0.5'>WhatsApp</p>
+                <p className='text-xs text-muted-foreground mb-0.5'>
+                  {t('whatsappLabel')}
+                </p>
                 <p className='text-primary text-sm'>+351 914 171 793</p>
               </div>
             </a>
@@ -143,7 +158,7 @@ const Contact = () => {
                   htmlFor='name'
                   className='block text-sm font-medium text-navy mb-2'
                 >
-                  Name
+                  {t('nameLabel')}
                 </label>
                 <input
                   type='text'
@@ -153,7 +168,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300'
-                  placeholder='Your name'
+                  placeholder={t('namePlaceholder')}
                 />
               </div>
               <div>
@@ -161,7 +176,7 @@ const Contact = () => {
                   htmlFor='email'
                   className='block text-sm font-medium text-navy mb-2'
                 >
-                  Email
+                  {t('emailLabel')}
                 </label>
                 <input
                   type='email'
@@ -171,7 +186,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300'
-                  placeholder='your@email.com'
+                  placeholder={t('emailPlaceholder')}
                 />
               </div>
 
@@ -180,7 +195,7 @@ const Contact = () => {
                   htmlFor='message'
                   className='block text-sm font-medium text-navy mb-2'
                 >
-                  Message
+                  {t('messageLabel')}
                 </label>
                 <textarea
                   id='message'
@@ -190,13 +205,13 @@ const Contact = () => {
                   required
                   rows={5}
                   className='w-full px-4 py-3 rounded-xl border border-border/50 bg-background text-navy placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-aqua/30 focus:border-aqua/50 transition-all duration-300 resize-none'
-                  placeholder='Tell us about your dream dive journey...'
+                  placeholder={t('messagePlaceholder')}
                 />
               </div>
 
               <Button type='submit' variant='hero' size='xl' className='w-full'>
                 <Send className='w-5 h-5 mr-2' />
-                Send Message
+                {t('submitButton')}
               </Button>
             </form>
           </ScrollReveal>

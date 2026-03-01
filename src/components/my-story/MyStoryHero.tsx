@@ -1,15 +1,18 @@
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const MyStoryHero = () => {
+  const t = useTranslations("myStory");
+
   return (
     <section className="relative min-h-[70vh] flex items-end justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="https://static.wixstatic.com/media/6ecca8_4373ec5123eb4017823ec3e0938529cd~mv2.jpg/v1/fill/w_1920,h_800,al_c,q_85,enc_avif,quality_auto/6ecca8_4373ec5123eb4017823ec3e0938529cd~mv2.jpg"
-          alt="My Story"
+          alt={t("imageAlt")}
           fill
           className="object-cover"
           priority
@@ -23,7 +26,7 @@ const MyStoryHero = () => {
         className="absolute top-8 left-8 z-20 inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
       >
         <ArrowLeft className="w-4 h-4" />
-        Back to home
+        {t("backHome")}
       </Link>
 
       {/* Content */}
@@ -34,7 +37,7 @@ const MyStoryHero = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <span className="text-sm font-medium text-primary-foreground tracking-wide uppercase">
-              My Story
+              {t("label")}
             </span>
           </div>
 
@@ -42,7 +45,7 @@ const MyStoryHero = () => {
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-primary-foreground mb-6 leading-tight animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            The ocean changed my life in ways I never expected.
+            {t("heading")}
           </h1>
         </div>
       </div>

@@ -1,32 +1,32 @@
 import { Compass, Heart, Sparkles } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const values = [
-  {
-    icon: Compass,
-    title: "Conscious Travel",
-    description:
-      "I believe travel should respect the ocean, the people and natural rhythms \u2014 creating meaningful experiences without rush or excess.",
-  },
-  {
-    icon: Heart,
-    title: "Connection to the Ocean",
-    description:
-      "For me, diving is more than exploration. It\u2019s a way to slow down, observe and reconnect \u2014 with the ocean, with others and with ourselves.",
-  },
-  {
-    icon: Sparkles,
-    title: "Carefully Selected Experiences",
-    description:
-      "Each itinerary is thoughtfully designed, built around trusted local partners \u2014 always prioritising safety, quality and authenticity.",
-  },
-];
-
 const AboutUs = () => {
+  const t = useTranslations("aboutUs");
+
+  const values = [
+    {
+      icon: Compass,
+      title: t("value1Title"),
+      description: t("value1Description"),
+    },
+    {
+      icon: Heart,
+      title: t("value2Title"),
+      description: t("value2Description"),
+    },
+    {
+      icon: Sparkles,
+      title: t("value3Title"),
+      description: t("value3Description"),
+    },
+  ];
+
   return (
     <section id="about" className="py-24 bg-white relative overflow-hidden">
       {/* Subtle wave pattern background */}
@@ -62,7 +62,7 @@ const AboutUs = () => {
           <ScrollReveal animation="fade-up">
             <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
               <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                What I Do
+                {t("label")}
               </span>
             </div>
           </ScrollReveal>
@@ -76,8 +76,7 @@ const AboutUs = () => {
 
           <ScrollReveal animation="fade-up" delay={200}>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I design dive journeys bringing together trusted local knowledge,
-              thoughtful planning and respect for the ocean.
+              {t("description")}
             </p>
           </ScrollReveal>
         </div>
@@ -88,7 +87,7 @@ const AboutUs = () => {
             <div className="relative h-96 md:h-125 rounded-3xl overflow-hidden shadow-xl group">
               <Image
                 src="/hero-underwater.jpg"
-                alt="Underwater diving scene"
+                alt={t("imageAlt")}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -100,23 +99,16 @@ const AboutUs = () => {
           <ScrollReveal animation="fade-left" delay={150}>
             <div>
               <h3 className="text-2xl md:text-3xl font-serif text-navy mb-6 leading-tight">
-                Born from real dives and genuine connections
+                {t("subheading")}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Blue Soul Journeys grew from years spent in and around the ocean
-                &mdash; diving remote reefs, exploring iconic wrecks and sharing
-                time with people whose lives are shaped by the sea.
+                {t("paragraph1")}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Every journey I create is rooted in places I know, journeys
-                I&apos;ve experienced first-hand and partners I trust deeply. I
-                don&apos;t build trips from a catalogue.
+                {t("paragraph2")}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether it&apos;s a liveaboard in the Red Sea, drifting through
-                the channels of the Maldives or slow, immersive dives along the
-                Mozambican coast, each journey is designed to feel personal,
-                conscious and connected to the ocean.
+                {t("paragraph3")}
               </p>
               <Link
                 href="/what-i-do"
@@ -125,7 +117,7 @@ const AboutUs = () => {
                   "inline-flex",
                 )}
               >
-                Learn More
+                {t("cta")}
               </Link>
             </div>
           </ScrollReveal>

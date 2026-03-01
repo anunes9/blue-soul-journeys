@@ -1,9 +1,13 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { WHATSAPP_URL } from "@/lib/contact";
 
 const Footer = () => {
+  const t = useTranslations("footer");
+  const nav = useTranslations("nav");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -20,11 +24,8 @@ const Footer = () => {
                 className="h-auto w-16"
                 alt="Blue Soul Journeys"
               />
-
               <p className="text-primary-foreground/60 max-w-md leading-relaxed text-sm">
-                Dive journeys designed for those who truly feel at home in the
-                ocean. Each journey is chosen for its quality, ethical approach
-                and genuine connection to the ocean.
+                {t("brandDescription")}
               </p>
             </div>
             <div className="flex gap-4">
@@ -32,12 +33,14 @@ const Footer = () => {
                 href="https://instagram.com/bluesouljourneys"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={t("instagramAriaLabel")}
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-aqua/20 hover:text-aqua transition-all"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="mailto:contact@bluesouljourneys.com"
+                aria-label={t("emailAriaLabel")}
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-aqua/20 hover:text-aqua transition-all"
               >
                 <Mail className="w-5 h-5" />
@@ -46,7 +49,7 @@ const Footer = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chat on WhatsApp"
+                aria-label={t("whatsappAriaLabel")}
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-aqua/20 hover:text-aqua transition-all"
               >
                 <WhatsAppIcon className="w-5 h-5" />
@@ -57,48 +60,48 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="text-primary-foreground font-medium font-sans mb-4">
-              Explore
+              {t("exploreHeading")}
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
+                <Link
                   href="/journeys"
                   className="text-primary-foreground/60 hover:text-aqua transition-colors text-sm"
                 >
-                  Journeys
-                </a>
+                  {nav("journeys")}
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/what-i-do"
                   className="text-primary-foreground/60 hover:text-aqua transition-colors text-sm"
                 >
-                  What I Do
-                </a>
+                  {nav("whatIDo")}
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/how-it-works"
                   className="text-primary-foreground/60 hover:text-aqua transition-colors text-sm"
                 >
-                  How It Works
-                </a>
+                  {nav("howItWorks")}
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/why-travel-with-me"
                   className="text-primary-foreground/60 hover:text-aqua transition-colors text-sm"
                 >
-                  Why Travel With Me
-                </a>
+                  {nav("whyTravelWithMe")}
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/my-story"
                   className="text-primary-foreground/60 hover:text-aqua transition-colors text-sm"
                 >
-                  My Story
-                </a>
+                  {nav("myStory")}
+                </Link>
               </li>
             </ul>
           </div>
@@ -106,7 +109,7 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="text-primary-foreground font-medium mb-4">
-              Contact
+              {t("contactHeading")}
             </h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
@@ -130,7 +133,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                Available worldwide
+                {t("availableWorldwide")}
               </li>
             </ul>
           </div>
@@ -139,14 +142,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/40 text-sm">
-            © {currentYear} Blue Soul Journeys. All rights reserved.
+            © {currentYear} {t("copyright")}
           </p>
           <div className="flex gap-6">
             <span className="text-primary-foreground/40 text-sm">
-              Privacy Policy
+              {t("privacyPolicy")}
             </span>
             <span className="text-primary-foreground/40 text-sm">
-              Terms of Service
+              {t("termsOfService")}
             </span>
           </div>
         </div>

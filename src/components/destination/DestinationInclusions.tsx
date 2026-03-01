@@ -1,12 +1,20 @@
 import { Check, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Destination } from "@/data/destinations";
 
 const DestinationInclusions = ({
-  destination,
+  slug,
 }: {
+  slug: string;
   destination: Destination;
 }) => {
+  const t = useTranslations("destinationPage");
+  const td = useTranslations("destinationData");
+
+  const included = td.raw(`${slug}.included` as never) as string[];
+  const notIncluded = td.raw(`${slug}.notIncluded` as never) as string[];
+
   return (
     <section className="py-24 bg-sand relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -42,7 +50,7 @@ const DestinationInclusions = ({
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                  What&apos;s Included
+                  {t("inclusionsLabel")}
                 </span>
               </div>
             </div>
@@ -52,16 +60,17 @@ const DestinationInclusions = ({
             {/* Included */}
             <ScrollReveal animation="fade-right">
               <div className="p-8 rounded-2xl bg-card border-2 border-aqua/30 shadow-lg h-full">
-                <h3 className="text-xl font-serif text-navy mb-6">Included</h3>
+                <h3 className="text-xl font-serif text-navy mb-6">{t("included")}</h3>
                 <ul className="space-y-4">
-                  {destination.included.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Check className="w-3 h-3 text-ocean-deep" />
-                      </div>
-                      <span className="text-navy">{item}</span>
-                    </li>
-                  ))}
+                  {Array.isArray(included) &&
+                    included.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="w-5 h-5 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <Check className="w-3 h-3 text-ocean-deep" />
+                        </div>
+                        <span className="text-navy">{item}</span>
+                      </li>
+                    ))}
                 </ul>
               </div>
             </ScrollReveal>
@@ -70,17 +79,18 @@ const DestinationInclusions = ({
             <ScrollReveal animation="fade-left" delay={150}>
               <div className="p-8 rounded-2xl bg-card border border-border/50 h-full">
                 <h3 className="text-xl font-serif text-navy/60 mb-6">
-                  Not Included
+                  {t("notIncluded")}
                 </h3>
                 <ul className="space-y-4">
-                  {destination.notIncluded.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5">
-                        <X className="w-3 h-3 text-red-400" />
-                      </div>
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
+                  {Array.isArray(notIncluded) &&
+                    notIncluded.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <X className="w-3 h-3 text-red-400" />
+                        </div>
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
                 </ul>
               </div>
             </ScrollReveal>

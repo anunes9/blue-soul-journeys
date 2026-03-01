@@ -1,9 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { destinations } from "@/data/destinations";
 
 const Destinations = () => {
+  const t = useTranslations("destinations");
+  const td = useTranslations("destinationData");
+
   return (
     <>
       {/* Wave Divider */}
@@ -23,19 +27,16 @@ const Destinations = () => {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <ScrollReveal animation="fade-up">
               <h2 className="text-3xl md:text-5xl font-bold text-[#0A3D62] mb-6">
-                Featured Dive Journeys
+                {t("heading")}
               </h2>
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={100}>
               <p className="text-lg text-[#0F1E2E]/80 leading-relaxed">
-                From remote coral reefs to legendary wrecks, these dive journeys
-                invite you to explore the ocean in its many expressions - from
-                calm, contemplative dives to more intense encounters.
+                {t("description1")}
                 <br />
                 <br />
-                Each destination moves at its own rhythm, leaving space to
-                observe, feel and dive at your own pace.
+                {t("description2")}
               </p>
             </ScrollReveal>
           </div>
@@ -61,13 +62,13 @@ const Destinations = () => {
                   <div className="absolute inset-0 bg-linear-to-t from-[#0A3D62] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 p-8 w-full translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="text-2xl font-merriweather font-bold text-white mb-2">
-                      {dest.name}
+                      {td(`${dest.slug}.name` as never)}
                     </h3>
                     <p className="text-[#6DD5ED] font-medium mb-3">
-                      {dest.region}
+                      {td(`${dest.slug}.region` as never)}
                     </p>
                     <p className="text-white/90 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                      {dest.description}
+                      {td(`${dest.slug}.description` as never)}
                     </p>
                   </div>
                 </Link>

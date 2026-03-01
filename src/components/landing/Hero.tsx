@@ -2,7 +2,8 @@
 
 import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 
 const bubbles = Array.from({ length: 8 }, (_, i) => ({
@@ -14,6 +15,8 @@ const bubbles = Array.from({ length: 8 }, (_, i) => ({
 }))
 
 const Hero = () => {
+  const t = useTranslations('hero')
+
   const scrollToNext = () => {
     const missionSection = document.getElementById('mission')
     if (missionSection) {
@@ -27,7 +30,7 @@ const Hero = () => {
       <div className='absolute inset-0 z-0'>
         <Image
           src='/images/home.jpg'
-          alt='Underwater diving scene'
+          alt={t('imageAlt')}
           fill
           className='object-cover'
           priority
@@ -84,7 +87,10 @@ const Hero = () => {
             className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-primary-foreground mb-6 leading-tight animate-fade-up'
             style={{ animationDelay: '0.4s' }}
           >
-            Where Ocean Souls <span className='text-gradient-aqua'>Belong</span>
+            {t('tagline').split(' ').slice(0, -1).join(' ')}{' '}
+            <span className='text-gradient-aqua'>
+              {t('tagline').split(' ').at(-1)}
+            </span>
           </h1>
 
           {/* Subheadline */}
@@ -92,10 +98,7 @@ const Hero = () => {
             className='text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto font-light animate-fade-up'
             style={{ animationDelay: '0.6s' }}
           >
-            I create dive journeys with close attention to detail, in
-            collaboration with trusted local partners. Whenever possible, I
-            personally accompany the journeys, ensuring safety, ease and an
-            experience aligned with the destination.
+            {t('description')}
           </p>
 
           {/* CTAs */}
@@ -104,10 +107,10 @@ const Hero = () => {
             style={{ animationDelay: '0.8s' }}
           >
             <Button variant='hero' size='xl'>
-              <Link href='/#contact'>Start Your Journey</Link>
+              <Link href='/#contact'>{t('ctaPrimary')}</Link>
             </Button>
             <Button variant='heroOutline' size='xl'>
-              <Link href='/journeys'>Explore Journeys</Link>
+              <Link href='/journeys'>{t('ctaSecondary')}</Link>
             </Button>
           </div>
         </div>
@@ -118,7 +121,7 @@ const Hero = () => {
         type='button'
         onClick={scrollToNext}
         className='absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-primary-foreground/60 hover:text-primary-foreground transition-colors animate-float cursor-pointer'
-        aria-label='Scroll to next section'
+        aria-label={t('scrollLabel')}
       >
         <ChevronDown className='w-8 h-8' />
       </button>

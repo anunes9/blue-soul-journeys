@@ -1,7 +1,7 @@
 # TODO
 
-- [ ] Add whatsapp icon at the bottom to open the app
-- [ ] Add Phone number to contact form
+- [x] Add whatsapp icon at the bottom to open the app
+- [x] Add Phone number to contact form
 - [ ] Automations for initial contact
 
 ## Airtable

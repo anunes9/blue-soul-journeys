@@ -4,7 +4,10 @@
       "mcp__acp__Write",
       "mcp__acp__Edit",
       "mcp__acp__Bash",
-      "WebFetch(domain:www.bluesouljourneys.com)"
+      "WebFetch(domain:www.bluesouljourneys.com)",
+      "Bash(bun add:*)",
+      "Bash(bun run build:*)",
+      "Bash(NODE_ENV=development bun next build:*)"
     ]
   }
 }

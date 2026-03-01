@@ -1,45 +1,45 @@
 import { Anchor, Check, Compass, Heart, Shield, X } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const reasons = [
-  {
-    icon: Compass,
-    title: "Real Ocean Experience",
-    description:
-      "Years spent in and around the ocean have shaped the way I travel \u2014 and the way I design each journey. I help you choose destinations and experiences that respect your rhythm, your interests and your comfort level \u2014 always grounded in real, first-hand experience, never from catalogues.",
-  },
-  {
-    icon: Shield,
-    title: "Quality & Trusted Partners",
-    description:
-      "Every destination is chosen with care. I work exclusively with trusted local partners \u2014 responsible operators and well-tested experiences \u2014 so you can travel with peace of mind, knowing you are supported at every stage of your journey.",
-  },
-  {
-    icon: Heart,
-    title: "Meaningful & Personal Travel",
-    description:
-      "Each journey is designed with intention \u2014 balancing nature, culture, adventure and time. The result is an experience that feels deep, fluid and authentic. Never rushed. Never generic.",
-  },
-];
-
-const withMe = [
-  "Tailor-made itineraries",
-  "Ocean-specialised partners",
-  "Support before and during your journey",
-  "Experiences aligned with your values",
-  "A journey that truly feels like yours",
-];
-
-const onYourOwn = [
-  "Generic packages",
-  "Limited expertise in marine experiences",
-  "Minimal support",
-  "Hard to assess what\u2019s safe or truly worth it",
-  "Higher risk of disappointments",
-];
-
 const WhyTravelWithMe = () => {
+  const t = useTranslations("whyTravelWithMe");
+
+  const reasons = [
+    {
+      icon: Compass,
+      title: t("reason1Title"),
+      description: t("reason1Description"),
+    },
+    {
+      icon: Shield,
+      title: t("reason2Title"),
+      description: t("reason2Description"),
+    },
+    {
+      icon: Heart,
+      title: t("reason3Title"),
+      description: t("reason3Description"),
+    },
+  ];
+
+  const withMe = [
+    t("withMe1"),
+    t("withMe2"),
+    t("withMe3"),
+    t("withMe4"),
+    t("withMe5"),
+  ];
+
+  const onYourOwn = [
+    t("onYourOwn1"),
+    t("onYourOwn2"),
+    t("onYourOwn3"),
+    t("onYourOwn4"),
+    t("onYourOwn5"),
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -79,7 +79,7 @@ const WhyTravelWithMe = () => {
             >
               <Anchor className="w-4 h-4 text-aqua" />
               <span className="text-sm font-medium text-aqua tracking-wide uppercase">
-                Why Travel With Me
+                {t("label")}
               </span>
             </div>
 
@@ -87,10 +87,7 @@ const WhyTravelWithMe = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary-foreground mb-8 leading-tight animate-fade-up"
               style={{ animationDelay: "0.4s" }}
             >
-              Travel with Purpose.{" "}
-              <span className="text-gradient-aqua">
-                Explore with Confidence.
-              </span>
+              {t("heading")}
             </h1>
           </div>
         </div>
@@ -148,7 +145,7 @@ const WhyTravelWithMe = () => {
               <ScrollReveal animation="fade-right">
                 <div className="p-8 md:p-10 rounded-2xl bg-card border-2 border-aqua/30 shadow-lg h-full">
                   <h3 className="text-2xl font-serif text-navy mb-8">
-                    With Me
+                    {t("withMeHeading")}
                   </h3>
                   <ul className="space-y-5">
                     {withMe.map((item) => (
@@ -166,7 +163,7 @@ const WhyTravelWithMe = () => {
               <ScrollReveal animation="fade-left" delay={150}>
                 <div className="p-8 md:p-10 rounded-2xl bg-card border border-border/50 h-full">
                   <h3 className="text-2xl font-serif text-navy/60 mb-8">
-                    On Your Own
+                    {t("onYourOwnHeading")}
                   </h3>
                   <ul className="space-y-5">
                     {onYourOwn.map((item) => (
@@ -193,7 +190,7 @@ const WhyTravelWithMe = () => {
               <div className="relative h-64 md:h-96 rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="/img4.avif"
-                  alt="Diving journey"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 896px"

@@ -1,7 +1,16 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import type { Destination } from "@/data/destinations";
 
-const DestinationHero = ({ destination }: { destination: Destination }) => {
+const DestinationHero = ({
+  slug,
+  destination,
+}: {
+  slug: string;
+  destination: Destination;
+}) => {
+  const td = useTranslations("destinationData");
+
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -24,7 +33,7 @@ const DestinationHero = ({ destination }: { destination: Destination }) => {
             style={{ animationDelay: "0.2s" }}
           >
             <span className="text-sm font-medium text-primary-foreground tracking-wide uppercase">
-              {destination.region}
+              {td(`${slug}.region` as never)}
             </span>
           </div>
 
@@ -32,14 +41,14 @@ const DestinationHero = ({ destination }: { destination: Destination }) => {
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-primary-foreground mb-6 leading-tight animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            {destination.name}
+            {td(`${slug}.name` as never)}
           </h1>
 
           <p
             className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto font-light animate-fade-up"
             style={{ animationDelay: "0.6s" }}
           >
-            {destination.description}
+            {td(`${slug}.description` as never)}
           </p>
         </div>
       </div>

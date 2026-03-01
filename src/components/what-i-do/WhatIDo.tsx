@@ -1,32 +1,32 @@
 import { Anchor, Compass, Heart, Sparkles } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const values = [
-  {
-    icon: Compass,
-    title: "Conscious Travel",
-    description:
-      "I believe travel should respect the ocean, the people and natural rhythms \u2014 creating meaningful experiences without rush or excess.",
-  },
-  {
-    icon: Heart,
-    title: "Connection to the Ocean",
-    description:
-      "For me, diving is more than exploration. It\u2019s a way to slow down, observe and reconnect \u2014 with the ocean, with others and with ourselves.",
-  },
-  {
-    icon: Sparkles,
-    title: "Carefully Selected Experiences",
-    description:
-      "Each itinerary is thoughtfully designed, built around trusted local partners \u2014 always prioritising safety, quality and authenticity.",
-  },
-];
-
 const WhatIDo = () => {
+  const t = useTranslations("whatIDo");
+
+  const values = [
+    {
+      icon: Compass,
+      title: t("value1Title"),
+      description: t("value1Description"),
+    },
+    {
+      icon: Heart,
+      title: t("value2Title"),
+      description: t("value2Description"),
+    },
+    {
+      icon: Sparkles,
+      title: t("value3Title"),
+      description: t("value3Description"),
+    },
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -66,7 +66,7 @@ const WhatIDo = () => {
             >
               <Anchor className="w-4 h-4 text-aqua" />
               <span className="text-sm font-medium text-aqua tracking-wide uppercase">
-                What I Do
+                {t("label")}
               </span>
             </div>
 
@@ -82,8 +82,7 @@ const WhatIDo = () => {
               className="text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up"
               style={{ animationDelay: "0.6s" }}
             >
-              Bringing together trusted local knowledge, thoughtful planning and
-              respect for the ocean.
+              {t("description")}
             </p>
           </div>
         </div>
@@ -108,31 +107,13 @@ const WhatIDo = () => {
               <ScrollReveal animation="fade-right">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
-                    Born from Real Dives and Genuine Connections
+                    {t("storyHeading")}
                   </h2>
                   <div className="space-y-5 text-muted-foreground leading-relaxed">
-                    <p>
-                      Blue Soul Journeys grew from years spent in and around the
-                      ocean &mdash; diving remote reefs, exploring iconic wrecks
-                      and sharing time with people whose lives are shaped by the
-                      sea.
-                    </p>
-                    <p>
-                      Every journey I create is rooted in places I know,
-                      journeys I&apos;ve experienced first-hand and partners I
-                      trust deeply.
-                    </p>
-                    <p className="font-medium text-navy">
-                      I don&apos;t build trips from a catalogue.
-                    </p>
-                    <p>
-                      I create journeys from authentic encounters, real dives
-                      and genuine connections. Whether it&apos;s a liveaboard in
-                      the Red Sea, drifting through the channels of the Maldives
-                      or slow, immersive dives along the Mozambican coast, each
-                      journey is designed to feel personal, conscious and
-                      connected to the ocean.
-                    </p>
+                    <p>{t("storyP1")}</p>
+                    <p>{t("storyP2")}</p>
+                    <p className="font-medium text-navy">{t("storyP3")}</p>
+                    <p>{t("storyP4")}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -141,7 +122,7 @@ const WhatIDo = () => {
                 <div className="relative h-80 md:h-[28rem] rounded-3xl overflow-hidden shadow-xl">
                   <Image
                     src="/img3.avif"
-                    alt="Diving journey experience"
+                    alt={t("imageAlt")}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -187,7 +168,7 @@ const WhatIDo = () => {
                     "inline-flex",
                   )}
                 >
-                  See How It Works
+                  {t("cta")}
                 </Link>
               </div>
             </ScrollReveal>
@@ -201,10 +182,10 @@ const WhatIDo = () => {
           <ScrollReveal animation="scale-in">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-2xl md:text-3xl font-serif text-primary-foreground leading-relaxed mb-4">
-                Travel deeper. Travel differently.
+                {t("closing1")}
               </p>
               <p className="text-2xl md:text-3xl font-serif text-gradient-aqua">
-                Let the ocean guide you. Live your journey.
+                {t("closing2")}
               </p>
             </div>
           </ScrollReveal>

@@ -1,12 +1,17 @@
 import { Plane } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Destination } from "@/data/destinations";
 
 const DestinationTransfers = ({
-  destination,
+  slug,
 }: {
+  slug: string;
   destination: Destination;
 }) => {
+  const t = useTranslations("destinationPage");
+  const td = useTranslations("destinationData");
+
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -21,10 +26,10 @@ const DestinationTransfers = ({
                 </div>
                 <div>
                   <h2 className="text-2xl font-serif text-navy mb-4">
-                    Airport Transfers
+                    {t("transfersHeading")}
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    {destination.transfers}
+                    {td(`${slug}.transfers` as never)}
                   </p>
                 </div>
               </div>

@@ -1,11 +1,22 @@
 import { Check, Home, Ship } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Destination } from "@/data/destinations";
 
-const DestinationVessel = ({ destination }: { destination: Destination }) => {
+const DestinationVessel = ({
+  slug,
+  destination,
+}: {
+  slug: string;
+  destination: Destination;
+}) => {
+  const t = useTranslations("destinationPage");
+  const td = useTranslations("destinationData");
+
   const { vessel } = destination;
   const Icon = vessel.type === "liveaboard" ? Ship : Home;
+  const amenities = td.raw(`${slug}.amenities` as never) as string[];
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
@@ -17,13 +28,13 @@ const DestinationVessel = ({ destination }: { destination: Destination }) => {
                 <Icon className="w-4 h-4 text-ocean-deep" />
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
                   {vessel.type === "liveaboard"
-                    ? "The Liveaboard"
-                    : "The Dive Resort"}
+                    ? t("liveaboardLabel")
+                    : t("resortLabel")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
-                {vessel.name}
+                {td(`${slug}.vesselName` as never)}
               </h2>
             </div>
           </ScrollReveal>
@@ -45,18 +56,19 @@ const DestinationVessel = ({ destination }: { destination: Destination }) => {
             <ScrollReveal animation="fade-left" delay={150}>
               <div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  {vessel.description}
+                  {td(`${slug}.vesselDescription` as never)}
                 </p>
 
                 <ul className="space-y-3">
-                  {vessel.amenities.map((amenity) => (
-                    <li key={amenity} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Check className="w-3 h-3 text-ocean-deep" />
-                      </div>
-                      <span className="text-navy">{amenity}</span>
-                    </li>
-                  ))}
+                  {Array.isArray(amenities) &&
+                    amenities.map((amenity) => (
+                      <li key={amenity} className="flex items-start gap-3">
+                        <div className="w-5 h-5 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <Check className="w-3 h-3 text-ocean-deep" />
+                        </div>
+                        <span className="text-navy">{amenity}</span>
+                      </li>
+                    ))}
                 </ul>
               </div>
             </ScrollReveal>

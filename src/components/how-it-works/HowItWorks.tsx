@@ -6,40 +6,39 @@ import {
   MessageCircle,
 } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const steps = [
-  {
-    number: "01",
-    icon: MessageCircle,
-    title: "First Contact",
-    description:
-      "A relaxed conversation to understand your travel style, diving experience and what you\u2019re looking for \u2014 beyond dates and destinations.",
-  },
-  {
-    number: "02",
-    icon: Compass,
-    title: "Journey Design",
-    description:
-      "Based on our conversation, I design destinations, stays and dive experiences that match your rhythm \u2014 always prioritising safety, quality and authenticity.",
-  },
-  {
-    number: "03",
-    icon: CalendarCheck,
-    title: "Journey Planning",
-    description:
-      "I take care of logistics and coordination, ensuring everything flows smoothly \u2014 from dive operators and liveaboards to accommodations.",
-  },
-  {
-    number: "04",
-    icon: Headset,
-    title: "Ongoing Support",
-    description:
-      "Before and during your journey, I\u2019m available to support you whenever needed \u2014 creating space for you to fully experience the ocean.",
-  },
-];
-
 const HowItWorks = () => {
+  const t = useTranslations("howItWorks");
+
+  const steps = [
+    {
+      number: t("step1Number"),
+      icon: MessageCircle,
+      title: t("step1Title"),
+      description: t("step1Description"),
+    },
+    {
+      number: t("step2Number"),
+      icon: Compass,
+      title: t("step2Title"),
+      description: t("step2Description"),
+    },
+    {
+      number: t("step3Number"),
+      icon: CalendarCheck,
+      title: t("step3Title"),
+      description: t("step3Description"),
+    },
+    {
+      number: t("step4Number"),
+      icon: Headset,
+      title: t("step4Title"),
+      description: t("step4Description"),
+    },
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -79,7 +78,7 @@ const HowItWorks = () => {
             >
               <Anchor className="w-4 h-4 text-aqua" />
               <span className="text-sm font-medium text-aqua tracking-wide uppercase">
-                How It Works
+                {t("label")}
               </span>
             </div>
 
@@ -87,16 +86,17 @@ const HowItWorks = () => {
               className="text-4xl md:text-5xl lg:text-6xl font-serif text-primary-foreground mb-8 leading-tight animate-fade-up"
               style={{ animationDelay: "0.4s" }}
             >
-              Every Journey Starts with a{" "}
-              <span className="text-gradient-aqua">Conversation</span>
+              {t("heading").split(" ").slice(0, -1).join(" ")}{" "}
+              <span className="text-gradient-aqua">
+                {t("heading").split(" ").at(-1)}
+              </span>
             </h1>
 
             <p
               className="text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up"
               style={{ animationDelay: "0.6s" }}
             >
-              From there, I design a travel experience shaped around who you
-              are, how you dive and what you seek from the ocean.
+              {t("description")}
             </p>
           </div>
         </div>
@@ -121,28 +121,13 @@ const HowItWorks = () => {
               <ScrollReveal animation="fade-right">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6 leading-tight">
-                    Built on Trust & Shared Values
+                    {t("trustHeading")}
                   </h2>
                   <div className="space-y-5 text-muted-foreground leading-relaxed">
-                    <p>
-                      I work closely with a small circle of trusted local
-                      operators &mdash; people I&rsquo;ve dived with, learned
-                      from and built long-term relationships with.
-                    </p>
-                    <p>
-                      These partnerships are built on clear values: safety,
-                      respect for the ocean and genuine care for the experiences
-                      of each traveller.
-                    </p>
-                    <p>
-                      Some journeys are accompanied by me, whenever my presence
-                      adds real value to the group and the overall experience.
-                    </p>
-                    <p>
-                      Others are led by the local teams I trust completely
-                      &mdash; always with the same level of care, preparation
-                      and attention to detail.
-                    </p>
+                    <p>{t("trust1")}</p>
+                    <p>{t("trust2")}</p>
+                    <p>{t("trust3")}</p>
+                    <p>{t("trust4")}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -151,7 +136,7 @@ const HowItWorks = () => {
                 <div className="relative h-80 md:h-[28rem] rounded-3xl overflow-hidden shadow-xl">
                   <Image
                     src="/img2.avif"
-                    alt="Diving journey experience"
+                    alt={t("imageAlt")}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -171,18 +156,15 @@ const HowItWorks = () => {
             <div className="max-w-3xl mx-auto text-center mb-20">
               <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                  What Can You Expect?
+                  {t("expectLabel")}
                 </span>
               </div>
 
               <p className="text-xl md:text-2xl text-navy font-serif leading-relaxed">
-                Transparency, honest guidance and a journey designed with
-                purpose.
+                {t("expect1")}
               </p>
               <p className="text-lg text-muted-foreground mt-6 leading-relaxed max-w-2xl mx-auto">
-                No rush. No unnecessary extras. Just thoughtfully structured
-                dive experiences, delivered responsibly and in tune with what
-                truly matters to you.
+                {t("expect2")}
               </p>
             </div>
           </ScrollReveal>
@@ -205,7 +187,7 @@ const HowItWorks = () => {
                       </div>
                       <div>
                         <div className="text-sm font-medium text-aqua mb-1">
-                          Step {step.number}
+                          {step.number}
                         </div>
                         <h3 className="text-xl font-serif text-navy mb-3">
                           {step.title}
@@ -225,8 +207,7 @@ const HowItWorks = () => {
           <ScrollReveal animation="fade-up" delay={200}>
             <div className="max-w-3xl mx-auto text-center mt-16">
               <p className="text-lg text-muted-foreground leading-relaxed italic">
-                Beyond planning trips, I create experiences, select trusted
-                partners and support you before and during the entire journey.
+                {t("expect3")}
               </p>
             </div>
           </ScrollReveal>

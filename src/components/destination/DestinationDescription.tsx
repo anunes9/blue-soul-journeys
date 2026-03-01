@@ -1,12 +1,34 @@
 import { Sparkles } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Destination } from "@/data/destinations";
 
 const DestinationDescription = ({
+  slug,
   destination,
 }: {
+  slug: string;
   destination: Destination;
 }) => {
+  const t = useTranslations("destinationPage");
+  const td = useTranslations("destinationData");
+
+  const longDescription = td.raw(`${slug}.longDescription` as never) as string[];
+  const highlights = [
+    {
+      title: td(`${slug}.highlight1Title` as never) as string,
+      description: td(`${slug}.highlight1Description` as never) as string,
+    },
+    {
+      title: td(`${slug}.highlight2Title` as never) as string,
+      description: td(`${slug}.highlight2Description` as never) as string,
+    },
+    {
+      title: td(`${slug}.highlight3Title` as never) as string,
+      description: td(`${slug}.highlight3Description` as never) as string,
+    },
+  ];
+
   return (
     <section className="py-24 bg-sand relative overflow-hidden">
       {/* Subtle wave pattern background */}
@@ -44,7 +66,7 @@ const DestinationDescription = ({
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
                 <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                  About This Destination
+                  {t("aboutLabel")}
                 </span>
               </div>
             </div>
@@ -53,30 +75,30 @@ const DestinationDescription = ({
           {/* Heading */}
           <ScrollReveal animation="fade-up" delay={100}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 leading-tight text-center">
-              Discover{" "}
-              <span className="text-gradient-aqua">{destination.name}</span>
+              {t("discoverHeading", { name: td(`${slug}.name` as never) })}
             </h2>
           </ScrollReveal>
 
           {/* Long Description */}
           <div className="space-y-6">
-            {destination.longDescription.map((paragraph, index) => (
-              <ScrollReveal
-                key={paragraph.slice(0, 50)}
-                animation="fade-up"
-                delay={200 + index * 100}
-              >
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  {paragraph}
-                </p>
-              </ScrollReveal>
-            ))}
+            {Array.isArray(longDescription) &&
+              longDescription.map((paragraph, index) => (
+                <ScrollReveal
+                  key={paragraph.slice(0, 50)}
+                  animation="fade-up"
+                  delay={200 + index * 100}
+                >
+                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                    {paragraph}
+                  </p>
+                </ScrollReveal>
+              ))}
           </div>
         </div>
 
         {/* Highlights */}
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {destination.highlights.map((highlight, index) => (
+          {highlights.map((highlight, index) => (
             <ScrollReveal
               key={highlight.title}
               animation="fade-up"
