@@ -21,6 +21,7 @@ const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [destinationsOpen, setDestinationsOpen] = useState(false)
+  const [experienceOpen, setExperienceOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
   const pathname = usePathname()
   const router = useRouter()
@@ -113,38 +114,64 @@ const Navbar = () => {
               </div>
             </nav>
 
-            <Link
-              href='/what-i-do'
-              className={`text-sm font-medium transition-colors ${
-                hasScrolled
-                  ? 'text-navy/80 hover:text-ocean-deep'
-                  : 'text-primary-foreground/80 hover:text-primary-foreground'
-              }`}
+            {/* Experience Dropdown */}
+            <nav
+              className='relative'
+              onMouseEnter={() => setExperienceOpen(true)}
+              onMouseLeave={() => setExperienceOpen(false)}
+              aria-label={t('experience')}
             >
-              {t('whatIDo')}
-            </Link>
+              <button
+                type='button'
+                className={`flex items-center gap-1 text-sm font-medium transition-colors ${
+                  hasScrolled
+                    ? 'text-navy/80 hover:text-ocean-deep'
+                    : 'text-primary-foreground/80 hover:text-primary-foreground'
+                }`}
+              >
+                {t('experience')}
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${
+                    experienceOpen ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
 
-            <Link
-              href='/how-it-works'
-              className={`text-sm font-medium transition-colors ${
-                hasScrolled
-                  ? 'text-navy/80 hover:text-ocean-deep'
-                  : 'text-primary-foreground/80 hover:text-primary-foreground'
-              }`}
-            >
-              {t('howItWorks')}
-            </Link>
-
-            <Link
-              href='/my-story'
-              className={`text-sm font-medium transition-colors ${
-                hasScrolled
-                  ? 'text-navy/80 hover:text-ocean-deep'
-                  : 'text-primary-foreground/80 hover:text-primary-foreground'
-              }`}
-            >
-              {t('myStory')}
-            </Link>
+              <div
+                className={`absolute top-full left-0 pt-2 transition-all duration-200 ${
+                  experienceOpen
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 -translate-y-2 pointer-events-none'
+                }`}
+              >
+                <div className='bg-white rounded-xl shadow-lg border border-border/50 py-2 min-w-52'>
+                  <Link
+                    href='/how-it-works'
+                    className='block px-4 py-2.5 text-sm text-navy/80 hover:text-ocean-deep hover:bg-sand transition-colors font-medium'
+                  >
+                    {t('howItWorks')}
+                  </Link>
+                  <Link
+                    href='/what-i-do'
+                    className='block px-4 py-2.5 text-sm text-navy/80 hover:text-ocean-deep hover:bg-sand transition-colors font-medium'
+                  >
+                    {t('whatIDo')}
+                  </Link>
+                  <Link
+                    href='/why-travel-with-me'
+                    className='block px-4 py-2.5 text-sm text-navy/80 hover:text-ocean-deep hover:bg-sand transition-colors font-medium'
+                  >
+                    {t('whyTravelWithMe')}
+                  </Link>
+                  <Link
+                    href='/my-story'
+                    className='block px-4 py-2.5 text-sm text-navy/80 hover:text-ocean-deep hover:bg-sand transition-colors font-medium'
+                  >
+                    {t('myStory')}
+                  </Link>
+                </div>
+              </div>
+            </nav>
 
             <Link
               href='/#contact'
@@ -266,6 +293,17 @@ const Navbar = () => {
 
           <div className='w-12 h-px bg-aqua/30' />
 
+          <p className='text-xs font-medium text-ocean-deep tracking-widest uppercase'>
+            {t('experience')}
+          </p>
+          <Link
+            href='/how-it-works'
+            onClick={() => setMobileMenuOpen(false)}
+            className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
+          >
+            {t('howItWorks')}
+          </Link>
+
           <Link
             href='/what-i-do'
             onClick={() => setMobileMenuOpen(false)}
@@ -275,11 +313,11 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href='/how-it-works'
+            href='/why-travel-with-me'
             onClick={() => setMobileMenuOpen(false)}
             className='text-2xl font-heading text-navy hover:text-ocean-deep transition-colors'
           >
-            {t('howItWorks')}
+            {t('whyTravelWithMe')}
           </Link>
 
           <Link

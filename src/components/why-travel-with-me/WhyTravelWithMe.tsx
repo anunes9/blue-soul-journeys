@@ -1,131 +1,131 @@
-import { Anchor, Check, Compass, Heart, Shield, X } from "lucide-react";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import ScrollReveal from "@/components/ScrollReveal";
+import { Anchor, Check, Compass, Heart, Shield, X } from 'lucide-react'
+import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import ScrollReveal from '@/components/ScrollReveal'
 
 const WhyTravelWithMe = () => {
-  const t = useTranslations("whyTravelWithMe");
+  const t = useTranslations('whyTravelWithMe')
 
   const reasons = [
     {
       icon: Compass,
-      title: t("reason1Title"),
-      description: t("reason1Description"),
+      title: t('reason1Title'),
+      description: t('reason1Description'),
     },
     {
       icon: Shield,
-      title: t("reason2Title"),
-      description: t("reason2Description"),
+      title: t('reason2Title'),
+      description: t('reason2Description'),
     },
     {
       icon: Heart,
-      title: t("reason3Title"),
-      description: t("reason3Description"),
+      title: t('reason3Title'),
+      description: t('reason3Description'),
     },
-  ];
+  ]
 
   const withMe = [
-    t("withMe1"),
-    t("withMe2"),
-    t("withMe3"),
-    t("withMe4"),
-    t("withMe5"),
-  ];
+    t('withMe1'),
+    t('withMe2'),
+    t('withMe3'),
+    t('withMe4'),
+    t('withMe5'),
+  ]
 
   const onYourOwn = [
-    t("onYourOwn1"),
-    t("onYourOwn2"),
-    t("onYourOwn3"),
-    t("onYourOwn4"),
-    t("onYourOwn5"),
-  ];
+    t('onYourOwn1'),
+    t('onYourOwn2'),
+    t('onYourOwn3'),
+    t('onYourOwn4'),
+    t('onYourOwn5'),
+  ]
 
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-32 md:py-40 bg-navy overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      <section className='relative py-32 md:py-40 bg-navy overflow-hidden'>
+        <div className='absolute inset-0 opacity-5'>
           <svg
-            aria-hidden="true"
-            className="w-full h-full"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
+            aria-hidden='true'
+            className='w-full h-full'
+            viewBox='0 0 100 100'
+            preserveAspectRatio='none'
           >
             <pattern
-              id="wave-bg-why"
-              x="0"
-              y="0"
-              width="50"
-              height="10"
-              patternUnits="userSpaceOnUse"
+              id='wave-bg-why'
+              x='0'
+              y='0'
+              width='50'
+              height='10'
+              patternUnits='userSpaceOnUse'
             >
               <path
-                d="M0 5 Q12.5 0 25 5 T50 5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.5"
-                className="text-aqua"
+                d='M0 5 Q12.5 0 25 5 T50 5'
+                fill='none'
+                stroke='currentColor'
+                strokeWidth='0.5'
+                className='text-aqua'
               />
             </pattern>
-            <rect width="100%" height="100%" fill="url(#wave-bg-why)" />
+            <rect width='100%' height='100%' fill='url(#wave-bg-why)' />
           </svg>
         </div>
 
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className='container mx-auto px-6 relative z-10'>
+          <div className='max-w-3xl mx-auto text-center'>
             <div
-              className="inline-flex items-center gap-2 bg-aqua/10 px-4 py-2 rounded-full mb-8 animate-fade-up"
-              style={{ animationDelay: "0.2s" }}
+              className='inline-flex items-center gap-2 bg-aqua/10 px-4 py-2 rounded-full mb-8 animate-fade-up'
+              style={{ animationDelay: '0.2s' }}
             >
-              <Anchor className="w-4 h-4 text-aqua" />
-              <span className="text-sm font-medium text-aqua tracking-wide uppercase">
-                {t("label")}
+              <Anchor className='w-4 h-4 text-aqua' />
+              <span className='text-sm font-medium text-aqua tracking-wide uppercase'>
+                {t('label')}
               </span>
             </div>
 
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up"
-              style={{ animationDelay: "0.4s" }}
+              className='text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up'
+              style={{ animationDelay: '0.4s' }}
             >
-              {t("heading")}
+              {t('heading')}
             </h1>
           </div>
         </div>
 
-        <div className="wave-divider z-10">
+        <div className='wave-divider z-10'>
           <svg
-            aria-hidden="true"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            className="fill-sand"
+            aria-hidden='true'
+            viewBox='0 0 1200 120'
+            preserveAspectRatio='none'
+            className='fill-sand'
           >
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,321.39,56.44Z" />
+            <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,321.39,56.44Z' />
           </svg>
         </div>
       </section>
 
       {/* Reasons Section */}
-      <section className="py-24 bg-sand relative overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto space-y-16">
+      <section className='py-24 bg-sand relative overflow-hidden'>
+        <div className='container mx-auto px-6'>
+          <div className='max-w-4xl mx-auto space-y-16'>
             {reasons.map((reason, index) => (
               <ScrollReveal
                 key={reason.title}
-                animation="fade-up"
+                animation='fade-up'
                 delay={index * 100}
               >
-                <div className="group p-8 md:p-10 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300">
-                  <div className="flex flex-col md:flex-row items-start gap-6">
-                    <div className="shrink-0">
-                      <div className="w-16 h-16 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <reason.icon className="w-8 h-8 text-primary-foreground" />
+                <div className='group p-8 md:p-10 rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
+                  <div className='flex flex-col md:flex-row items-start gap-6'>
+                    <div className='shrink-0'>
+                      <div className='w-16 h-16 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
+                        <reason.icon className='w-8 h-8 text-primary-foreground' />
                       </div>
                     </div>
                     <div>
-                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
+                      <h2 className='text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight'>
                         {reason.title}
                       </h2>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
+                      <p className='text-lg text-muted-foreground leading-relaxed'>
                         {reason.description}
                       </p>
                     </div>
@@ -138,40 +138,40 @@ const WhyTravelWithMe = () => {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <ScrollReveal animation="fade-right">
-                <div className="p-8 md:p-10 rounded-2xl bg-card border-2 border-aqua/30 shadow-lg h-full">
-                  <h3 className="text-2xl font-heading text-navy mb-8">
-                    {t("withMeHeading")}
+      <section className='py-24 bg-background relative overflow-hidden'>
+        <div className='container mx-auto px-6'>
+          <div className='max-w-4xl mx-auto'>
+            <div className='grid md:grid-cols-2 gap-8'>
+              <ScrollReveal animation='fade-right'>
+                <div className='p-8 md:p-10 rounded-2xl bg-card border-2 border-aqua/30 shadow-lg h-full'>
+                  <h3 className='text-2xl font-heading text-navy mb-8'>
+                    {t('withMeHeading')}
                   </h3>
-                  <ul className="space-y-5">
+                  <ul className='space-y-5'>
                     {withMe.map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <div className="w-6 h-6 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5">
-                          <Check className="w-4 h-4 text-ocean-deep" />
+                      <li key={item} className='flex items-start gap-3'>
+                        <div className='w-6 h-6 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5'>
+                          <Check className='w-4 h-4 text-ocean-deep' />
                         </div>
-                        <span className="text-navy">{item}</span>
+                        <span className='text-navy'>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal animation="fade-left" delay={150}>
-                <div className="p-8 md:p-10 rounded-2xl bg-card border border-border/50 h-full">
-                  <h3 className="text-2xl font-heading text-navy/60 mb-8">
-                    {t("onYourOwnHeading")}
+              <ScrollReveal animation='fade-left' delay={150}>
+                <div className='p-8 md:p-10 rounded-2xl bg-card border border-border/50 h-full'>
+                  <h3 className='text-2xl font-heading text-navy/60 mb-8'>
+                    {t('onYourOwnHeading')}
                   </h3>
-                  <ul className="space-y-5">
+                  <ul className='space-y-5'>
                     {onYourOwn.map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <X className="w-4 h-4 text-red-400" />
+                      <li key={item} className='flex items-start gap-3'>
+                        <div className='w-6 h-6 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5'>
+                          <X className='w-4 h-4 text-red-400' />
                         </div>
-                        <span className="text-muted-foreground">{item}</span>
+                        <span className='text-muted-foreground'>{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -183,26 +183,26 @@ const WhyTravelWithMe = () => {
       </section>
 
       {/* Image Section */}
-      <section className="py-24 bg-sand relative overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <ScrollReveal animation="scale-in">
-              <div className="relative h-64 md:h-96 rounded-3xl overflow-hidden shadow-xl">
+      <section className='py-24 bg-sand relative overflow-hidden'>
+        <div className='container mx-auto px-6'>
+          <div className='max-w-4xl mx-auto'>
+            <ScrollReveal animation='scale-in'>
+              <div className='relative h-64 md:h-96 rounded-3xl overflow-hidden shadow-xl'>
                 <Image
-                  src="/img4.avif"
-                  alt={t("imageAlt")}
+                  src='/images/my_story5.jpg'
+                  alt={t('imageAlt')}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 896px"
+                  className='object-cover'
+                  sizes='(max-width: 768px) 100vw, 896px'
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-navy/40 to-transparent" />
+                <div className='absolute inset-0 bg-linear-to-t from-navy/40 to-transparent' />
               </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default WhyTravelWithMe;
+export default WhyTravelWithMe
