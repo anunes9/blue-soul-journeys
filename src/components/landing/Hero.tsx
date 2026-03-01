@@ -61,25 +61,14 @@ const Hero = () => {
       <div className='relative z-20 container mx-auto px-6 text-center'>
         <div className='max-w-4xl mx-auto'>
           {/* Logo/Brand */}
-          <div
-            className='mb-8 animate-fade-up'
-            style={{ animationDelay: '0.2s' }}
-          >
-            <div className='inline-flex items-center gap-3'>
-              <div className='w-12 h-12 rounded-full bg-aqua/20 backdrop-blur-sm flex items-center justify-center border border-aqua/30'>
-                <svg
-                  aria-hidden='true'
-                  viewBox='0 0 24 24'
-                  className='w-6 h-6 text-aqua'
-                  fill='currentColor'
-                >
-                  <path d='M12 2C12 2 8 6 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 6 12 2 12 2ZM12 12C10.9 12 10 11.1 10 10C10 8.14 11.14 6.09 12 4.68C12.86 6.09 14 8.14 14 10C14 11.1 13.1 12 12 12ZM12 15C8.69 15 6 16.79 6 19V20C6 20.55 6.45 21 7 21H17C17.55 21 18 20.55 18 20V19C18 16.79 15.31 15 12 15Z' />
-                </svg>
-              </div>
-              <span className='text-xl font-serif text-primary-foreground tracking-wide'>
-                Blue Soul Journeys
-              </span>
-            </div>
+          <div className='animate-fade-up' style={{ animationDelay: '0.2s' }}>
+            <Image
+              src='/logo_text.png'
+              width={512}
+              height={512}
+              className='h-auto w-80 mx-auto'
+              alt='Blue Soul Journeys'
+            />
           </div>
 
           {/* Headline */}

@@ -95,31 +95,39 @@ const Contact = () => {
             animation='fade-right'
             className='md:col-span-2 flex flex-col gap-8'
           >
-            <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
+            <a
+              href='mailto:contact@bluesouljourneys.com'
+              className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'
+            >
               <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Mail className='w-6 h-6 text-primary-foreground' />
               </div>
               <div>
                 <p className='text-xs text-muted-foreground mb-0.5'>
-                  {t('whatsappLabel')}
+                  {t('emailCardLabel')}
                 </p>
                 <p className='text-primary text-sm'>
                   contact@bluesouljourneys.com
                 </p>
               </div>
-            </div>
+            </a>
 
-            <div className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'>
+            <a
+              href='https://www.instagram.com/bluesouljourneys'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='group flex gap-4 p-4 items-center rounded-2xl bg-card border border-border/50 hover:border-aqua/30 hover:shadow-lg transition-all duration-300'
+            >
               <div className='w-10 h-10 rounded-2xl bg-linear-to-br from-ocean-light to-aqua flex items-center justify-center group-hover:scale-110 transition-transform duration-300'>
                 <Instagram className='w-6 h-6 text-primary-foreground' />
               </div>
               <div>
                 <p className='text-xs text-muted-foreground mb-0.5'>
-                  {t('whatsappLabel')}
+                  {t('instagramLabel')}
                 </p>
                 <p className='text-primary text-sm'>@bluesouljourneys</p>
               </div>
-            </div>
+            </a>
 
             <a
               href={WHATSAPP_URL}

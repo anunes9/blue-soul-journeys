@@ -54,19 +54,12 @@ const Navbar = () => {
           {/* Logo */}
           <Link href='/' className='flex items-center gap-2'>
             <Image
-              src='/logo.avif'
+              src='/logo.png'
               width={48}
               height={48}
               className='h-auto w-12 sm:w-10'
               alt='Blue Soul Journeys'
             />
-            <span
-              className={`text-sm font-serif tracking-wide hidden sm:inline transition-colors duration-300 ${
-                hasScrolled ? 'text-navy' : 'text-primary-foreground'
-              }`}
-            >
-              Blue Soul Journeys
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -108,7 +101,9 @@ const Navbar = () => {
                       href={`/destinations/${dest.slug}`}
                       className='block px-4 py-2.5 text-sm text-navy/80 hover:text-ocean-deep hover:bg-sand transition-colors'
                     >
-                      <span className='font-medium'>{td(`${dest.slug}.name` as never)}</span>
+                      <span className='font-medium'>
+                        {td(`${dest.slug}.name` as never)}
+                      </span>
                       <span className='block text-xs text-muted-foreground'>
                         {td(`${dest.slug}.region` as never)}
                       </span>

@@ -114,11 +114,23 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
                 <Mail className="w-4 h-4" />
-                contact@bluesouljourneys.com
+                <a
+                  href="mailto:contact@bluesouljourneys.com"
+                  className="hover:text-aqua transition-colors"
+                >
+                  contact@bluesouljourneys.com
+                </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
                 <Instagram className="w-4 h-4" />
-                @bluesouljourneys
+                <a
+                  href="https://www.instagram.com/bluesouljourneys"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-aqua transition-colors"
+                >
+                  @bluesouljourneys
+                </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
                 <WhatsAppIcon className="w-4 h-4" />
