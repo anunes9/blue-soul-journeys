@@ -3,7 +3,7 @@
     "journeys": "Viajes",
     "whatIDo": "Lo Que Hago",
     "howItWorks": "Cómo Funciona",
-    "whyTravelWithMe": "Por Qué Viajar Conmigo",
+    "whyTravelWithMe": "Por Qué Viajar con BSJ",
     "myStory": "Mi Historia",
     "experience": "Experiencia",
     "contact": "Contacto",
@@ -30,7 +30,8 @@
   },
   "aboutUs": {
     "label": "Lo Que Hago",
-    "heading": "Viajes de buceo diseñados con cuidado y propósito",
+    "heading": "Viajes de buceo diseñados con",
+    "headingHighlight": "cuidado y propósito",
     "description": "Diseño viajes de buceo reuniendo conocimiento local de confianza, planificación cuidada y respeto por el océano.",
     "subheading": "Nacido de inmersiones reales y conexiones genuinas",
     "paragraph1": "Blue Soul Journeys nació de años vividos dentro y alrededor del océano - buceando en arrecifes remotos, explorando naufragios icónicos y compartiendo tiempo con personas profundamente conectadas con el mar.",
@@ -108,7 +109,7 @@
     "expectLabel": "¿Qué Puedes Esperar?",
     "expect1": "Transparencia, orientación honesta y un viaje diseñado con intención.",
     "expect2": "Sin prisas. Sin extras innecesarios. Solo experiencias de buceo cuidadosamente diseñadas, organizadas de forma responsable y alineadas con lo que realmente buscas.",
-    "expect3": "Para além de planear viagens, crio experiências - com parceiros de confiança e apoio antes e durante toda a viagem."
+    "expect3": "Además de planificar viajes, creo experiencias — con socios de confianza y apoyo antes y durante todo el viaje."
   },
   "journeys": {
     "label": "Viajes",
@@ -121,7 +122,8 @@
   },
   "whatIDo": {
     "label": "Lo Que Hago",
-    "heading": "Viajes de buceo diseñados con cuidado y propósito",
+    "heading": "Viajes de buceo diseñados con",
+    "headingHighlight": "cuidado y propósito",
     "description": "Reuniendo conocimiento local de confianza, planificación cuidadosa y respeto por el océano.",
     "storyHeading": "Nacido de Inmersiones Reales y Conexiones Genuinas",
     "storyP1": "Blue Soul Journeys creció de años pasados dentro y fuera del océano — buceando en arrecifes remotos, explorando naufragios icónicos y compartiendo tiempo con personas cuyas vidas están moldeadas por el mar.",
@@ -216,8 +218,8 @@
   "destinationPage": {
     "aboutLabel": "Sobre Este Destino",
     "discoverHeading": "Descubrir {name}",
-    "liveaboardLabel": "El Barco de Buceo",
-    "resortLabel": "El Resort de Buceo",
+    "liveaboardLabel": "El Liveaboard",
+    "resortLabel": "El Lodge de Buceo",
     "inclusionsLabel": "Qué Está Incluido",
     "included": "Incluido",
     "notIncluded": "No Incluido",
@@ -248,7 +250,8 @@
       "highlight2Description": "Explora vibrantes jardines de coral duro y blando llenos de vida, desde pequeños nudibranquios hasta enormes morenas escondidas entre los arrecifes.",
       "highlight3Title": "Encuentros Pelágicos",
       "highlight3Description": "Observa tiburones oceánicos de puntas blancas, barracudas, grandes bancos de peces y, en ocasiones, delfines o mantarrayas en las aguas abiertas del Mar Rojo.",
-      "vesselName": "Liveaboard del Mar Rojo - Ruta Norte Extendida (Naufragios y Arrecifes)",
+      "vesselName": "Liveaboard del Mar Rojo",
+      "vesselRoute": "Ruta Norte Extendida — Naufragios y Arrecifes",
       "vesselDescription": "Un liveaboard cómodo y bien equipado, ideal para explorar los legendarios arrecifes y naufragios del norte del Mar Rojo. A bordo encontrarás cabinas confortables, amplias instalaciones de buceo, Nitrox disponible y una tripulación experimentada que conoce muy bien estas aguas. ",
       "amenities": [
         "Cabinas con baño privado y aire acondicionado",
@@ -336,7 +339,8 @@
       "highlight2Description": "Déjate llevar por las corrientes de los canales entre tiburones de arrecife, rayas y densos bancos de peces.",
       "highlight3Title": "Atolones Remotos",
       "highlight3Description": "Explora arrecifes de coral prístinos y una vibrante vida marina repartida por los atolones dispersos de las Maldivas.",
-      "vesselName": "Liveaboard de Maldivas",
+      "vesselName": "El Liveaboard de Maldivas",
+      "vesselRoute": "Ruta de los Atolones Centrales",
       "vesselDescription": "Un liveaboard de estilo tradicional maldivo, diseñado para ofrecer confort y funcionalidad durante una semana de buceo en las Maldivas. A bordo viaja un pequeño grupo de buceadores, lo que permite briefings personalizados y rutas flexibles adaptadas a las condiciones del mar y a los encuentros con la vida marina.",
       "amenities": [
         "Cabinas con baño privado y aire acondicionado",
@@ -428,6 +432,7 @@
       "highlight3Title": "Inmersión Cultural",
       "highlight3Description": "Conecta con las comunidades costeras locales y experimenta el ritmo de vida junto al océano. Desde mercados locales hasta la hospitalidad cotidiana de Mozambique, cada día en Tofo ofrece una auténtica experiencia de la costa del África Oriental.",
       "vesselName": "Beach Lodge en Tofo",
+      "vesselRoute": "Tofo, Costa de Inhambane",
       "vesselDescription": "Un alojamiento de playa en Tofo, gestionado en colaboración con un centro de buceo local. Sencillo, cómodo y integrado en la vida de la villa, ofrece acceso fácil al buceo y al ambiente relajado de la costa de Inhambane.",
       "amenities": [
         "Habitaciones con vistas al océano y baño privado",

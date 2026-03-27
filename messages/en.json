@@ -3,7 +3,7 @@
     "journeys": "Journeys",
     "whatIDo": "What I Do",
     "howItWorks": "How It Works",
-    "whyTravelWithMe": "Why Travel With Me",
+    "whyTravelWithMe": "Why Travel With BSJ",
     "myStory": "My Story",
     "experience": "Experience",
     "contact": "Contact",
@@ -30,7 +30,8 @@
   },
   "aboutUs": {
     "label": "What I Do",
-    "heading": "Dive Journeys Designed with Care & Purpose",
+    "heading": "Dive Journeys Designed with",
+    "headingHighlight": "Care & Purpose",
     "description": "I design dive journeys bringing together trusted local knowledge, thoughtful planning and respect for the ocean.",
     "subheading": "Born from real dives and genuine connections",
     "paragraph1": "Blue Soul Journeys grew from years spent in and around the ocean — diving remote reefs, exploring iconic wrecks and sharing time with people whose lives are shaped by the sea.",
@@ -121,7 +122,8 @@
   },
   "whatIDo": {
     "label": "What I Do",
-    "heading": "Dive Journeys Designed with Care & Purpose",
+    "heading": "Dive Journeys Designed with",
+    "headingHighlight": "Care & Purpose",
     "description": "Bringing together trusted local knowledge, thoughtful planning and respect for the ocean.",
     "storyHeading": "Born from Real Dives and Genuine Connections",
     "storyP1": "Blue Soul Journeys grew from years spent in and around the ocean — diving remote reefs, exploring iconic wrecks and sharing time with people whose lives are shaped by the sea.",
@@ -217,7 +219,7 @@
     "aboutLabel": "About This Destination",
     "discoverHeading": "Discover {name}",
     "liveaboardLabel": "The Liveaboard",
-    "resortLabel": "The Dive Resort",
+    "resortLabel": "The Dive Lodge",
     "inclusionsLabel": "What's Included",
     "included": "Included",
     "notIncluded": "Not Included",
@@ -248,6 +250,7 @@
       "highlight3Title": "Pelagic Encounters",
       "highlight3Description": "Spot oceanic whitetip sharks, barracudas, large schools of fish and, at times, dolphins or manta rays in the open waters of the Red Sea.",
       "vesselName": "Red Sea Liveaboard - Extended North Route (Wrecks & Reefs)",
+      "vesselRoute": "Extended North Route — Wrecks & Reefs",
       "vesselDescription": "A comfortable and well-equipped liveaboard, ideal for exploring the legendary reefs and wrecks of the northern Red Sea. On board you’ll find comfortable cabins, spacious dive facilities, Nitrox available, and an experienced crew who know these waters extremely well. ",
       "amenities": [
         "En-suite cabins with air conditioning",
@@ -269,7 +272,7 @@
       "notIncluded": [
         "International flights",
         "Egyptian visa",
-        "Travel insurance",
+        "Travel and dive insurance",
         "Personal dive equipment",
         "Alcoholic beverages",
         "Crew gratuities",
@@ -335,6 +338,7 @@
       "highlight3Title": "Remote Atolls",
       "highlight3Description": "Explore pristine coral reefs and vibrant marine life across the scattered atolls of the Maldives.",
       "vesselName": "Maldives Liveaboard",
+      "vesselRoute": "Central Atolls Route",
       "vesselDescription": "A traditional Maldivian-style liveaboard designed to offer comfort and functionality during a week of diving in the Maldives. On board, a small group of divers allows for personalized briefings and flexible itineraries adapted to sea conditions and marine life encounters.",
       "amenities": [
         "En-suite cabins with air conditioning",
@@ -425,6 +429,7 @@
       "highlight3Title": "Cultural Immersion",
       "highlight3Description": "Connect with coastal communities and experience the rhythm of life by the ocean. From local markets and fishing villages to the warmth of Mozambican hospitality, every day in Tofo offers an authentic taste of East African coastal life.",
       "vesselName": "Tofo Beach Dive Lodge",
+      "vesselRoute": "Tofo, Inhambane Coast",
       "vesselDescription": "A beach lodge in Tofo, operated in partnership with a local dive centre. Simple, comfortable and connected to the life of the village, it offers easy access to diving and to the relaxed atmosphere of the Inhambane coast.",
       "amenities": [
         "Ocean-view rooms with private bathroom",

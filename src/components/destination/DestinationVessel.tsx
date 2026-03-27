@@ -1,72 +1,75 @@
-import { Check, Home, Ship } from "lucide-react";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import ScrollReveal from "@/components/ScrollReveal";
-import type { Destination } from "@/data/destinations";
+import { Check, Home, Ship } from 'lucide-react'
+import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import ScrollReveal from '@/components/ScrollReveal'
+import type { Destination } from '@/data/destinations'
 
 const DestinationVessel = ({
   slug,
   destination,
 }: {
-  slug: string;
-  destination: Destination;
+  slug: string
+  destination: Destination
 }) => {
-  const t = useTranslations("destinationPage");
-  const td = useTranslations("destinationData");
+  const t = useTranslations('destinationPage')
+  const td = useTranslations('destinationData')
 
-  const { vessel } = destination;
-  const Icon = vessel.type === "liveaboard" ? Ship : Home;
-  const amenities = td.raw(`${slug}.amenities` as never) as string[];
+  const { vessel } = destination
+  const Icon = vessel.type === 'liveaboard' ? Ship : Home
+  const amenities = td.raw(`${slug}.amenities` as never) as string[]
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <ScrollReveal animation="fade-up">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8">
-                <Icon className="w-4 h-4 text-ocean-deep" />
-                <span className="text-sm font-medium text-ocean-deep tracking-wide uppercase">
-                  {vessel.type === "liveaboard"
-                    ? t("liveaboardLabel")
-                    : t("resortLabel")}
+    <section className='py-24 bg-background relative overflow-hidden'>
+      <div className='container mx-auto px-6'>
+        <div className='max-w-4xl mx-auto'>
+          <ScrollReveal animation='fade-up'>
+            <div className='text-center mb-12'>
+              <div className='inline-flex items-center gap-2 bg-ocean-deep/10 px-4 py-2 rounded-full mb-8'>
+                <Icon className='w-4 h-4 text-ocean-deep' />
+                <span className='text-sm font-medium text-ocean-deep tracking-wide uppercase'>
+                  {vessel.type === 'liveaboard'
+                    ? t('liveaboardLabel')
+                    : t('resortLabel')}
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
+              <h2 className='text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-4 leading-tight'>
                 {td(`${slug}.vesselName` as never)}
               </h2>
+              <p className='text-lg font-medium text-ocean-deep tracking-wide uppercase'>
+                {td(`${slug}.vesselRoute` as never)}
+              </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ScrollReveal animation="fade-right">
-              <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden shadow-xl group">
+          <div className='grid md:grid-cols-2 gap-12 items-center'>
+            <ScrollReveal animation='fade-right'>
+              <div className='relative h-72 md:h-96 rounded-3xl overflow-hidden shadow-xl group'>
                 <Image
                   src={vessel.image}
                   alt={vessel.imageAlt}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
+                  sizes='(max-width: 768px) 100vw, 50vw'
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-navy/30 to-transparent" />
+                <div className='absolute inset-0 bg-linear-to-t from-navy/30 to-transparent' />
               </div>
             </ScrollReveal>
 
-            <ScrollReveal animation="fade-left" delay={150}>
+            <ScrollReveal animation='fade-left' delay={150}>
               <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                <p className='text-lg text-muted-foreground leading-relaxed mb-8'>
                   {td(`${slug}.vesselDescription` as never)}
                 </p>
 
-                <ul className="space-y-3">
+                <ul className='space-y-3'>
                   {Array.isArray(amenities) &&
                     amenities.map((amenity) => (
-                      <li key={amenity} className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5">
-                          <Check className="w-3 h-3 text-ocean-deep" />
+                      <li key={amenity} className='flex items-start gap-3'>
+                        <div className='w-5 h-5 rounded-full bg-aqua/20 flex items-center justify-center shrink-0 mt-0.5'>
+                          <Check className='w-3 h-3 text-ocean-deep' />
                         </div>
-                        <span className="text-navy">{amenity}</span>
+                        <span className='text-navy'>{amenity}</span>
                       </li>
                     ))}
                 </ul>
@@ -76,7 +79,7 @@ const DestinationVessel = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default DestinationVessel;
+export default DestinationVessel

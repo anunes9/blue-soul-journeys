@@ -69,8 +69,8 @@ const AboutUs = () => {
 
           <ScrollReveal animation="fade-up" delay={100}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight">
-              Dive Journeys Designed with{" "}
-              <span className="text-gradient-aqua">Care & Purpose</span>
+              {t("heading")}{" "}
+              <span className="text-gradient-aqua">{t("headingHighlight")}</span>
             </h2>
           </ScrollReveal>
 

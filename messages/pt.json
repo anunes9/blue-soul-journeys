@@ -3,7 +3,7 @@
     "journeys": "Viagens",
     "whatIDo": "O Que Faço",
     "howItWorks": "Como Funciona",
-    "whyTravelWithMe": "Porquê Viajar Comigo",
+    "whyTravelWithMe": "Porquê Viajar com BSJ",
     "myStory": "A Minha História",
     "experience": "Experiência",
     "contact": "Contacto",
@@ -30,7 +30,8 @@
   },
   "aboutUs": {
     "label": "O Que Faço",
-    "heading": "Viagens de mergulho criadas com cuidado e propósito",
+    "heading": "Viagens de mergulho criadas com",
+    "headingHighlight": "cuidado e propósito",
     "description": "Desenho viagens de mergulho reunindo conhecimento local de confiança, planeamento cuidadoso e respeito pelo oceano.",
     "subheading": "Nascido de mergulhos reais e ligações genuínas",
     "paragraph1": "A Blue Soul Journeys cresceu de anos passados dentro e fora do oceano — mergulhando em recifes remotos, explorando naufrágios icónicos e partilhando tempo com pessoas cujas vidas são moldadas pelo mar.",
@@ -51,7 +52,7 @@
     "description2": "Cada destino tem o seu próprio ritmo, deixando espaço para observar, sentir e mergulhar ao teu ritmo."
   },
   "contact": {
-    "label": "Entre em Contacto",
+    "label": "Entra em Contacto",
     "heading": "Pronto para começar a tua",
     "headingHighlight": "Viagem?",
     "description": "Vamos criar uma experiência de viagem à tua medida - guiada pela experiência e por uma ligação genuína ao oceano.",
@@ -121,7 +122,8 @@
   },
   "whatIDo": {
     "label": "O Que Faço",
-    "heading": "Viagens de mergulho criadas com cuidado e propósito",
+    "heading": "Viagens de mergulho criadas com",
+    "headingHighlight": "cuidado e propósito",
     "description": "Reunindo conhecimento local de confiança, planeamento cuidadoso e respeito pelo oceano.",
     "storyHeading": "Nascido de Mergulhos Reais e Ligações Genuínas",
     "storyP1": "A Blue Soul Journeys cresceu de anos passados dentro e fora do oceano - mergulhando em recifes remotos, explorando naufrágios icónicos e partilhando tempo com pessoas que vivem o mar.",
@@ -137,7 +139,7 @@
     "value3Description": "Cada itinerário é cuidadosamente pensado e construído em colaboração com parceiros locais de confiança - sempre com prioridade na segurança, qualidade e autenticidade.",
     "cta": "Ver Como Funciona",
     "closing1": "Mergulhe mais fundo. Viaje de forma diferente.",
-    "closing2": "Deixe o oceano guiá-lo. Viva a sua viagem."
+    "closing2": "Deixe o oceano guiar-te. Viva a sua viagem."
   },
   "whyTravelWithMe": {
     "label": "Porquê Viajar Com a Blue Soul Journeys",
@@ -249,6 +251,7 @@
       "highlight3Title": "Encontros Pelágicos",
       "highlight3Description": "Observa tubarões de ponta branca de recife, barracudas, grandes cardumes de peixes e, por vezes, golfinhos ou raias-manta nas águas abertas do Mar Vermelho.",
       "vesselName": "Liveaboard do Mar Vermelho - Rota Norte Estendida (Naufrágios e Recifes)",
+      "vesselRoute": "Rota Norte Estendida — Naufrágios e Recifes",
       "vesselDescription": "Um liveaboard confortável e bem equipado, ideal para explorar os recifes e naufrágios lendários do norte do Mar Vermelho. A bordo encontrarás cabines confortáveis, amplos espaços de mergulho, Nitrox disponível e uma tripulação experiente que conhece estas águas muito bem.",
       "amenities": [
         "Cabines com casa de banho privativa e ar condicionado",
@@ -337,6 +340,7 @@
       "highlight3Title": "Atóis Remotos",
       "highlight3Description": "Explora recifes de coral intactos e uma vida marinha cheia de vida espalhada pelos atóis das Maldivas.",
       "vesselName": "Liveaboard das Maldivas",
+      "vesselRoute": "Rota dos Atolos Centrais",
       "vesselDescription": "Um liveaboard de estilo dhoni tradicional, adaptado para oferecer conforto e funcionalidade durante uma semana de mergulho nas Maldivas. A bordo viaja um pequeno grupo de mergulhadores, permitindo briefings personalizados e itinerários flexíveis ajustados às condições do mar e aos avistamentos de vida marinha.",
       "amenities": [
         "Cabines com casa de banho privativa e ar condicionado",
@@ -426,8 +430,9 @@
       "highlight2Description": "Mergulhos em sistemas de recife ao longo da costa selvagem de Inhambane, longe das multidões e cheios de vida. Cada mergulho pode revelar novas espécies, desde grandes pelágicos até à pequena vida do recife.",
       "highlight3Title": "Imersão Cultural",
       "highlight3Description": "Ligação com as comunidades costeiras locais e com o ritmo da vida junto ao oceano. Entre mercados, pequenas aldeias piscatórias e a hospitalidade moçambicana, cada dia no Tofo oferece uma experiência autêntica da costa da África Oriental.",
-      "vesselName": "Alojamento de Praia no Tofo",
-      "vesselDescription": "Um alojamento de praia no Tofo, em parceria com um centro de mergulho local. Simples, confortável e integrado na vida da vila, oferece acesso fácil ao mergulho e ao ambiente descontraído da costa de Inhambane.",
+      "vesselName": "Resort de Mergulho no Tofo",
+      "vesselRoute": "Tofo, Costa de Inhambane",
+      "vesselDescription": "Um resort de mergulho no Tofo, em parceria com um centro de mergulho local. Simples, confortável e integrado na vida da vila, oferece acesso fácil ao mergulho e ao ambiente descontraído da costa de Inhambane.",
       "amenities": [
         "Quartos com vista para o oceano e casa de banho privativa",
         "Centro de mergulho no local com guias experientes",
