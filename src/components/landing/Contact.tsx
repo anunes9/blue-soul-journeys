@@ -78,7 +78,6 @@ const Contact = () => {
               <span className='text-gradient-aqua'>
                 {t('headingHighlight')}
               </span>
-              ?
             </h2>
           </ScrollReveal>
 
