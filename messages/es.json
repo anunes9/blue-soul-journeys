@@ -12,19 +12,19 @@
   "hero": {
     "tagline": "Viajes para Quienes Viven el Océano",
     "description": "Creo viajes de buceo cuidadosamente diseñados, en colaboración con socios locales de confianza. Siempre que es posible, acompaño personalmente cada viaje, garantizando seguridad, tranquilidad y una experiencia verdaderamente conectada con el destino.",
-    "ctaPrimary": "Comenzar tu Viaje",
+    "ctaPrimary": "Empieza tu Viaje",
     "ctaSecondary": "Explorar Viajes",
     "scrollLabel": "Ir a la siguiente sección",
     "imageAlt": "Escena de buceo bajo el agua"
   },
   "mission": {
-    "label": "Viajes de Buceo, Elegidos con Cuidado",
+    "label": "Viajes de Buceo Elegidos con Cuidado",
     "heading": "Más que unas vacaciones",
-    "description": "Cada viaje es cuidadosamente seleccionado, con un fuerte enfoque en calidad, seguridad, respeto por el océano y las comunidades que visitamos. Blue Soul Journeys se dedica exclusivamente al turismo de buceo — desde expediciones en barcos de buceo hasta estancias en resorts de buceo cuidadosamente seleccionados.",
+    "description": "Cada viaje se selecciona con un fuerte enfoque en la calidad, la seguridad y el respeto por el océano y las comunidades que visitamos. Blue Soul Journeys se dedica exclusivamente a experiencias de buceo - desde expediciones en liveaboard hasta estancias en resorts o alojamientos de buceo cuidadosamente seleccionados.",
     "value1Title": "Calidad y Seguridad",
     "value1Description": "Cada destino se selecciona con rigor, trabajando únicamente con socios locales de confianza y experiencias comprobadas.",
-    "value2Title": "Viaje Consciente",
-    "value2Description": "Viajes que respetan el océano, las personas y los ritmos naturales — creando experiencias significativas sin prisas ni excesos.",
+    "value2Title": "Viajar Consciente",
+    "value2Description": "Viajes que respetan el océano, las comunidades locales y los ritmos naturales - creando experiencias significativas sin prisas ni excesos.",
     "value3Title": "Conexión Personal",
     "value3Description": "Cada viaje se diseña con atención y intención, adaptado a quién eres y a lo que buscas en el oceáno."
   },
@@ -33,16 +33,16 @@
     "heading": "Viajes de buceo diseñados con cuidado y propósito",
     "description": "Diseño viajes de buceo reuniendo conocimiento local de confianza, planificación cuidada y respeto por el océano.",
     "subheading": "Nacido de inmersiones reales y conexiones genuinas",
-    "paragraph1": "Blue Soul Journeys creció de años pasados dentro y fuera del océano — buceando en arrecifes remotos, explorando naufragios icónicos y compartiendo tiempo con personas cuyas vidas están moldeadas por el mar.",
+    "paragraph1": "Blue Soul Journeys nació de años vividos dentro y alrededor del océano - buceando en arrecifes remotos, explorando naufragios icónicos y compartiendo tiempo con personas profundamente conectadas con el mar.",
     "paragraph2": "Cada viaje que diseñó nace de lugares que conozco bien, experiencias vividas en primera persona y socios en los que confío plenamente. No construo viajes de catálogo.",
     "paragraph3": "Ya sea un liveaboard en el Mar Rojo, dejándose llevar por los canales de Maldivas o una inmersión a lo largo de la costa de Mozambique, cada viaje está pensado para sentirse personal, consciente y conectado con el océano.",
     "cta": "Saber Más",
     "value1Title": "Viaje Consciente",
     "value1Description": "Creo que viajar debe respetar el océano, las personas y los ritmos naturales — creando experiencias significativas sin prisas ni excesos.",
     "value2Title": "Conexión con el Océano",
-    "value2Description": "Para mí, el buceo es más que exploración. Es una forma de desacelerar, observar y reconectar — con el océano, con los demás y con nosotros mismos.",
+    "value2Description": "Para mí, bucear es más que explorar. Es una forma de detenerse, observar y reconectar - con el océano, con los demás y con nosotros mismos.",
     "value3Title": "Experiencias Seleccionadas con Rigor",
-    "value3Description": "Cada itinerario está cuidadosamente diseñado, construido alrededor de socios locales de confianza — priorizando siempre la seguridad, calidad y autenticidad.",
+    "value3Description": "Cada itinerario se diseña con atención y se construye en colaboración con socios locales de confianza - siempre priorizando la seguridad, la calidad y la autenticidad.",
     "imageAlt": "Escena de buceo bajo el agua"
   },
   "destinations": {
@@ -52,9 +52,9 @@
   },
   "contact": {
     "label": "Ponte en Contacto",
-    "heading": "¿Listo para Comenzar tu",
+    "heading": "?Listo para empezar tu viaje?",
     "headingHighlight": "Viaje",
-    "description": "Creemos una experiencia de viaje que se sienta como tú — guiada por la experiencia y profundamente conectada al océano.",
+    "description": "Vamos a crear una experiencia de viaje a tu medida - guiada por la experiencia y profundamente conectada con el océano.",
     "nameLabel": "Nombre",
     "namePlaceholder": "Tu nombre",
     "emailCardLabel": "Contacto por email",
@@ -62,7 +62,7 @@
     "instagramLabel": "Encuéntranos en Instagram",
     "emailPlaceholder": "tu@email.com",
     "messageLabel": "Mensaje",
-    "messagePlaceholder": "Cuéntanos sobre tu viaje de buceo soñado...",
+    "messagePlaceholder": "Cuéntame qué tienes en mente - destinos, tipo de buceo o simplemente la idea de un viaje. ",
     "submitButton": "Enviar Mensaje",
     "whatsappLabel": "Chat en WhatsApp",
     "whatsappAriaLabel": "Chat en WhatsApp"
@@ -86,29 +86,29 @@
   "howItWorks": {
     "label": "Cómo Funciona",
     "heading": "Cada viaje comienza con una conversación",
-    "description": "Todo empieza con una conversación sencilla. A partir de ahí, diseño una experiencia de viaje pensada para ti - para la forma en que buceas y para lo que buscar en el océano.",
+    "description": "Todo empieza con una conversación sencilla. A partir de ahí, diseño una experiencia de viaje pensada para ti - para la forma en que buceas y para lo que buscas en el océano. ",
     "step1Number": "Paso 01",
     "step1Title": "Primer Contacto",
-    "step1Description": "Una conversación relajada para entender tu estilo de viaje, experiencia de buceo y lo que buscas — más allá de fechas y destinos.",
+    "step1Description": "Una conversación tranquila para entender tu estilo de viaje, tu experiencia de buceo y lo que buscas - más allá de fechas y destinos.",
     "step2Number": "Paso 02",
     "step2Title": "Diseño del Viaje",
-    "step2Description": "Basándome en nuestra conversación, diseño destinos, estancias y experiencias de buceo que se adapten a tu ritmo — priorizando siempre la seguridad, calidad y autenticidad.",
+    "step2Description": "A partir de esa conversación, diseño una propuesta de viaje con destinos, alojamientos y experiencias de buceo que encajen con tu ritmo.",
     "step3Number": "Paso 03",
     "step3Title": "Planificación del Viaje",
-    "step3Description": "Me encargo de la logística y coordinación, garantizando que todo fluya sin problemas — desde operadores de buceo y barcos hasta alojamientos.",
+    "step3Description": "Me encargo de la logística y de la coordinación para que todo funcione de forma sencilla - desde centros de buceo y liveaboards hasta alojamientos y traslados.",
     "step4Number": "Paso 04",
     "step4Title": "Apoyo Continuo",
-    "step4Description": "Antes y durante tu viaje, estoy disponible para apoyarte cuando lo necesites — creando espacio para que puedas vivir plenamente la experiencia del océano.",
+    "step4Description": "Antes y durante tu viaje, estoy disponible siempre que lo necesites. La idea es simple: que puedas centrarte en el océano y disfrutar plenamente de la experiencia.",
     "trustHeading": "Construido sobre confianza y valores compartidos",
-    "trust1": "Trabajo estrechamente con un pequeño círculo de operadores locales de confianza — personas con las que he buceado, de quienes he aprendido y con quienes he construido relaciones a largo plazo.",
+    "trust1": "Trabajo con un pequeño grupo de operadores locales de confianza - personas con las que he buceado, aprendido y construido relaciones a lo largo del tiempo.",
     "trust2": "Estas colaboraciones se basan en valores claros: seguridad, respeto por el océano y una auténtica atención a la experiencia de cada buceador.",
     "trust3": "Algunos viajes son acompañados por mí, siempre que mi presencia aporte valor al grupo y a la experiencia.",
-    "trust4": "Otros son liderados por los equipos locales en los que confío plenamente — siempre con el mismo nivel de cuidado, preparación y atención al detalle.",
+    "trust4": "Otros son guiados por equipos locales en los que confío plenamente, siempre con el mismo nivel de preparación, cuidado y atención al detalle.",
     "imageAlt": "Experiencia de viaje de buceo",
     "expectLabel": "¿Qué Puedes Esperar?",
     "expect1": "Transparencia, orientación honesta y un viaje diseñado con intención.",
     "expect2": "Sin prisas. Sin extras innecesarios. Solo experiencias de buceo cuidadosamente diseñadas, organizadas de forma responsable y alineadas con lo que realmente buscas.",
-    "expect3": "Más allá de planificar viajes, creo experiencias con significado — trabajando con socios de confianza, apoyo a los viajeros antes y durante todo el viaje."
+    "expect3": "Para além de planear viagens, crio experiências - com parceiros de confiança e apoio antes e durante toda a viagem."
   },
   "journeys": {
     "label": "Viajes",
@@ -140,27 +140,27 @@
     "closing2": "Deja que el océano te guíe. Vive tu viaje."
   },
   "whyTravelWithMe": {
-    "label": "Por Qué Viajar Conmigo",
+    "label": "Por Qué Viajar Con Blue Soul Journeys",
     "heading": "Viaja con propósito. Explora con confianza.",
     "description": "Experiencia real en el océano, socios de calidad y viajes significativos y personales diseñados para ti.",
     "reason1Title": "Experiencia Real en el Océano",
-    "reason1Description": "Años vividos dentro y fuera del océano han moldeado la forma en que viajo — y cómo diseño cada viaje. Te ayudo a elegir destinos y experiencias que respetan tu ritmo, tus intereses y tu nivel de comodidad — siempre basado en experiencia real, nunca en catálogos.",
+    "reason1Description": "Años vividos dentro y alrededor del océano han moldeado la forma en que viajo - y cómo diseño cada viaje. Te ayudo a elegir destinos y experiencias que respeten tu ritmo, tus intereses y tu nivel de comodidad. Todo se basa en experiencia real, nunca en catálogos.",
     "reason2Title": "Calidad y Socios de Confianza",
-    "reason2Description": "Cada destino se elige con cuidado. Trabajo exclusivamente con socios locales de confianza — operadores responsables y experiencias bien probadas — para que puedas viajar con tranquilidad, sabiendo que estás respaldado en cada etapa de tu viaje.",
+    "reason2Description": "Cada destino se elige con atención. Trabajo exclusivamente con socios locales de confianza - operadores responsables y experiencias bien probadas. Así puedes viajar con tranquilidad, sabiendo que estás acompañado en cada etapa del viaje.",
     "reason3Title": "Viajes Personales y con Significado",
-    "reason3Description": "Cada viaje se diseña con intención — equilibrando naturaleza, cultura, aventura y tiempo. El resultado es una experiencia que se siente profunda, fluida y auténtica. Nunca apresurada. Nunca genérica.",
+    "reason3Description": "Cada viaje se diseña con intención, equilibrando naturaleza, cultura, aventura y tiempo para simplemente estar. El resultado es una experiencia fluida y auténtica. Nunca apresurada. Nunca genérica.",
     "withMeHeading": "Conmigo",
     "withMe1": "Itinerarios a medida",
     "withMe2": "Socios especializados en el océano",
     "withMe3": "Apoyo antes y durante tu viaje",
     "withMe4": "Experiencias alineadas con tus valores",
     "withMe5": "Un viaje que realmente se siente tuyo",
-    "onYourOwnHeading": "Por Tu Cuenta",
+    "onYourOwnHeading": "Planificar Por Tu Cuenta",
     "onYourOwn1": "Paquetes genéricos",
-    "onYourOwn2": "Experiencia limitada en experiencias marinas",
+    "onYourOwn2": "Conocimiento limitado sobre destinos de buceo",
     "onYourOwn3": "Apoyo mínimo",
-    "onYourOwn4": "Difícil evaluar qué es seguro o realmente vale la pena",
-    "onYourOwn5": "Mayor riesgo de decepciones",
+    "onYourOwn4": "Difícil saber qué realmente es seguro o realmente vale la pena",
+    "onYourOwn5": "Mayor riesgo de decepción",
     "imageAlt": "Viaje de buceo"
   },
   "myStory": {
@@ -171,44 +171,44 @@
     "timeline2018Year": "2018",
     "timeline2018Title": "Donde Todo Comenzó",
     "timeline2018P1": "Mi camino comenzó en 2018, cuando completé mi certificación Open Water a bordo de mi primer liveaboard, en Australia.",
-    "timeline2018P2": "En esa primera inmersión, algo cambió. Sentí un sentido inmediato de pertenencia — una tranquila mezcla de claridad, libertad y presencia que solo el océano puede ofrecer.",
+    "timeline2018P2": "En ese primer buceo, algo cambió. Sentí inmediatamente una sensación de pertenencia - una mezcla tranquila de libertad, claridad y presencia que solo el océano puede ofrecer.",
     "timeline2018P3": "Desde entonces, el océano ha estado conmigo, donde quiera que vaya.",
     "timeline2018ImageAlt": "Primera experiencia de buceo en Australia",
     "timeline2020Year": "2020",
     "timeline2020Title": "Aprendiendo del Océano",
     "timeline2020P1": "En 2020, una experiencia de liveaboard en Tailandia profundizó aún más esa conexión.",
     "timeline2020P2": "Más tarde, en Tofo (Mozambique), me acerqué a la conservación marina y completé la certificación Advanced Open Water. Durante ese período participé en actividades de conservación con tiburones ballena y mantarrayas, y comencé a aprender mucho más sobre otras especies - desde tortugas y tiburones hasta la identificación de peces.",
-    "timeline2020P3": "Cada viaje añadió una nueva capa — no solo como buceador, sino como persona.",
+    "timeline2020P3": "Cada experiencia añadió una nueva capa - no solo como buceador, sino también como persona.",
     "timeline2020ImageAlt": "Buceo en Tailandia y Mozambique",
     "timeline2024Year": "2024",
-    "timeline2024Title": "Momentos que lo Cambiaron Todo",
-    "timeline2024P1": "En 2024, exploré Raja Ampat — una de las regiones marinas más biodiversas del planeta.",
-    "timeline2024P2": "Estar allí confirmó algo que ya sentía profundamente: el océano tiene el poder de cambiar cómo vemos el mundo, cómo nos movemos por él y cómo nos relacionamos con la naturaleza.",
+    "timeline2024Title": "Momentos que Cambiaron Todo",
+    "timeline2024P1": "En 2024 exploré Raja Ampat, una de las regiones marinas con mayor biodiversidad del planeta.",
+    "timeline2024P2": "Estar allí confirmó algo que ya venía sintiendo desde hacía tiempo: el océano tiene el poder de cambiar la forma en que vemos el mundo, cómo nos movemos en él y cómo nos relacionamos con la naturaleza. Fue un paso más en una conexión que seguía creciendo con cada viaje.",
     "timeline2024ImageAlt": "Explorando Raja Ampat",
     "timeline2025Year": "2025",
     "timeline2025Title": "El Origen de Blue Soul Journeys",
-    "timeline2025P1": "En 2025, durante un viaje en barco de buceo en Egipto — rodeado de arrecifes vibrantes, naufragios históricos y personas extraordinarias — llegué a un punto de inflexión.",
+    "timeline2025P1": "En 2025, durante un liveaboard en Egipto, rodeado de arrecifes vibrantes, naufragios históricos y personas extraordinarias, comprendí que había llegado a un punto de inflexión en mi viaje.",
     "timeline2025P2": "Sentí un fuerte deseo de compartir esta conexión con el océano con otras personas - no de forma ocasional o superficial, sino de manera constante y con intención.",
-    "timeline2025P3": "Quería crear un espacio donde los viajeros pudieran sentirse seguros, apoyados y confiados. Un espacio construido sobre la confianza — en los socios, los itinerarios, el ritmo del viaje — permitiendo a las personas simplemente estar presentes.",
+    "timeline2025P3": "Quería crear un espacio donde los buceadores se sintieran seguros, apoyados y libres para experimentar el océano a su propio ritmo.",
     "timeline2025P4": "Un espacio construido sobre la confianza - en los socios, en los itinerarios y en la forma en que cada viaje está diseñado.",
     "timeline2025P5": "Un lugar donde el océano no fuera solo el escenario, sino parte de la experiencia. Fue entonces cuando nació Blue Soul Journeys.",
     "timeline2025ImageAlt": "Barco de buceo en Egipto",
     "connectionLabel": "Conexión",
     "connectionHeading": "Más que Lugares — Son las Personas",
     "connectionP1": "Lo que hace que estos viajes sean realmente especiales no es solo adónde vamos, sino con quién los compartimos.",
-    "connectionP2": "El océano es donde desacelero, respiro profundo y me siento más presente. Es donde gano perspectiva y regreso al equilibrio.",
+    "connectionP2": "El océano es donde desacelero, respiro profundo y me siento más presente. Es donde gano perspectiva y vuelvo al equilibrio.",
     "connectionP3": "Con el tiempo, me di cuenta de que el océano no solo nos transforma individualmente, sino que también crea conexiones.",
     "connectionP4": "En los liveaboards y en los viajes compartidos, las conversaciones surgen de forma natural. Las personas se conectan a través de un respeto compartido por el océano, por la simplicidad y por una forma más consciente de viajar.",
     "value1Title": "Construido sobre la Confianza",
-    "value1Description": "Cada viaje está diseñado con cuidado, atención y socios de confianza — para que puedas simplemente estar presente.",
+    "value1Description": "Cada viaje está diseñado con cuidado y construido con socios de confianza - para que simplemente puedas estar presente y disfrutar de la experiencia.",
     "value2Title": "Experiencias Compartidas",
-    "value2Description": "Los mejores momentos ocurren cuando personas afines se reúnen con un respeto compartido por el océano.",
+    "value2Description": "Los mejores momentos ocurren cuando personas con perspectivas diferentes se reúnen y comparten el mismo respeto por el océano.",
     "wantLabel": "Lo Que Quiero para Ti",
     "wantHeading": "Quiero que sientas lo que yo sentí",
     "wantLine1": "La magia del mundo submarino,",
-    "wantLine2": "el silencio del amanecer en el mar,",
-    "wantLine3": "la emoción de aprender algo nuevo,",
-    "wantLine4": "la calma que solo el océano puede dar.",
+    "wantLine2": "El silencio del amanecer en el mar,",
+    "wantLine3": "La emoción de aprender algo nuevo,",
+    "wantLine4": "La calma que solo el océano puede dar.",
     "wantP1": "Y quiero que te sientas seguro — sabiendo que tu viaje ha sido diseñado con cuidado, atención y socios de confianza.",
     "wantClosing1": "Esto es más que viajar.",
     "wantClosing2": "Es una forma de reconectar contigo mismo."
@@ -237,8 +237,8 @@
       "region": "Egipto",
       "description": "Un viaje a los orígenes del buceo moderno, marcado por la historia, arrecifes vibrantes y algunos de los naufragios más icónicos del mundo.",
       "longDescription": [
-        "El Mar Rojo es donde nació el buceo recreativo moderno. Sus aguas cristalinas, con visibilidad de hasta 40 metros, revelan un mundo de jardines de coral vibrantes, espectaculares inmersiones en paredes y algunos de los naufragios más icónicos del mundo — incluyendo el SS Thistlegorm, un barco de carga de la Segunda Guerra Mundial que descansa en el fondo del mar desde 1941.",
-        "Nuestras expediciones al Mar Rojo te llevan más allá de los concurridos arrecifes de los resorts. Exploramos los remotos confines del sur en barco de buceo, visitando sitios intactos como el Arrecife Elphinstone, donde tiburones oceánicos de punta blanca patrullan el azul, y las Islas Brothers, hogar de exuberantes bosques de coral blando y martillos en cardumen.",
+        "El Mar Rojo es donde nació el buceo recreativo moderno. Sus aguas cristalinas, con visibilidad que puede superar los 40 metros, revelan un mundo de jardines de coral vibrantes, abundante vida marina y algunos de los naufragios más legendarios del planeta - incluyendo el famoso SS Thistlegorm, un carguero de la Segunda Guerra Mundial que descansa en el fondo del mar desde 1941.",
+        "Nuestras expediciones al Mar Rojo te llevan a algunos de los lugares de buceo más legendarios de la ruta norte - desde los históricos naufragios de Abu Nuhas hasta los espectaculares arrecifes de Ras Mohammed y los jardines de coral de las Islas Tiran. A lo largo del viaje, las inmersiones se desarrollan entre arrecifes vibrantes, paredes cubiertas de vida marina y grandes bancos de peces que convierten esta región en uno de los destinos de buceo más icónicos del mundo.",
         "Ya sea que te atraiga la historia escondida bajo las olas o la extraordinaria diversidad de vida marina que prospera en cada arrecife, el Mar Rojo ofrece una experiencia de buceo arraigada en la tradición y siempre llena de descubrimientos."
       ],
       "highlight1Title": "Naufragios de Classe Mundial",
@@ -246,31 +246,32 @@
       "highlight2Title": "Jardines de Coral Vibrantes",
       "highlight2Description": "Explora vibrantes jardines de coral duro y blando llenos de vida, desde pequeños nudibranquios hasta enormes morenas escondidas entre los arrecifes.",
       "highlight3Title": "Encuentros Pelágicos",
-      "highlight3Description": "Avista tiburones oceánicos de punta blanca, martillos, delfines y mantas en los profundos canales azules.",
+      "highlight3Description": "Observa tiburones oceánicos de puntas blancas, barracudas, grandes bancos de peces y, en ocasiones, delfines o mantarrayas en las aguas abiertas del Mar Rojo.",
       "vesselName": "Liveaboard del Mar Rojo - Ruta Norte Extendida (Naufragios y Arrecifes)",
-      "vesselDescription": "Un barco de buceo cuidadosamente seleccionado que ofrece cómodas cabinas, espaciosas cubiertas de buceo y acceso a sitios de buceo remotos en el sur del Mar Rojo. El barco está equipado con equipo de seguridad moderno, Nitrox y una tripulación experimentada que conoce estas aguas íntimamente.",
+      "vesselDescription": "Un liveaboard cómodo y bien equipado, ideal para explorar los legendarios arrecifes y naufragios del norte del Mar Rojo. A bordo encontrarás cabinas confortables, amplias instalaciones de buceo, Nitrox disponible y una tripulación experimentada que conoce muy bien estas aguas. ",
       "amenities": [
-        "Cabinas en suite con aire acondicionado",
-        "Espaciosa cubierta de buceo con almacenamiento personal",
+        "Cabinas con baño privado y aire acondicionado",
+        "Amplio deck de buceo con espacio personal para el equipo",
         "Nitrox disponible",
-        "Cubierta solar y áreas de estar",
-        "Pensión completa con cocina local fresca",
+        "Sundeck y zonas de descanso para relajarse entre inmersiones",
+        "Comidas completas a bordo con cocina local fresca",
         "Guías de buceo experimentados"
       ],
       "included": [
-        "Alojamiento en pensión completa en el barco",
+        "Alojamiento en pensión completa a bordo del liveaboard",
         "Hasta 4 inmersiones por día",
         "Nitrox (para buceadores certificados)",
-        "Servicios de guía de buceo",
-        "Botellas y plomos",
+        "Servicios professionales deguía de buceo",
+        "Botellas y lastre",
         "Toallas y ropa de cama",
-        "Té, café y agua durante todo el día"
+        "Té, café y agua durante todo el día",
+        "Translados entre aeropuertos, hotel (si aplica) y el barco"
       ],
       "notIncluded": [
         "Vuelos internacionales",
-        "Visado egipcio",
-        "Seguro de viaje",
-        "Equipo de buceo personal",
+        "Visado de entrada a Egipto",
+        "Seguro de viaje y de buceo",
+        "Equipo personal de buceo",
         "Bebidas alcohólicas",
         "Propinas para la tripulación",
         "Tasas del parque marino"
@@ -302,15 +303,15 @@
           "description": "Inmersión final matutina, regreso al puerto. Traslado al aeropuerto para tu vuelo de salida."
         }
       ],
-      "transfers": "Los traslados al aeropuerto entre el Aeropuerto Internacional de Hurghada (HRG) o el Aeropuerto de Marsa Alam (RMF) y la marina del barco están incluidos en el viaje. Coordinaré tus horarios de llegada y salida para garantizar una conexión fluida. Si deseas llegar antes o extender tu estancia, puedo ayudarte a organizar alojamiento adicional."
+      "transfers": "Traslados entre el Aeropuerto Internacional de Sharm El Sheikh (SSH) y la marina del liveaboard están incluidos en el viaje. Coordinaré los horarios de llegada y salida para asegurar una conexión fluida. Si planeas llegar antes o prolongar tu estancia, también puedo ayudarte a organizar alojamiento adicional. Los traslados se organizan de acuerdo con los horarios de salida y regreso del liveaboard"
     },
     "maldives": {
       "name": "Maldivas",
-      "region": "Atolones Centrales y Sur Profundo",
-      "description": "Un viaje guiado por el ritmo del océano — a la deriva por canales, corrientes y frecuentes encuentros con grandes especies pelágicas.",
+      "region": "Ruta de los Atolones Centrales",
+      "description": "Un viaje guiado por el ritmo del océano - a la deriva por canales y corrientes donde los encuentros con mantarrayas, tiburones de arrecife y otras grandes especies pelágicas forman parte del buceo cotidiano en las Maldivas. ",
       "longDescription": [
-        "Las Maldivas son el paraíso de los buceadores — una cadena de 26 atolones dispersos por el Océano Índico, donde las corrientes cálidas traen una extraordinaria concentración de vida marina a canales, thilas y estaciones de limpieza. Aquí, el buceo se define por la deriva: te entregas a la corriente y dejas que el océano te lleve por un mundo de color y movimiento.",
-        "Nuestros itinerarios en las Maldivas se centran en los Atolones Centrales y del Sur Profundo, lejos de los centros turísticos. Visitamos estaciones de limpieza de mantas donde docenas de rayas se deslizan en elegantes círculos, exploramos inmersiones en canales repletos de tiburones de arrecife grises y cardúmenes de jureles, y derivamos a lo largo de salientes cubiertos de coral llenos de vida con corales blandos y peces de cristal.",
+        "Las Maldivas son un verdadero paraíso para buceadores - una cadena de atolones de coral dispersos por el Océano Índico. Aquí, el buceo está definido por el movimiento: corrientes cálidas que atraviesan los canales traen una extraordinaria concentración de vida marina, desde tiburones de arrecife y mantarrayas hasta tiburones ballena y grandes cardúmenes.",
+        "Los itinerarios de las Maldivas exploran los Atolones Centrales, incluyendo North Malé, South Malé, Ari y Vaavu. El buceo combina emocionantes inmersiones a la deriva en canales con vibrantes arrecifes de coral y famosas estaciones de limpieza de mantarrayas, creando una de las experiencias de liveaboard más icónicas del Océano Índico.",
         "En la superficie, el ritmo se suaviza. Entre inmersiones puedes relajarte en cubierta, hacer snorkel en lagunas turquesa o simplemente contemplar el atardecer sobre el infinito horizonte de Océano Índico."
       ],
       "highlight1Title": "Encuentros con Mantarrayas",
@@ -318,34 +319,39 @@
       "highlight2Title": "Inmersiones a la Deriva en Canales",
       "highlight2Description": "Déjate llevar por las corrientes de los canales entre tiburones de arrecife, rayas y densos bancos de peces.",
       "highlight3Title": "Atolones Remotos",
-      "highlight3Description": "Explora el raramente visitado Sur Profundo, donde los arrecifes prístinos permanecen intactos y la vida marina es abundante.",
+      "highlight3Description": "Explora arrecifes de coral prístinos y una vibrante vida marina repartida por los atolones dispersos de las Maldivas.",
       "vesselName": "Liveaboard de Maldivas",
-      "vesselDescription": "Un barco de buceo de estilo dhoni tradicional, cuidadosamente reformado para la comodidad del buceo. El barco lleva un pequeño grupo de buceadores, permitiendo briefings de buceo personalizados e itinerarios flexibles basados en las condiciones y avistamientos de vida marina.",
+      "vesselDescription": "Un liveaboard de estilo tradicional maldivo, diseñado para ofrecer confort y funcionalidad durante una semana de buceo en las Maldivas. A bordo viaja un pequeño grupo de buceadores, lo que permite briefings personalizados y rutas flexibles adaptadas a las condiciones del mar y a los encuentros con la vida marina.",
       "amenities": [
-        "Cabinas en suite con aire acondicionado",
+        "Cabinas con baño privado y aire acondicionado",
         "Dhoni de buceo dedicado",
         "Nitrox disponible",
-        "Cubierta solar con tumbonas",
+        "Sundeck y zonas de descanso",
         "Pensión completa con cocina maldiva e internacional",
         "Kayaks y equipo de snorkel"
       ],
       "included": [
-        "Alojamiento en pensión completa en el barco",
-        "Hasta 3–4 inmersiones por día",
+        "Alojamiento en pensión completa en el liveaboard",
+        "3 a 4 inmersiones por día*",
         "Nitrox (para buceadores certificados)",
-        "Servicios de guía de buceo",
-        "Botellas y plomos",
+        "Guías de buceo profesionales",
+        "Botellas y lastre",
         "Equipo de snorkel",
-        "Té, café, agua y refrescos"
+        "Toallas y ropa de cama",
+        "Té, café, agua y refrescos disponibles durante todo el día",
+        "Traslados entre el aeropuerto internacional de Malé y el liveaboard",
+        "*El número de inmersiones puede variar según las condiciones meteorológicas y el itinerario final."
       ],
       "notIncluded": [
         "Vuelos internacionales",
-        "Impuesto verde de Maldivas",
-        "Seguro de viaje",
-        "Equipo de buceo personal",
+        "Tasa turística de Maldivas (Green Tax)",
+        "Seguro de viaje y de buceo ",
+        "Equipo personal de buceo",
         "Bebidas alcohólicas",
         "Propinas para la tripulación",
-        "IVA y cargos por servicio"
+        "IVA y cargos por servicio",
+        "Tasas de parque marino o áreas protegidas (cuando sea aplicable)",
+        "Cursos de buceo o especialidades"
       ],
       "itinerary": [
         {
@@ -374,16 +380,17 @@
           "description": "Inmersión final matutina, crucero de regreso hacia Malé. Traslado al aeropuerto para tu salida."
         }
       ],
-      "transfers": "El liveaboard parte de Malé, fácilmente accesible desde el Aeropuerto Internacional de Velana (MLE). Los traslados entre el aeropuerto y la marina del liveaboard están incluidos en el viaje. Coordinaré los horarios de llegada y salida para asegurar una conexión fluida. Si llegas antes o sales más tarde, también puedo ayudarte a organizar alojamiento en Malé o Hulhumalé."
+      "transfers": "El liveaboard parte de Malé, fácilmente accesible desde el Aeropuerto Internacional de Velana (MLE). Los traslados entre el aeropuerto y la marina del liveaboard están incluidos en el viaje. Coordinaré los horarios de llegada y salida para asegurar una conexión fluida. Si llegas antes o sales más tarde, también puedo ayudarte a organizar alojamiento en Malé o Hulhumalé. Los traslados se organizan de acuerdo con los horarios de salida y regreso del liveaboard. "
     },
     "mozambique": {
       "name": "Mozambique",
-      "region": "Tofo y La Costa Salvaje",
+      "region": "Tofo",
       "description": "Un viaje desarrollado en colaboración con centros de buceo y alojamientos locales, donde la conexión con el océano y con la comunidad forma parte de la experiencia.",
       "longDescription": [
-        "Mozambique es una de las últimas verdaderas fronteras del buceo. A lo largo de su salvaje costa, la cálida Corriente de Agulhas arrastra aguas ricas en nutrientes cerca de la costa, creando un ecosistema marino de asombrosa diversidad y escala. Aquí es donde te encuentras cara a cara con los gigantes del océano — tiburones ballena, mantas, ballenas jorobadas y la esquiva manta oceánica.",
+        "Mozambique es una de las últimas grandes fronteras del buceo. A lo largo de la costa de Inhambane, las corrientes cálidas del Océano Índico atraen una extraordinaria diversidad de vida marina. Es aquí donde se producen encuentros con algunos de los gigantes del océano - tiburones ballena, mantarrayas oceánicas, ballenas jorobadas y mucho más. ",
         "Las expediciones en Mozambique tienen base en Tofo y en la costa de Inhambane, donde cada día de buceo es diferente y memorable. Muchas salidas comienzan con un breve trayecto en barco antes de sumergirse en sistemas de arrecife llenos de vida. La visibilidad puede sorprender y las corrientes traen vida desde el arrecife hacia el azul profundo.",
-        "Más allá del buceo, Tofo tiene una energía propia. Pequeños restaurantes sirven buena comida a precios accesibles, mientras que bares al aire libre y terrazas frente al mar crean un ambiente relajado que se prolonga hasta el atardecer. Entre surfistas, buceadores, viajeros y locales, la villa mantiene un espíritu libre y auténtico."
+        "Más allá del buceo, Tofo tiene una energía propia. Pequeños restaurantes sirven buena comida a precios accesibles, mientras que bares al aire libre y terrazas frente al mar crean un ambiente relajado que se prolonga hasta el atardecer. Entre surfistas, buceadores, viajeros y locales, la villa mantiene un espíritu libre y auténtico.",
+        "La cultura local añade otra dimensión al viaje. Comunidades pesqueras, mercados coloreados y sabores africanos preparados en la playa hacen de Tofo un destino que se vive mucho más allá del buceo. "
       ],
       "highlight1Title": "Capital de Megafauna",
       "highlight1Description": "Uno de los mejores lugares del mundo para encuentros con tiburones ballena y mantarrayas en mar abierto. A lo largo de la costa de Tofo, estas especies pueden observarse durante gran parte del año, convirtiendo la región en un destino de referencia para buceadores y investigadores marinos.",
@@ -392,20 +399,20 @@
       "highlight3Title": "Inmersión Cultural",
       "highlight3Description": "Conecta con las comunidades costeras locales y experimenta el ritmo de vida junto al océano. Desde mercados locales hasta la hospitalidad cotidiana de Mozambique, cada día en Tofo ofrece una auténtica experiencia de la costa del África Oriental.",
       "vesselName": "Beach Lodge en Tofo",
-      "vesselDescription": "Un resort de buceo de primera línea de playa cuidadosamente seleccionado en Tofo, gestionado en asociación con un centro de buceo local. El alojamiento es sencillo, cómodo y profundamente conectado con la comunidad local — con vistas al océano, cálida hospitalidad y acceso directo a la playa.",
+      "vesselDescription": "Un alojamiento de playa en Tofo, gestionado en colaboración con un centro de buceo local. Sencillo, cómodo y integrado en la vida de la villa, ofrece acceso fácil al buceo y al ambiente relajado de la costa de Inhambane.",
       "amenities": [
         "Habitaciones con vistas al océano y baño privado",
-        "Centro de buceo en las instalaciones con guías experimentados",
+        "Centro de buceo en el lugar con guías experimentados",
         "Restaurante de playa con cocina local",
         "Alquiler de equipo disponible",
         "Excursiones de snorkel y safari oceánico",
-        "Turismo con apoyo comunitario"
+        "Conexión directa con la comunidad local"
       ],
       "included": [
-        "Alojamiento en el resort de buceo",
+        "Alojamiento en el lodge de buceo",
         "2–3 inmersiones guiadas por día",
         "Servicios de guía de buceo",
-        "Botellas y plomos",
+        "Botellas y lastre",
         "Desayuno diario",
         "Excursión de safari oceánico",
         "Visita a la comunidad local"
@@ -413,8 +420,8 @@
       "notIncluded": [
         "Vuelos internacionales",
         "Visado de Mozambique",
-        "Seguro de viaje",
-        "Equipo de buceo personal",
+        "Seguro de viaje y de buceo",
+        "Equipo personal de buceo",
         "Almuerzo y cena (disponible en el resort)",
         "Bebidas alcohólicas",
         "Excursiones adicionales"
@@ -446,7 +453,7 @@
           "description": "Una última inmersión matutina, tiempo para despedirse de Tofo. Traslado al aeropuerto de Inhambane para tu salida."
         }
       ],
-      "transfers": "Los traslados entre el Aeropuerto de Inhambane (INH) y el resort de buceo en Tofo (aproximadamente 25 minutos) están incluidos. También puedo ayudarte a organizar traslados desde Maputo (Aeropuerto Internacional de Mavalane) si vuelas vía la capital — el pintoresco trayecto toma alrededor de 6 horas a lo largo de la costa."
+      "transfers": "Los traslados entre el Aeropuerto de Inhambane (INH) y el lodge de buceo en Tofo (aproximadamente 25 minutos) están incluidos. También puedo ayudarte a organizar traslados desde Maputo (Aeropuerto Internacional de Mavalane) si llegas a través de la capital - el trayecto dura alrededor de 6 horas a lo largo de la costa."
     }
   },
   "metadata": {
