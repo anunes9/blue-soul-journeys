@@ -223,13 +223,14 @@
     "notIncluded": "Not Included",
     "itineraryLiveaboardLabel": "About the Route",
     "itineraryResortLabel": "About the Programme",
-    "itineraryHeading": "Your Journey, Day by Day",
+    "itineraryHeading": "Example of Your Journey, Day by Day",
     "datesLabel": "Upcoming Dates",
     "datesHeading": "When Can You Join?",
     "statusAvailable": "Available",
     "statusLimited": "Limited",
     "statusSoldOut": "Sold Out",
-    "transfersHeading": "Airport Transfers"
+    "transfersHeading": "Airport Transfers",
+    "marineLifeLabel": "Marine Life You May Encounter"
   },
   "destinationData": {
     "red-sea": {
@@ -301,7 +302,22 @@
           "description": "Final morning dive, return to port. Transfer to the airport for your departure flight."
         }
       ],
-      "transfers": "Airport transfers between Sharm El Sheikh International Airport (SSH) and the liveaboard marina are included in the journey. I will coordinate your arrival and departure time to ensure a smooth connection. If you plan to arrive earlier or extend your stay, I can also help arrange additional accommodation. Transfers are scheduled according to the liveaboard departure and return times."
+      "transfers": "Airport transfers between Sharm El Sheikh International Airport (SSH) and the liveaboard marina are included in the journey. I will coordinate your arrival and departure time to ensure a smooth connection. If you plan to arrive earlier or extend your stay, I can also help arrange additional accommodation. Transfers are scheduled according to the liveaboard departure and return times.",
+      "marineLife": [
+        "Oceanic whitetip sharks",
+        "Hammerhead sharks (occasional)",
+        "Reef sharks",
+        "Eagle rays",
+        "Blue-spotted stingrays",
+        "Schools of barracudas",
+        "Trevallies",
+        "Tunas",
+        "Sea turtles",
+        "Moray eels",
+        "Nudibranchs",
+        "Frogfish",
+        "Octopus"
+      ]
     },
     "maldives": {
       "name": "The Maldives",
@@ -377,7 +393,20 @@
           "description": "Final morning dive, cruise back towards Malé. Transfer to the airport for your departure."
         }
       ],
-      "transfers": "The liveaboard departs from Malé, easily accessible from Velana International Airport (MLE). Transfers between the airport and the liveaboard marina are included in the journey. I will coordinate arrival and departure times to ensure a smooth connection. If you arrive earlier or depart later, I can also help arrange accommodation in Malé or Hulhumalé. Transfers are organized according to the liveaboard departure and return schedule."
+      "transfers": "The liveaboard departs from Malé, easily accessible from Velana International Airport (MLE). Transfers between the airport and the liveaboard marina are included in the journey. I will coordinate arrival and departure times to ensure a smooth connection. If you arrive earlier or depart later, I can also help arrange accommodation in Malé or Hulhumalé. Transfers are organized according to the liveaboard departure and return schedule.",
+      "marineLife": [
+        "Whale sharks",
+        "Oceanic manta rays",
+        "Reef sharks",
+        "Hammerhead sharks (occasional)",
+        "Eagle rays",
+        "Sea turtles",
+        "Schools of barracudas",
+        "Trevallies",
+        "Nudibranchs",
+        "Frogfish",
+        "Octopus"
+      ]
     },
     "mozambique": {
       "name": "Mozambique",
@@ -450,7 +479,24 @@
           "description": "One last morning dive, time to say goodbye to Tofo. Transfer to Inhambane airport for your departure."
         }
       ],
-      "transfers": "Transfers between Inhambane Airport (INH) and the dive lodge in Tofo (approximately 25 minutes) are included. I can also help arrange transfers from Maputo (Mavalane International Airport) if you’re flying via the capital - the drive takes around 6 hours along the coast."
+      "transfers": "Transfers between Inhambane Airport (INH) and the dive lodge in Tofo (approximately 25 minutes) are included. I can also help arrange transfers from Maputo (Mavalane International Airport) if you’re flying via the capital - the drive takes around 6 hours along the coast.",
+      "marineLife": [
+        "Whale sharks",
+        "Oceanic manta rays",
+        "Humpback whales (seasonal)",
+        "Reef sharks",
+        "Hammerhead sharks (occasional)",
+        "Eagle rays",
+        "Blue-spotted stingrays",
+        "Schools of barracudas",
+        "Trevallies",
+        "Tunas",
+        "Sea turtles",
+        "Moray eels",
+        "Nudibranchs",
+        "Frogfish",
+        "Octopus"
+      ]
     }
   },
   "metadata": {

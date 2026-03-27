@@ -1,51 +1,52 @@
-import type { Metadata } from "next";
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
-import DestinationDates from "@/components/destination/DestinationDates";
-import DestinationDescription from "@/components/destination/DestinationDescription";
-import DestinationHero from "@/components/destination/DestinationHero";
-import DestinationInclusions from "@/components/destination/DestinationInclusions";
-import DestinationItinerary from "@/components/destination/DestinationItinerary";
-import DestinationTransfers from "@/components/destination/DestinationTransfers";
-import DestinationVessel from "@/components/destination/DestinationVessel";
-import Contact from "@/components/landing/Contact";
-import Footer from "@/components/landing/Footer";
-import { destinations } from "@/data/destinations";
-import { routing } from "@/i18n/routing";
+import type { Metadata } from 'next'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
+import { notFound } from 'next/navigation'
+import DestinationDates from '@/components/destination/DestinationDates'
+import DestinationDescription from '@/components/destination/DestinationDescription'
+import DestinationHero from '@/components/destination/DestinationHero'
+import DestinationInclusions from '@/components/destination/DestinationInclusions'
+import DestinationItinerary from '@/components/destination/DestinationItinerary'
+import DestinationTransfers from '@/components/destination/DestinationTransfers'
+import DestinationMarineLife from '@/components/destination/DestinationMarineLife'
+import DestinationVessel from '@/components/destination/DestinationVessel'
+import Contact from '@/components/landing/Contact'
+import Footer from '@/components/landing/Footer'
+import { destinations } from '@/data/destinations'
+import { routing } from '@/i18n/routing'
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    destinations.map((d) => ({ locale, slug: d.slug }))
-  );
+    destinations.map((d) => ({ locale, slug: d.slug })),
+  )
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string }>
 }): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const { locale, slug } = await params
 
-  const dest = destinations.find((d) => d.slug === slug);
-  if (!dest) return { title: "Destination Not Found" };
+  const dest = destinations.find((d) => d.slug === slug)
+  if (!dest) return { title: 'Destination Not Found' }
 
-  let name: string;
-  let description: string;
+  let name: string
+  let description: string
 
   try {
     const t = await getTranslations({
       locale,
       namespace: `destinationData.${slug}` as never,
-    });
-    name = t("name" as never);
-    description = t("description" as never);
+    })
+    name = t('name' as never)
+    description = t('description' as never)
   } catch {
-    name = dest.name;
-    description = dest.description;
+    name = dest.name
+    description = dest.description
   }
 
-  const siteUrl = "https://www.bluesouljourneys.com";
-  const url = `${siteUrl}/${locale}/destinations/${slug}`;
+  const siteUrl = 'https://www.bluesouljourneys.com'
+  const url = `${siteUrl}/${locale}/destinations/${slug}`
 
   return {
     title: `${name} Diving`,
@@ -56,7 +57,7 @@ export async function generateMetadata({
         en: `${siteUrl}/en/destinations/${slug}`,
         pt: `${siteUrl}/pt/destinations/${slug}`,
         es: `${siteUrl}/es/destinations/${slug}`,
-        "x-default": `${siteUrl}/en/destinations/${slug}`,
+        'x-default': `${siteUrl}/en/destinations/${slug}`,
       },
     },
     openGraph: {
@@ -66,29 +67,30 @@ export async function generateMetadata({
       images: [{ url: dest.image, width: 1200, height: 630, alt: dest.alt }],
     },
     twitter: {
-      card: "summary_large_image",
+      card: 'summary_large_image',
       title: `${name} — Blue Soul Journeys`,
       description,
       images: [dest.image],
     },
-  };
+  }
 }
 
 export default async function DestinationPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string }>
 }) {
-  const { locale, slug } = await params;
-  setRequestLocale(locale);
+  const { locale, slug } = await params
+  setRequestLocale(locale)
 
-  const destination = destinations.find((d) => d.slug === slug);
-  if (!destination) notFound();
+  const destination = destinations.find((d) => d.slug === slug)
+  if (!destination) notFound()
 
   return (
     <main>
       <DestinationHero slug={slug} destination={destination} />
       <DestinationDescription slug={slug} destination={destination} />
+      <DestinationMarineLife slug={slug} destination={destination} />
       <DestinationVessel slug={slug} destination={destination} />
       <DestinationInclusions slug={slug} destination={destination} />
       <DestinationItinerary slug={slug} destination={destination} />
@@ -97,5 +99,5 @@ export default async function DestinationPage({
       <Contact />
       <Footer />
     </main>
-  );
+  )
 }

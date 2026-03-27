@@ -223,13 +223,14 @@
     "notIncluded": "Não Incluído",
     "itineraryLiveaboardLabel": "Sobre o Percurso",
     "itineraryResortLabel": "Sobre o Programa",
-    "itineraryHeading": "A Sua Viagem, Dia a Dia",
+    "itineraryHeading": "Exmeplo da Tua Viagem, Dia a Dia",
     "datesLabel": "Próximas Datas",
     "datesHeading": "Quando te podes juntar?",
     "statusAvailable": "Disponível",
     "statusLimited": "Limitado",
     "statusSoldOut": "Esgotado",
-    "transfersHeading": "Transferes de Aeroporto"
+    "transfersHeading": "Transferes de Aeroporto",
+    "marineLifeLabel": "Vida Marinha que Podes Encontrar"
   },
   "destinationData": {
     "red-sea": {
@@ -303,7 +304,22 @@
           "description": "Mergulho final da manhã, regresso ao porto. Transfere para o aeroporto para o voo de partida."
         }
       ],
-      "transfers": "Os transferes entre o Aeroporto Internacional de Sharm El Sheikh (SSH) e a marina do liveaboard estão incluídos na viagem. Coordenarei os horários de chega e partida para garantir uma ligação tranquila. Caso pretendas chegar mais cedo ou prolongar a estadia, posso também ajudar a organizar alojamento adicional. Os transferes são organizados de acordo com os horários de partida e chegada do liveaboard."
+      "transfers": "Os transferes entre o Aeroporto Internacional de Sharm El Sheikh (SSH) e a marina do liveaboard estão incluídos na viagem. Coordenarei os horários de chega e partida para garantir uma ligação tranquila. Caso pretendas chegar mais cedo ou prolongar a estadia, posso também ajudar a organizar alojamento adicional. Os transferes são organizados de acordo com os horários de partida e chegada do liveaboard.",
+      "marineLife": [
+        "Tubarões de ponta branca oceânicos",
+        "Tubarões-martelo (ocasionais)",
+        "Tubarões de recife",
+        "Raias-águia",
+        "Raias de manchas azuis",
+        "Cardumes de barracudas",
+        "Caranhos",
+        "Atum",
+        "Tartarugas marinhas",
+        "Enguias moray",
+        "Nudibrânquios",
+        "Peixe-sapo",
+        "Polvo"
+      ]
     },
     "maldives": {
       "name": "Maldivas",
@@ -379,7 +395,20 @@
           "description": "Mergulho final da manhã, cruzeiro de regresso a Malé. Transfere para o aeroporto para a sua partida."
         }
       ],
-      "transfers": "O liveaboard parte de Malé, facilmente acessível a partir do Aeroporto Internacional de Velana (MLE). Os transferes entre o aeroporto e a marina do liveaboard estão incluídos na viagem. Coordenarei os horários de chegada e partida para garantir uma ligação tranquila. Caso chegues mais cedo ou partas mais tarde, posso também ajudar a organizar alojamento em Malé ou Hulhumalé. Os transferes são organizados de acordo com os horários de partida e regresso do liveaboard. "
+      "transfers": "O liveaboard parte de Malé, facilmente acessível a partir do Aeroporto Internacional de Velana (MLE). Os transferes entre o aeroporto e a marina do liveaboard estão incluídos na viagem. Coordenarei os horários de chegada e partida para garantir uma ligação tranquila. Caso chegues mais cedo ou partas mais tarde, posso também ajudar a organizar alojamento em Malé ou Hulhumalé. Os transferes são organizados de acordo com os horários de partida e regresso do liveaboard. ",
+      "marineLife": [
+        "Tubarões-baleia",
+        "Raias-manta oceânicas",
+        "Tubarões de recife",
+        "Tubarões-martelo (ocasionais)",
+        "Raias-águia",
+        "Tartarugas marinhas",
+        "Cardumes de barracudas",
+        "Caranhos",
+        "Nudibrânquios",
+        "Peixe-sapo",
+        "Polvo"
+      ]
     },
     "mozambique": {
       "name": "Moçambique",
@@ -453,7 +482,24 @@
           "description": "Um último mergulho matinal, tempo para se despedir de Tofo. Transfere para o aeroporto de Inhambane para a sua partida."
         }
       ],
-      "transfers": "Os transferes entre o Aeroporto de Inhambane (INH) e o lodge de mergulho no Tofo (aproximadamente 25 minutos) estão incluídos. Posso também ajudar a arranjar transferes de Maputo (Aeroporto Internacional de Mavalane) se estiveres a voar pela capital - a viagem demora cerca de 6 horas ao longo da costa."
+      "transfers": "Os transferes entre o Aeroporto de Inhambane (INH) e o lodge de mergulho no Tofo (aproximadamente 25 minutos) estão incluídos. Posso também ajudar a arranjar transferes de Maputo (Aeroporto Internacional de Mavalane) se estiveres a voar pela capital - a viagem demora cerca de 6 horas ao longo da costa.",
+      "marineLife": [
+        "Tubarões-baleia",
+        "Raias-manta oceânicas",
+        "Baleias jubarte (sazonais)",
+        "Tubarões de recife",
+        "Tubarões-martelo (ocasionais)",
+        "Raias-águia",
+        "Raias de manchas azuis",
+        "Cardumes de barracudas",
+        "Caranhos",
+        "Atum",
+        "Tartarugas marinhas",
+        "Enguias moray",
+        "Nudibrânquios",
+        "Peixe-sapo",
+        "Polvo"
+      ]
     }
   },
   "metadata": {
