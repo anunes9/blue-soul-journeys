@@ -109,11 +109,12 @@
     "expectLabel": "What Can You Expect?",
     "expect1": "Transparency, honest guidance and a journey designed with purpose.",
     "expect2": "No rush. No unnecessary extras. Just thoughtfully structured dive experiences, delivered responsibly and aligned with what truly matters to you.",
-    "expect3": "Beyond planning trips, I create experiences, select trusted partners and support you before and during the entire journey."
+    "expect3": "For me, travel goes beyond simply planning trips. I create meaningful experiences - working with trusted partners and supporting you before and throughout the entire journey."
   },
   "journeys": {
     "label": "Journeys",
-    "heading": "Dive Journeys Designed to Explore the Ocean",
+    "heading": "Dive Journeys Designed to",
+    "headingHighlight": "Explore the Ocean",
     "description1": "From remote coral reefs to legendary wrecks, these dive journeys invite you to explore the ocean in its many expressions — from calm, contemplative dives to more intense encounters.",
     "description2": "Each destination moves at its own rhythm, leaving space to observe, feel and dive at your own pace.",
     "featuredLabel": "Featured Dive Journeys",
@@ -249,8 +250,8 @@
       "highlight2Description": "Explore vibrant hard and soft coral gardens teeming with life, from tiny nudibranchs to giant moray eels hidden among the reefs.",
       "highlight3Title": "Pelagic Encounters",
       "highlight3Description": "Spot oceanic whitetip sharks, barracudas, large schools of fish and, at times, dolphins or manta rays in the open waters of the Red Sea.",
-      "vesselName": "Red Sea Liveaboard - Extended North Route (Wrecks & Reefs)",
-      "vesselRoute": "Extended North Route — Wrecks & Reefs",
+      "vesselName": "Red Sea Liveaboard",
+      "vesselRoute": "Wrecks & Reefs",
       "vesselDescription": "A comfortable and well-equipped liveaboard, ideal for exploring the legendary reefs and wrecks of the northern Red Sea. On board you’ll find comfortable cabins, spacious dive facilities, Nitrox available, and an experienced crew who know these waters extremely well. ",
       "amenities": [
         "En-suite cabins with air conditioning",
@@ -461,7 +462,7 @@
         {
           "day": "Day 1",
           "title": "Arrival in Tofo",
-          "description": "Arrive in Inhambane. Transfer to the dive resort in Tofo, settle in and enjoy your first evening on the beach."
+          "description": "Arrive in Inhambane. Transfer to the dive lodge in Tofo, settle in and enjoy your first evening on the beach."
         },
         {
           "day": "Days 2–3",

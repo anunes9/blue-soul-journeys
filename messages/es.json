@@ -113,7 +113,8 @@
   },
   "journeys": {
     "label": "Viajes",
-    "heading": "Viajes de Buceo Diseñados para Explorar el Océano",
+    "heading": "Viajes de Buceo Diseñados para",
+    "headingHighlight": "Explorar el Océano",
     "description1": "Desde arrecifes de coral remotos hasta naufragios legendarios, estos viajes de buceo te invitan a explorar el océano en sus muchas expresiones — desde inmersiones tranquilas y contemplativas hasta encuentros más intensos.",
     "description2": "Cada destino tiene su propio ritmo, dejando espacio para observar, sentir y bucear a tu manera.",
     "featuredLabel": "Viajes de Buceo Destacados",
@@ -217,7 +218,7 @@
   },
   "destinationPage": {
     "aboutLabel": "Sobre Este Destino",
-    "discoverHeading": "Descubrir {name}",
+    "discoverHeading": "Descubrir las Maldivas",
     "liveaboardLabel": "El Liveaboard",
     "resortLabel": "El Lodge de Buceo",
     "inclusionsLabel": "Qué Está Incluido",
@@ -251,7 +252,7 @@
       "highlight3Title": "Encuentros Pelágicos",
       "highlight3Description": "Observa tiburones oceánicos de puntas blancas, barracudas, grandes bancos de peces y, en ocasiones, delfines o mantarrayas en las aguas abiertas del Mar Rojo.",
       "vesselName": "Liveaboard del Mar Rojo",
-      "vesselRoute": "Ruta Norte Extendida — Naufragios y Arrecifes",
+      "vesselRoute": "Naufragios y Arrecifes",
       "vesselDescription": "Un liveaboard cómodo y bien equipado, ideal para explorar los legendarios arrecifes y naufragios del norte del Mar Rojo. A bordo encontrarás cabinas confortables, amplias instalaciones de buceo, Nitrox disponible y una tripulación experimentada que conoce muy bien estas aguas. ",
       "amenities": [
         "Cabinas con baño privado y aire acondicionado",
@@ -464,7 +465,7 @@
         {
           "day": "Día 1",
           "title": "Llegada a Tofo",
-          "description": "Llega a Inhambane. Traslado al resort de buceo en Tofo, instálate y disfruta de tu primera tarde en la playa."
+          "description": "Llega a Inhambane. Traslado al lodge de buceo en Tofo, instálate y disfruta de tu primera tarde en la playa."
         },
         {
           "day": "Días 2–3",

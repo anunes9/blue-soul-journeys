@@ -61,15 +61,15 @@ const Hero = () => {
       <div className='relative z-20 container mx-auto px-6 text-center'>
         <div className='max-w-4xl mx-auto'>
           {/* Logo/Brand */}
-          {/*<div className='animate-fade-up' style={{ animationDelay: '0.2s' }}>
+          <div className='animate-fade-up' style={{ animationDelay: '0.2s' }}>
             <Image
-              src='/logo_text.png'
+              src='/logo-horizontal-white.png'
               width={512}
-              height={512}
+              height={256}
               className='h-auto w-80 mx-auto'
               alt='Blue Soul Journeys'
             />
-          </div>*/}
+          </div>
 
           {/* Headline */}
           <h1

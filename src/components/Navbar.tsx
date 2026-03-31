@@ -55,10 +55,14 @@ const Navbar = () => {
           {/* Logo */}
           <Link href='/' className='flex items-center gap-2'>
             <Image
-              src='/logo.png'
-              width={48}
+              src={
+                hasScrolled
+                  ? '/logo-horizontal.png'
+                  : '/logo-horizontal-white.png'
+              }
+              width={96}
               height={48}
-              className='h-auto w-12 sm:w-10'
+              className='h-auto w-28'
               alt='Blue Soul Journeys'
             />
           </Link>
@@ -264,7 +268,7 @@ const Navbar = () => {
           {/* Mobile Logo */}
           <div className='flex items-center gap-3 mb-4'>
             <Image
-              src='/logo.avif'
+              src='/logo.png'
               width={56}
               height={56}
               className='h-auto w-14'
