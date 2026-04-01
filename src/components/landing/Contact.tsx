@@ -17,6 +17,7 @@ const Contact = () => {
     subject: '',
     message: '',
   })
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -26,10 +27,24 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
-    console.log('Form submitted:', formData)
+    setStatus('loading')
+
+    try {
+      const res = await fetch(`${window.location.origin}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error('Failed')
+
+      setStatus('success')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
@@ -216,9 +231,26 @@ const Contact = () => {
                 />
               </div>
 
-              <Button type='submit' variant='hero' size='xl' className='w-full'>
+              {status === 'success' && (
+                <p className='text-sm text-center text-green-600 font-medium'>
+                  {t('successMessage')}
+                </p>
+              )}
+              {status === 'error' && (
+                <p className='text-sm text-center text-red-500 font-medium'>
+                  {t('errorMessage')}
+                </p>
+              )}
+
+              <Button
+                type='submit'
+                variant='hero'
+                size='xl'
+                className='w-full'
+                disabled={status === 'loading'}
+              >
                 <Send className='w-5 h-5 mr-2' />
-                {t('submitButton')}
+                {status === 'loading' ? t('sendingButton') : t('submitButton')}
               </Button>
             </form>
           </ScrollReveal>

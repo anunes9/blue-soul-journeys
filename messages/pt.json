@@ -66,7 +66,10 @@
     "messagePlaceholder": "Conta-me o que tens em mente - destinos, tipo de mergulho ou simplesmente uma ideia de viagem.",
     "submitButton": "Enviar Mensagem",
     "whatsappLabel": "WhatsApp",
-    "whatsappAriaLabel": "WhatsApp"
+    "whatsappAriaLabel": "WhatsApp",
+    "successMessage": "Mensagem enviada! Entro em contacto contigo em breve.",
+    "errorMessage": "Algo correu mal. Tenta novamente ou contacta-me diretamente.",
+    "sendingButton": "A enviar..."
   },
   "footer": {
     "brandDescription": "Viagens de mergulho criadas para quem verdadeiramente se sente em casa no oceano. Cada viagem é escolhida pela sua qualidade, abordagem ética e genuína ligação ao oceano.",

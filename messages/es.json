@@ -66,7 +66,10 @@
     "messagePlaceholder": "Cuéntame qué tienes en mente - destinos, tipo de buceo o simplemente la idea de un viaje. ",
     "submitButton": "Enviar Mensaje",
     "whatsappLabel": "Chat en WhatsApp",
-    "whatsappAriaLabel": "Chat en WhatsApp"
+    "whatsappAriaLabel": "Chat en WhatsApp",
+    "successMessage": "¡Mensaje enviado! Me pondré en contacto contigo pronto.",
+    "errorMessage": "Algo salió mal. Inténtalo de nuevo o contáctame directamente.",
+    "sendingButton": "Enviando..."
   },
   "footer": {
     "brandDescription": "Viajes de buceo diseñados para quienes verdaderamente se sienten como en casa en el océano. Cada viaje es elegido por su calidad, enfoque ético y genuina conexión con el océano.",
