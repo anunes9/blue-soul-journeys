@@ -218,7 +218,6 @@
   },
   "destinationPage": {
     "aboutLabel": "About This Destination",
-    "discoverHeading": "Discover {name}",
     "liveaboardLabel": "The Liveaboard",
     "resortLabel": "The Dive Lodge",
     "inclusionsLabel": "What's Included",
@@ -238,6 +237,7 @@
   "destinationData": {
     "red-sea": {
       "name": "The Red Sea",
+      "discoverHeading": "Discover the Red Sea",
       "region": "Egypt",
       "description": "A journey into the origins of modern diving, shaped by history, vibrant reefs and some of the most iconic wrecks of the world.",
       "longDescription": [
@@ -325,6 +325,7 @@
     },
     "maldives": {
       "name": "The Maldives",
+      "discoverHeading": "Discover the Maldives",
       "region": "Central Atolls Route",
       "description": "A journey shaped by the rhythm of the ocean - drifting through channels and currents where encounters with manta rays, reef sharks and other large pelagic species are part of everyday diving in the Maldives.",
       "longDescription": [
@@ -415,6 +416,7 @@
     },
     "mozambique": {
       "name": "Mozambique",
+      "discoverHeading": "Discover Mozambique",
       "region": "Tofo",
       "description": "A journey developed in partnership with local dive centres and accommodation, where connection to the ocean and the local community is part of the experience.",
       "longDescription": [

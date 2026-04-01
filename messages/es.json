@@ -109,7 +109,7 @@
     "expectLabel": "¿Qué Puedes Esperar?",
     "expect1": "Transparencia, orientación honesta y un viaje diseñado con intención.",
     "expect2": "Sin prisas. Sin extras innecesarios. Solo experiencias de buceo cuidadosamente diseñadas, organizadas de forma responsable y alineadas con lo que realmente buscas.",
-    "expect3": "Además de planificar viajes, creo experiencias — con socios de confianza y apoyo antes y durante todo el viaje."
+    "expect3": "Para mí, viajar va más allá de simplemente planificar viajes. Creo experiencias significativas, trabajando con socios de confianza y acompañándote antes y durante todo el trayecto."
   },
   "journeys": {
     "label": "Viajes",
@@ -218,7 +218,6 @@
   },
   "destinationPage": {
     "aboutLabel": "Sobre Este Destino",
-    "discoverHeading": "Descubrir las Maldivas",
     "liveaboardLabel": "El Liveaboard",
     "resortLabel": "El Lodge de Buceo",
     "inclusionsLabel": "Qué Está Incluido",
@@ -238,6 +237,7 @@
   "destinationData": {
     "red-sea": {
       "name": "El Mar Rojo",
+      "discoverHeading": "Descubrir el Mar Rojo",
       "region": "Egipto",
       "description": "Un viaje a los orígenes del buceo moderno, marcado por la historia, arrecifes vibrantes y algunos de los naufragios más icónicos del mundo.",
       "longDescription": [
@@ -327,6 +327,7 @@
     },
     "maldives": {
       "name": "Maldivas",
+      "discoverHeading": "Descubrir las Maldivas",
       "region": "Ruta de los Atolones Centrales",
       "description": "Un viaje guiado por el ritmo del océano - a la deriva por canales y corrientes donde los encuentros con mantarrayas, tiburones de arrecife y otras grandes especies pelágicas forman parte del buceo cotidiano en las Maldivas. ",
       "longDescription": [
@@ -418,6 +419,7 @@
     },
     "mozambique": {
       "name": "Mozambique",
+      "discoverHeading": "Descubrir Mozambique",
       "region": "Tofo",
       "description": "Un viaje desarrollado en colaboración con centros de buceo y alojamientos locales, donde la conexión con el océano y con la comunidad forma parte de la experiencia.",
       "longDescription": [

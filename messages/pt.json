@@ -69,7 +69,7 @@
     "whatsappAriaLabel": "WhatsApp"
   },
   "footer": {
-    "brandDescription": "Viagens de mergulho desenhadas para quem verdadeiramente se sente em casa no oceano. Cada viagem é escolhida pela sua qualidade, abordagem ética e genuína ligação ao oceano.",
+    "brandDescription": "Viagens de mergulho criadas para quem verdadeiramente se sente em casa no oceano. Cada viagem é escolhida pela sua qualidade, abordagem ética e genuína ligação ao oceano.",
     "exploreHeading": "Explorar",
     "contactHeading": "Contacto",
     "availableWorldwide": "Disponível em todo o mundo",
@@ -113,7 +113,7 @@
   },
   "journeys": {
     "label": "Viagens",
-    "heading": "Viagens de Mergulho Desenhadas para",
+    "heading": "Viagens de Mergulho Criadas para",
     "headingHighlight": "Explorar o Oceano",
     "description1": "De recifes de coral remotos a naufrágios lendários, estas viagens de mergulho convidam-no a explorar o oceano nas suas muitas expressões — de mergulhos calmos e contemplativos a encontros mais intensos.",
     "description2": "Cada destino tem o seu próprio ritmo, deixando espaço para observar, sentir e mergulhar ao teu ritmo.",
@@ -145,7 +145,7 @@
   "whyTravelWithMe": {
     "label": "Porquê Viajar Com a Blue Soul Journeys",
     "heading": "Viaja com propósito. Explora com confiança.",
-    "description": "Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais desenhadas à sua medida.",
+    "description": "Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais criadas à sua medida.",
     "reason1Title": "Experiência Real no Oceano",
     "reason1Description": "Anos passados dentro e à volta do oceano moldaram a forma como viajo - e como desenho cada jornada. Ajudo-te a escolher destinos e experiências que respeitam o teu ritmo, os teus interesses e o teu nível de conforto. Tudo baseado em experiência real, nunca em catálogos.",
     "reason2Title": "Qualidade e Parceiros de Confiança",
@@ -218,9 +218,8 @@
   },
   "destinationPage": {
     "aboutLabel": "Sobre Este Destino",
-    "discoverHeading": "Descobrir as Maldivas",
     "liveaboardLabel": "O Liveaboard",
-    "resortLabel": "O Resort de Mergulho",
+    "resortLabel": "O Lodge de Mergulho",
     "inclusionsLabel": "O Que Está Incluído",
     "included": "Incluído",
     "notIncluded": "Não Incluído",
@@ -238,6 +237,7 @@
   "destinationData": {
     "red-sea": {
       "name": "O Mar Vermelho",
+      "discoverHeading": "Descubrir o Mar Vermelho",
       "region": "Egito",
       "description": "Uma viagem às origens do mergulho moderno, moldada pela história, por recifes vibrantes e alguns dos naufrágios mais icónicos do mundo.",
       "longDescription": [
@@ -327,6 +327,7 @@
     },
     "maldives": {
       "name": "Maldivas",
+      "discoverHeading": "Descubrir as Maldivas",
       "region": "Rota dos Atóis Centrais",
       "description": "Uma viagem guiada pelo ritmo do oceano - à deriva por canais e correntes onde encontros com raias-manta, tubarões de recife e outras grandes espécies pelágicas fazem parte do mergulho nas Maldivas.",
       "longDescription": [
@@ -417,6 +418,7 @@
     },
     "mozambique": {
       "name": "Moçambique",
+      "discoverHeading": "Descubrir Moçambique",
       "region": "Tofo",
       "description": "Uma viagem desenvolvida em parceria com centros de mergulho e alojamentos locais, onde a ligação ao oceano e à comunidade faz parte da experiência.",
       "longDescription": [
@@ -465,7 +467,7 @@
         {
           "day": "Dia 1",
           "title": "Chegada a Tofo",
-          "description": "Chegada a Inhambane. Transfere para o resort de mergulho em Tofo, instale-se e desfrute da sua primeira tarde na praia."
+          "description": "Chegada a Inhambane. Transfere para o lodge de mergulho em Tofo, instale-se e desfrute da sua primeira tarde na praia."
         },
         {
           "day": "Dias 2–3",
@@ -510,12 +512,12 @@
   },
   "metadata": {
     "home": {
-      "title": "Viagens de Mergulho Desenhadas com Cuidado",
-      "description": "Viagens de mergulho desenhadas para quem verdadeiramente se sente em casa no oceano. Expedições em liveaboard e resorts de mergulho no Mar Vermelho, Maldivas e Moçambique, escolhidas com cuidado."
+      "title": "Viagens de Mergulho Criadas com Cuidado",
+      "description": "Viagens de mergulho criadas para quem verdadeiramente se sente em casa no oceano. Expedições em liveaboard e resorts de mergulho no Mar Vermelho, Maldivas e Moçambique, escolhidas com cuidado."
     },
     "journeys": {
       "title": "Viagens",
-      "description": "Viagens de mergulho desenhadas para explorar o oceano com tempo, consciência e profundidade. De recifes de coral remotos a naufrágios lendários, explore o oceano nas suas muitas expressões."
+      "description": "Viagens de mergulho criadas para explorar o oceano com tempo, consciência e profundidade. De recifes de coral remotos a naufrágios lendários, explore o oceano nas suas muitas expressões."
     },
     "howItWorks": {
       "title": "Como Funciona",
@@ -527,7 +529,7 @@
     },
     "whyTravelWithMe": {
       "title": "Porquê Viajar Comigo",
-      "description": "Viaje com propósito. Explore com confiança. Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais desenhadas à sua medida."
+      "description": "Viaje com propósito. Explore com confiança. Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais criadas à sua medida."
     },
     "myStory": {
       "title": "A Minha História",

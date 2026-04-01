@@ -156,14 +156,14 @@ const Footer = () => {
           <p className='text-primary-foreground/40 text-sm'>
             © {currentYear} {t('copyright')}
           </p>
-          <div className='flex gap-6'>
+          {/*<div className='flex gap-6'>
             <span className='text-primary-foreground/40 text-sm'>
               {t('privacyPolicy')}
             </span>
             <span className='text-primary-foreground/40 text-sm'>
               {t('termsOfService')}
             </span>
-          </div>
+          </div>*/}
         </div>
       </div>
     </footer>

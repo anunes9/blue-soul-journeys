@@ -75,7 +75,7 @@ const DestinationDescription = ({
           {/* Heading */}
           <ScrollReveal animation='fade-up' delay={100}>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight text-center'>
-              {t('discoverHeading', { name: td(`${slug}.name` as never) })}
+              {td(`${slug}.discoverHeading` as never)}
             </h2>
           </ScrollReveal>
 

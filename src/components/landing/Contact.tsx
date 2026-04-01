@@ -1,6 +1,6 @@
 'use client'
 
-import { Instagram, Mail, Phone, Send } from 'lucide-react'
+import { Instagram, Mail, Send } from 'lucide-react'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import ScrollReveal from '@/components/ScrollReveal'
