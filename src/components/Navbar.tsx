@@ -238,21 +238,54 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Toggle */}
-          <button
-            type='button'
-            className={`md:hidden transition-colors duration-300 ${
-              hasScrolled ? 'text-navy' : 'text-primary-foreground'
-            }`}
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={t('toggleMenu')}
-          >
-            {mobileMenuOpen ? (
-              <X className='w-6 h-6' />
-            ) : (
-              <Menu className='w-6 h-6' />
-            )}
-          </button>
+          {/* Mobile: Language + Toggle */}
+          <div className='md:hidden flex items-center gap-3'>
+            {/* Inline locale switcher */}
+            <div
+              className={`flex items-center gap-px text-[11px] font-medium tracking-wider ${
+                hasScrolled ? 'text-navy/60' : 'text-primary-foreground/60'
+              }`}
+            >
+              {routing.locales.map((locale, i) => (
+                <span key={locale} className='flex items-center'>
+                  {i > 0 && (
+                    <span className='mx-1 opacity-30'>·</span>
+                  )}
+                  <button
+                    type='button'
+                    onClick={() => switchLocale(locale)}
+                    className={`transition-all duration-200 px-0.5 ${
+                      locale === currentLocale
+                        ? hasScrolled
+                          ? 'text-ocean-deep font-semibold'
+                          : 'text-primary-foreground font-semibold'
+                        : hasScrolled
+                          ? 'text-navy/40 hover:text-navy/70'
+                          : 'text-primary-foreground/40 hover:text-primary-foreground/70'
+                    }`}
+                  >
+                    {localeLabels[locale]}
+                  </button>
+                </span>
+              ))}
+            </div>
+
+            {/* Hamburger */}
+            <button
+              type='button'
+              className={`transition-colors duration-300 ${
+                hasScrolled ? 'text-navy' : 'text-primary-foreground'
+              }`}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={t('toggleMenu')}
+            >
+              {mobileMenuOpen ? (
+                <X className='w-6 h-6' />
+              ) : (
+                <Menu className='w-6 h-6' />
+              )}
+            </button>
+          </div>
         </div>
       </nav>
 
