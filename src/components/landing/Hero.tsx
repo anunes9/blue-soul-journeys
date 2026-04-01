@@ -58,7 +58,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className='relative z-20 container mx-auto px-6 text-center'>
+      <div className='relative z-20 container mx-auto px-4 sm:px-6 text-center'>
         <div className='max-w-4xl mx-auto'>
           {/* Logo/Brand */}
           <div className='animate-fade-up' style={{ animationDelay: '0.2s' }}>
@@ -66,14 +66,14 @@ const Hero = () => {
               src='/logo-horizontal-white.png'
               width={512}
               height={256}
-              className='h-auto w-80 mx-auto'
+              className='h-auto w-48 sm:w-64 md:w-80 mx-auto'
               alt='Blue Soul Journeys'
             />
           </div>
 
           {/* Headline */}
           <h1
-            className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-primary-foreground mb-6 leading-tight animate-fade-up'
+            className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-primary-foreground mt-4 mb-4 sm:mb-6 leading-tight animate-fade-up'
             style={{ animationDelay: '0.4s' }}
           >
             {t('tagline').split(' ').slice(0, -1).join(' ')}{' '}
@@ -84,7 +84,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p
-            className='text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto font-light animate-fade-up'
+            className='text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-8 sm:mb-10 max-w-2xl mx-auto font-light animate-fade-up'
             style={{ animationDelay: '0.6s' }}
           >
             {t('description')}
@@ -92,13 +92,13 @@ const Hero = () => {
 
           {/* CTAs */}
           <div
-            className='flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up'
+            className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-up'
             style={{ animationDelay: '0.8s' }}
           >
-            <Button variant='hero' size='xl'>
+            <Button variant='hero' size='xl' className='w-full sm:w-auto'>
               <Link href='/#contact'>{t('ctaPrimary')}</Link>
             </Button>
-            <Button variant='heroOutline' size='xl'>
+            <Button variant='heroOutline' size='xl' className='w-full sm:w-auto'>
               <Link href='/journeys'>{t('ctaSecondary')}</Link>
             </Button>
           </div>
