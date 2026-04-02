@@ -240,7 +240,7 @@
   "destinationData": {
     "red-sea": {
       "name": "O Mar Vermelho",
-      "discoverHeading": "Descubrir o Mar Vermelho",
+      "discoverHeading": "Descobrir o Mar Vermelho",
       "region": "Egito",
       "description": "Uma viagem às origens do mergulho moderno, moldada pela história, por recifes vibrantes e alguns dos naufrágios mais icónicos do mundo.",
       "longDescription": [
@@ -330,7 +330,7 @@
     },
     "maldives": {
       "name": "Maldivas",
-      "discoverHeading": "Descubrir as Maldivas",
+      "discoverHeading": "Descobrir as Maldivas",
       "region": "Rota dos Atóis Centrais",
       "description": "Uma viagem guiada pelo ritmo do oceano - à deriva por canais e correntes onde encontros com raias-manta, tubarões de recife e outras grandes espécies pelágicas fazem parte do mergulho nas Maldivas.",
       "longDescription": [
@@ -421,7 +421,7 @@
     },
     "mozambique": {
       "name": "Moçambique",
-      "discoverHeading": "Descubrir Moçambique",
+      "discoverHeading": "Descobrir Moçambique",
       "region": "Tofo",
       "description": "Uma viagem desenvolvida em parceria com centros de mergulho e alojamentos locais, onde a ligação ao oceano e à comunidade faz parte da experiência.",
       "longDescription": [
