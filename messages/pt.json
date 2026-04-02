@@ -12,7 +12,7 @@
   "hero": {
     "tagline": "Viagens para Quem Vive o Oceano",
     "description": "Crio viagens de mergulho cuidadosamente planeadas, em colaboração com parceiros locais de confiança. Sempre que possível, acompanho pessoalmente cada viagem, garantido segurança, tranquilidade e uma experiência verdadeiramente ligada ao destino.",
-    "ctaPrimary": "Começar a Tua Viagem",
+    "ctaPrimary": "Começa a Tua Viagem",
     "ctaSecondary": "Explorar Viagens",
     "scrollLabel": "Ir para a próxima secção",
     "imageAlt": "Cena de mergulho subaquático"
@@ -54,7 +54,7 @@
   "contact": {
     "label": "Entra em Contacto",
     "heading": "Pronto para começar a tua",
-    "headingHighlight": "Viagem?",
+    "headingHighlight": "viagem?",
     "description": "Vamos criar uma experiência de viagem à tua medida - guiada pela experiência e por uma ligação genuína ao oceano.",
     "nameLabel": "Nome",
     "namePlaceholder": "O teu nome",
@@ -143,7 +143,7 @@
     "value3Description": "Cada itinerário é cuidadosamente pensado e construído em colaboração com parceiros locais de confiança - sempre com prioridade na segurança, qualidade e autenticidade.",
     "cta": "Ver Como Funciona",
     "closing1": "Mergulha mais fundo. Viaja de forma diferente.",
-    "closing2": "Deixa o oceano guiar-te. Viva a tua viagem."
+    "closing2": "Deixa o oceano guiar-te. Vive a tua viagem."
   },
   "whyTravelWithMe": {
     "label": "Porquê Viajar Com a Blue Soul Journeys",

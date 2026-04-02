@@ -98,7 +98,11 @@ const Hero = () => {
             <Button variant='hero' size='xl' className='w-full sm:w-auto'>
               <Link href='/#contact'>{t('ctaPrimary')}</Link>
             </Button>
-            <Button variant='heroOutline' size='xl' className='w-full sm:w-auto'>
+            <Button
+              variant='heroOutline'
+              size='xl'
+              className='w-full sm:w-auto'
+            >
               <Link href='/journeys'>{t('ctaSecondary')}</Link>
             </Button>
           </div>
@@ -116,7 +120,7 @@ const Hero = () => {
       </button>
 
       {/* Wave Divider */}
-      <div className='wave-divider z-10'>
+      {/*<div className='hidden md:block wave-divider z-10'>
         <svg
           aria-hidden='true'
           viewBox='0 0 1200 120'
@@ -125,7 +129,7 @@ const Hero = () => {
         >
           <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,140.83,94.17,321.39,56.44Z' />
         </svg>
-      </div>
+      </div>*/}
     </section>
   )
 }
