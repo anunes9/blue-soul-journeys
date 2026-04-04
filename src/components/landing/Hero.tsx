@@ -84,7 +84,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p
-            className='text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-8 sm:mb-10 max-w-2xl mx-auto font-light animate-fade-up'
+            className='hidden md:block text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-8 sm:mb-10 max-w-2xl mx-auto font-light animate-fade-up'
             style={{ animationDelay: '0.6s' }}
           >
             {t('description')}
@@ -92,7 +92,7 @@ const Hero = () => {
 
           {/* CTAs */}
           <div
-            className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-up'
+            className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-up mt-12'
             style={{ animationDelay: '0.8s' }}
           >
             <Button variant='hero' size='xl' className='w-full sm:w-auto'>
@@ -110,14 +110,14 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <button
+      {/*<button
         type='button'
         onClick={scrollToNext}
         className='absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-primary-foreground/60 hover:text-primary-foreground transition-colors animate-float cursor-pointer'
         aria-label={t('scrollLabel')}
       >
         <ChevronDown className='w-8 h-8' />
-      </button>
+      </button>*/}
 
       {/* Wave Divider */}
       {/*<div className='hidden md:block wave-divider z-10'>

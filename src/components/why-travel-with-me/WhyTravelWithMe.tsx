@@ -87,7 +87,9 @@ const WhyTravelWithMe = () => {
               className='text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up'
               style={{ animationDelay: '0.4s' }}
             >
-              {t('heading')}
+              {t('heading1')}
+              <br />
+              {t('heading2')}
             </h1>
           </div>
         </div>

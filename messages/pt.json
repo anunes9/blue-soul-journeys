@@ -147,7 +147,8 @@
   },
   "whyTravelWithMe": {
     "label": "Porquê Viajar Com a Blue Soul Journeys",
-    "heading": "Viaja com propósito. Explora com confiança.",
+    "heading1": "Viaja com propósito.",
+    "heading2": "Explora com confiança.",
     "description": "Experiência real no oceano, parceiros de qualidade e viagens significativas e pessoais criadas à sua medida.",
     "reason1Title": "Experiência Real no Oceano",
     "reason1Description": "Anos passados dentro e à volta do oceano moldaram a forma como viajo - e como desenho cada jornada. Ajudo-te a escolher destinos e experiências que respeitam o teu ritmo, os teus interesses e o teu nível de conforto. Tudo baseado em experiência real, nunca em catálogos.",
@@ -200,7 +201,7 @@
     "timeline2025P5": "Um lugar onde o oceano não fosse apenas o cenário mas parte da experiência. Foi assim que nasceu a Blue Soul Journeys.",
     "timeline2025ImageAlt": "Liveaboard no Egito",
     "connectionLabel": "Ligação",
-    "connectionHeading": "Mais do que Lugares — São as Pessoas",
+    "connectionHeading": "Mais do que lugares, são as pessoas",
     "connectionP1": "O que torna estas viagens verdadeiramente especiais não é apenas onde vamos, mas com quem as partilhamos.",
     "connectionP2": "O oceano é onde abrando, respiro fundo e me sinto mais presente. É onde ganho perspectiva e volto ao equilíbrio.",
     "connectionP3": "Com o tempo, percebi que o oceano não nos transforma apenas individualmente - também cria ligações.",
@@ -255,7 +256,7 @@
       "highlight3Title": "Encontros Pelágicos",
       "highlight3Description": "Observa tubarões de ponta branca de recife, barracudas, grandes cardumes de peixes e, por vezes, golfinhos ou raias-manta nas águas abertas do Mar Vermelho.",
       "vesselName": "Liveaboard do Mar Vermelho",
-      "vesselRoute": "Naufrágios e Recifes",
+      "vesselRoute": "Rota Norte - Naufrágios e Recifes",
       "vesselDescription": "Um liveaboard confortável e bem equipado, ideal para explorar os recifes e naufrágios lendários do norte do Mar Vermelho. A bordo encontrarás cabines confortáveis, amplos espaços de mergulho, Nitrox disponível e uma tripulação experiente que conhece estas águas muito bem.",
       "amenities": [
         "Cabines com casa de banho privativa e ar condicionado",

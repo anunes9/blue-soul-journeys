@@ -74,8 +74,11 @@ const WhatIDo = () => {
               className='text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up'
               style={{ animationDelay: '0.4s' }}
             >
-              {t('heading')}{' '}
-              <span className='text-gradient-aqua'>{t('headingHighlight')}</span>
+              {t('heading')}
+              <br />
+              <span className='text-gradient-aqua'>
+                {t('headingHighlight')}
+              </span>
             </h2>
 
             <p

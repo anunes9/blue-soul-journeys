@@ -54,7 +54,7 @@
   "contact": {
     "label": "Ponte en Contacto",
     "heading": "?Listo para empezar tu",
-    "headingHighlight": "Viaje?",
+    "headingHighlight": "viaje?",
     "description": "Vamos a crear una experiencia de viaje a tu medida - guiada por la experiencia y profundamente conectada con el océano.",
     "nameLabel": "Nombre",
     "namePlaceholder": "Tu nombre",
@@ -147,7 +147,8 @@
   },
   "whyTravelWithMe": {
     "label": "Por Qué Viajar Con Blue Soul Journeys",
-    "heading": "Viaja con propósito. Explora con confianza.",
+    "heading1": "Viaja con propósito.",
+    "heading2": "Explora con confianza.",
     "description": "Experiencia real en el océano, socios de calidad y viajes significativos y personales diseñados para ti.",
     "reason1Title": "Experiencia Real en el Océano",
     "reason1Description": "Años vividos dentro y alrededor del océano han moldeado la forma en que viajo - y cómo diseño cada viaje. Te ayudo a elegir destinos y experiencias que respeten tu ritmo, tus intereses y tu nivel de comodidad. Todo se basa en experiencia real, nunca en catálogos.",
@@ -200,7 +201,7 @@
     "timeline2025P5": "Un lugar donde el océano no fuera solo el escenario, sino parte de la experiencia. Fue entonces cuando nació Blue Soul Journeys.",
     "timeline2025ImageAlt": "Barco de buceo en Egipto",
     "connectionLabel": "Conexión",
-    "connectionHeading": "Más que Lugares — Son las Personas",
+    "connectionHeading": "Más que lugares, son las personas",
     "connectionP1": "Lo que hace que estos viajes sean realmente especiales no es solo adónde vamos, sino con quién los compartimos.",
     "connectionP2": "El océano es donde desacelero, respiro profundo y me siento más presente. Es donde gano perspectiva y vuelvo al equilibrio.",
     "connectionP3": "Con el tiempo, me di cuenta de que el océano no solo nos transforma individualmente, sino que también crea conexiones.",
@@ -255,7 +256,7 @@
       "highlight3Title": "Encuentros Pelágicos",
       "highlight3Description": "Observa tiburones oceánicos de puntas blancas, barracudas, grandes bancos de peces y, en ocasiones, delfines o mantarrayas en las aguas abiertas del Mar Rojo.",
       "vesselName": "Liveaboard del Mar Rojo",
-      "vesselRoute": "Naufragios y Arrecifes",
+      "vesselRoute": "Ruta Norte - Naufragios y Arrecifes",
       "vesselDescription": "Un liveaboard cómodo y bien equipado, ideal para explorar los legendarios arrecifes y naufragios del norte del Mar Rojo. A bordo encontrarás cabinas confortables, amplias instalaciones de buceo, Nitrox disponible y una tripulación experimentada que conoce muy bien estas aguas. ",
       "amenities": [
         "Cabinas con baño privado y aire acondicionado",
