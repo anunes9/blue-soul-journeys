@@ -71,18 +71,17 @@ const WhatIDo = () => {
             </div>
 
             <h2
-              className='text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up'
+              className='text-2xl md:text-4xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up'
               style={{ animationDelay: '0.4s' }}
             >
-              {t('heading')}
-              <br />
+              {t('heading')}{' '}
               <span className='text-gradient-aqua'>
                 {t('headingHighlight')}
               </span>
             </h2>
 
             <p
-              className='text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up'
+              className='text-sm md:text-lg text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up font-medium'
               style={{ animationDelay: '0.6s' }}
             >
               {t('description')}
@@ -184,10 +183,10 @@ const WhatIDo = () => {
         <div className='container mx-auto px-6 relative z-10'>
           <ScrollReveal animation='scale-in'>
             <div className='max-w-3xl mx-auto text-center'>
-              <p className='text-2xl md:text-3xl font-heading text-primary-foreground leading-relaxed mb-4'>
+              <p className='text-xl md:text-2xl font-heading text-primary-foreground mb-4 whitespace-break-spaces'>
                 {t('closing1')}
               </p>
-              <p className='text-2xl md:text-3xl font-heading text-gradient-aqua'>
+              <p className='text-xl md:text-2xl font-heading leadingnone text-gradient-aqua whitespace-break-spaces'>
                 {t('closing2')}
               </p>
             </div>

@@ -53,7 +53,7 @@
   },
   "contact": {
     "label": "Ponte en Contacto",
-    "heading": "?Listo para empezar tu",
+    "heading": "¿Listo para empezar tu",
     "headingHighlight": "viaje?",
     "description": "Vamos a crear una experiencia de viaje a tu medida - guiada por la experiencia y profundamente conectada con el océano.",
     "nameLabel": "Nombre",
@@ -116,8 +116,8 @@
   },
   "journeys": {
     "label": "Viajes",
-    "heading": "Viajes de Buceo Diseñados para",
-    "headingHighlight": "Explorar el Océano",
+    "heading": "Viajes de buceo diseñados para",
+    "headingHighlight": "explorar el océano",
     "description1": "Desde arrecifes de coral remotos hasta naufragios legendarios, estos viajes de buceo te invitan a explorar el océano en sus muchas expresiones — desde inmersiones tranquilas y contemplativas hasta encuentros más intensos.",
     "description2": "Cada destino tiene su propio ritmo, dejando espacio para observar, sentir y bucear a tu manera.",
     "featuredLabel": "Viajes de Buceo Destacados",
@@ -142,8 +142,8 @@
     "value3Title": "Experiencias Seleccionadas con Rigor",
     "value3Description": "Cada itinerario está cuidadosamente diseñado, construido alrededor de socios locales de confianza — priorizando siempre la seguridad, calidad y autenticidad.",
     "cta": "Ver Cómo Funciona",
-    "closing1": "Viaja más profundo. Viaja diferente.",
-    "closing2": "Deja que el océano te guíe. Vive tu viaje."
+    "closing1": "Viaja más profundo.\nViaja diferente.",
+    "closing2": "Deja que el océano te guíe.\nVive tu viaje."
   },
   "whyTravelWithMe": {
     "label": "Por Qué Viajar Con Blue Soul Journeys",

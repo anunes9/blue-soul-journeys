@@ -55,7 +55,7 @@ const JourneysList = () => {
             </div>
 
             <h1
-              className='text-4xl md:text-5xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-tight animate-fade-up'
+              className='text-2xl md:text-3xl lg:text-6xl font-heading text-primary-foreground mb-8 leading-none animate-fade-up'
               style={{ animationDelay: '0.4s' }}
             >
               {t('heading')}{' '}
@@ -65,7 +65,7 @@ const JourneysList = () => {
             </h1>
 
             <p
-              className='text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up'
+              className='text-base md:text-lg text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto animate-fade-up'
               style={{ animationDelay: '0.6s' }}
             >
               {t('description1')}

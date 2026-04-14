@@ -248,6 +248,7 @@ const MyStoryContent = () => {
                 <p>{t('wantP1')}</p>
                 <p className='text-2xl font-heading text-primary-foreground mt-8'>
                   {t('wantClosing1')}
+                  <br />
                   <span className='text-gradient-aqua text-2xl font-heading'>
                     {t('wantClosing2')}
                   </span>

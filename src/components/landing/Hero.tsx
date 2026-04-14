@@ -84,7 +84,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p
-            className='hidden md:block text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-8 sm:mb-10 max-w-2xl mx-auto font-light animate-fade-up'
+            className='text-sm md:text-base lg:text-lg text-primary-foreground/80 mb-8 sm:mb-10 max-w-2xl mx-auto font-medium animate-fade-up'
             style={{ animationDelay: '0.6s' }}
           >
             {t('description')}
@@ -95,12 +95,12 @@ const Hero = () => {
             className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-up mt-12'
             style={{ animationDelay: '0.8s' }}
           >
-            <Button variant='hero' size='xl' className='w-full sm:w-auto'>
+            <Button variant='hero' size='lg' className='w-full sm:w-auto'>
               <Link href='/#contact'>{t('ctaPrimary')}</Link>
             </Button>
             <Button
               variant='heroOutline'
-              size='xl'
+              size='lg'
               className='w-full sm:w-auto'
             >
               <Link href='/journeys'>{t('ctaSecondary')}</Link>

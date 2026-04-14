@@ -33,10 +33,10 @@ const DestinationVessel = ({
                 </span>
               </div>
 
-              <h2 className='text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-4 leading-tight'>
+              <h2 className='text-2xl md:text-3xl lg:text-5xl font-heading text-navy mb-4 leading-tight'>
                 {td(`${slug}.vesselName` as never)}
               </h2>
-              <p className='text-lg font-medium text-ocean-deep tracking-wide uppercase'>
+              <p className='text-sm md:text-base lg:text-lg font-medium text-ocean-deep tracking-wide uppercase'>
                 {td(`${slug}.vesselRoute` as never)}
               </p>
             </div>

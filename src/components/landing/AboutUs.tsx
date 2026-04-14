@@ -68,9 +68,8 @@ const AboutUs = () => {
           </ScrollReveal>
 
           <ScrollReveal animation='fade-up' delay={100}>
-            <h2 className='text-3xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-tight'>
-              {t('heading')}
-              <br />
+            <h2 className='text-2xl md:text-4xl lg:text-5xl font-heading text-navy mb-6 leading-none'>
+              {t('heading')}{' '}
               <span className='text-gradient-aqua'>
                 {t('headingHighlight')}
               </span>
@@ -78,7 +77,7 @@ const AboutUs = () => {
           </ScrollReveal>
 
           <ScrollReveal animation='fade-up' delay={200}>
-            <p className='text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
+            <p className='text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
               {t('description')}
             </p>
           </ScrollReveal>
